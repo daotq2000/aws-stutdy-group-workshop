@@ -17,7 +17,7 @@ S3 provides features such as versioning, encryption, access control, and lifecyc
 
 It is commonly used for a wide range of use cases, including backup and restore, data archiving, content distribution, and hosting static websites.
 
-![S3](/aws-stutdy-group-workshop/images/1/s3.png?featherlight=false&width=50pc)
+![S3](/images/1/s3.png?featherlight=false&width=50pc)
 #### Object Storage Classes:
 
 **Amazon S3 Standard (S3 Standard):** S3 Standard offers high durability, availability, and performance object storage for frequently accessed data. Because it delivers low latency and high throughput, S3 Standard is appropriate for a wide variety of use cases, including cloud applications, dynamic websites, content distribution, mobile and gaming applications, and big data analytics. 

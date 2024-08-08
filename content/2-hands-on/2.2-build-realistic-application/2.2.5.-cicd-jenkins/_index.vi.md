@@ -23,7 +23,7 @@ Following CI, Continuous Delivery automates the delivery of applications to sele
 A step beyond Continuous Delivery, Continuous Deployment goes further by releasing every change that passes through the production pipeline to customers with no human intervention. It requires a highly developed culture of monitoring, automated testing, and quality assurance to work effectively.
 
 #### Most Popular CI/CD tools
-![CICD Tools](/aws-stutdy-group-workshop/images/2.2/cicd_tools.png?featherlight=false&width=50pc)
+![CICD Tools](/images/2.2/cicd_tools.png?featherlight=false&width=50pc)
 As image above, there are most popular CI/CD tools, pricing and the complexity, you can refer:
 
 - **Jenkins:** An open-source automation server providing an impressive plugin ecosystem to support building, deploying, and automating any project.
@@ -40,7 +40,7 @@ We will install Jenkins on Bastion Host.
 
 #### 2.1 SSH to Bastion Host
     ssh -i public-bastion-host.pem ec2-user@YourEC2PublicIPV4
-![SSH Successfully to Bastion Host](/aws-stutdy-group-workshop/images/2.2/ssh-bastion-host.png?featherlight=false&width=50pc)
+![SSH Successfully to Bastion Host](/images/2.2/ssh-bastion-host.png?featherlight=false&width=50pc)
 #### 2.2 Configure Security for Jenkins
 At [terraform source code](https://github.com/daotq2000/aws-iaac-terraform), we have configured inbound security group for Jenkins allow access from Internet to Jenkins server via port **8080**
 
@@ -141,7 +141,7 @@ Outputs:
 ## 4. Configuring Jenkins
 Jenkins is now installed and running on your EC2 instance. To configure Jenkins:
 1. Connect to http://<your_server_public_DNS>:8080 from your browser. You will be able to access Jenkins through its management interface:
-   ![unlock_jenkins.png](/aws-stutdy-group-workshop/images/2.2/unlock_jenkins.png)[Jenkins Password](https://www.jenkins.io/doc/book/resources/tutorials/AWS/unlock_jenkins.png)
+   ![unlock_jenkins.png](/images/2.2/unlock_jenkins.png)[Jenkins Password](https://www.jenkins.io/doc/book/resources/tutorials/AWS/unlock_jenkins.png)
 2. As prompted, enter the password found in /var/lib/jenkins/secrets/initialAdminPassword.
 
 Use the following command to display this password:
@@ -150,20 +150,20 @@ Use the following command to display this password:
 3. The Jenkins installation script directs you to the Customize Jenkins page. Click Install suggested plugins.
 
 4. Once the installation is complete, the Create First Admin User will open. Enter your information, and then select Save and Continue.
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.2/create_admin_user.png)
+   ![create_admin_user.png](/images/2.2/create_admin_user.png)
 5. On the left-hand side, select Manage Jenkins, and then select Manage Plugins.
 6. Select the Available tab, and then enter Amazon EC2 plugin at the top right.
 
 7. Select the checkbox next to Amazon EC2 plugin, and then select Install without restart.
-   ![unlock_jenkins.png](/aws-stutdy-group-workshop/images/2.2/unlock_jenkins.png)
+   ![unlock_jenkins.png](/images/2.2/unlock_jenkins.png)
 8. Once the installation is done, select Back to Dashboard.
 9. Select Configure a cloud if there are no existing nodes or clouds.
-   ![configure_cloud.png](/aws-stutdy-group-workshop/images/2.2/configure_cloud.png)
+   ![configure_cloud.png](/images/2.2/configure_cloud.png)
    We are almost done to configure Jenkins on Bastion Host
 ## 3. Install require plugins for Jenkins
 Click to **install suggested plugins**
-![selected-plugsin.png](/aws-stutdy-group-workshop/images/2.2-jenkins/suggest-plugins.png)
-![selected-plugsin.png](/aws-stutdy-group-workshop/images/2.2-jenkins/require-plugins.png)
+![selected-plugsin.png](/images/2.2-jenkins/suggest-plugins.png)
+![selected-plugsin.png](/images/2.2-jenkins/require-plugins.png)
 
 ## 4. Configure aws credentials on Bastion Host
 1. Using this command to config credentials. By default, aws-cli always available on EC2, we don't need install aws-cli again.

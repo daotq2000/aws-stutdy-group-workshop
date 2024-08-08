@@ -15,7 +15,7 @@ S3 cung cấp các tính năng như lập phiên bản, mã hóa, kiểm soát t
 
 Nó thường được sử dụng cho nhiều trường hợp sử dụng, bao gồm sao lưu và khôi phục, lưu trữ dữ liệu, phân phối nội dung và lưu trữ các trang web tĩnh.
 
-![S3](/aws-stutdy-group-workshop/images/1/s3.png?featherlight=false&width=50pc)
+![S3](/images/1/s3.png?featherlight=false&width=50pc)
 #### Lớp lưu trữ đối tượng(Object Storage Classes):
 
 **Amazon S3 Standard (S3 Standard):** S3 Standard cung cấp khả năng lưu trữ đối tượng có độ bền cao, tính khả dụng và hiệu suất cao cho dữ liệu được truy cập thường xuyên. Vì mang lại độ trễ thấp và thông lượng cao nên S3 Standard phù hợp với nhiều trường hợp sử dụng khác nhau, bao gồm ứng dụng đám mây, trang web động, phân phối nội dung, ứng dụng di động và trò chơi cũng như phân tích dữ liệu lớn. 

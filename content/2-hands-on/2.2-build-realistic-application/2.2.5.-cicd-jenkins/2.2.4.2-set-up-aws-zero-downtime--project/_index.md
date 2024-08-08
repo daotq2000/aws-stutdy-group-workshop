@@ -13,7 +13,7 @@ and update existing data, delete data, and more.
 
 There is project structure:
 
-![project_stucture.png](/aws-stutdy-group-workshop/images/2.3_project/project_stucture.png)
+![project_stucture.png](/images/2.3_project/project_stucture.png)
 
 Refer my Github reposittory: https://github.com/daotq2000/aws-spring-sqs-queue.git
 
@@ -29,10 +29,10 @@ To get ECR push command, we are follow these step:
 1. Login to Amazon Console
 2. Go to Amazon Container Registry
 3. Click to detail project
-   ![zero-downtime-pipeline.png](/aws-stutdy-group-workshop/images/2.2-jenkins/ecr.png)
+   ![zero-downtime-pipeline.png](/images/2.2-jenkins/ecr.png)
 4. View push command
-   ![zero-downtime-pipeline.png](/aws-stutdy-group-workshop/images/2.2-jenkins/view-push-command.png)
-   ![zero-downtime-pipeline.png](/aws-stutdy-group-workshop/images/2.2-jenkins/push-command.png)
+   ![zero-downtime-pipeline.png](/images/2.2-jenkins/view-push-command.png)
+   ![zero-downtime-pipeline.png](/images/2.2-jenkins/push-command.png)
    
 ### Setup pipeline
 Using pipeline below:
@@ -103,11 +103,11 @@ Using pipeline below:
       }
       }
       } 
-![zero-downtime-pipeline.png](/aws-stutdy-group-workshop/images/2.2-jenkins/zero-downtime-pipeline.png)
+![zero-downtime-pipeline.png](/images/2.2-jenkins/zero-downtime-pipeline.png)
 
 ### Testing pipeline
 After done all, we have received result below:
-![zero-downtime-pipeline.png](/aws-stutdy-group-workshop/images/2.2-jenkins/build-success.png)
+![zero-downtime-pipeline.png](/images/2.2-jenkins/build-success.png)
 
 ### Monitoring service on Kubernetes Cluster
 #### Install K9s monitoring client tools
@@ -116,5 +116,5 @@ After done all, we have received result below:
 
 [Install K9s] (https://github.com/derailed/k9s)
 After done, we can monitoring kubernetes cluster any where.
-![k9s](/aws-stutdy-group-workshop/images/2.3_project/k9s.png)
+![k9s](/images/2.3_project/k9s.png)
 

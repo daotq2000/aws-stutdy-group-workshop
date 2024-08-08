@@ -56,15 +56,15 @@ Hãy cùng đi sâu vào các khái niệm về VPC, Subnet, Route Table và Sec
 
 #### Thực hành
 Hãy **Tạo VPC** làm theo hướng dẫn bên dưới:
-![CreateVPC1](/aws-stutdy-group-workshop/images/2/CreateVPC1.jpeg?featherlight=false&width=100pc)
+![CreateVPC1](/images/2/CreateVPC1.jpeg?featherlight=false&width=100pc)
 + Truy cập https://us-east-1.console.aws.amazon.com/vpcconsole/home?region=us-east-1#vpcs Chọn **Create VPC**
-![CreateVPC2](/aws-stutdy-group-workshop/images/2/CreateVPC2.jpeg?featherlight=false&width=100pc)
+![CreateVPC2](/images/2/CreateVPC2.jpeg?featherlight=false&width=100pc)
 + Chọn VPC and More
 + Chọn IPv4 CIDR: 10.0.0.0/16
 + Chọn AZ: 1
 + Chọn number public subnet 1
 + Chọn private subnet 1
 + Chọn NAT gateway: none, vì chúng tôi đang kết nối trong tài nguyên AWS nên không cần kết nối internet. Cổng NAT phù hợp với tài nguyên của bên thứ ba trên internet
-![CreateVPC3](/aws-stutdy-group-workshop/images/2/CreateVPC3.jpeg?featherlight=false&width=100pc)
+![CreateVPC3](/images/2/CreateVPC3.jpeg?featherlight=false&width=100pc)
 Sau khi hoàn thành các tùy chọn này, hãy nhấp vào **Tạo VPC**. Chờ một phút để cung cấp tài nguyên, Sau khi hoàn tất, chúng ta có một vpc như hình trên.
 

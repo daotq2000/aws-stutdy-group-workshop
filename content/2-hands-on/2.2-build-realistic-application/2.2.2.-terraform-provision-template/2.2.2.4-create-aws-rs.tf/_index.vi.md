@@ -64,8 +64,8 @@ Tại file `variables.tf` chúng ta đã xác định cidr_block
 Sau khi chạy terraform plan, apply , nó tạo ra vpc có tên là `vpc-main` và `vpc_cidr_block` là `10.0.0.0/16`
 
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![VPC created from terraform](/aws-stutdy-group-workshop/images/2.2/vpc1.png?featherlight=false&width=100pc)
-![VPC detail created from terraform](/aws-stutdy-group-workshop/images/2.2/vpc2.png?featherlight=false&width=100pc)
+![VPC created from terraform](/images/2.2/vpc1.png?featherlight=false&width=100pc)
+![VPC detail created from terraform](/images/2.2/vpc2.png?featherlight=false&width=100pc)
 
 ### Tạo file 02_subnet.tf
 
@@ -146,8 +146,8 @@ Nó cũng bao gồm các mạng con riêng được tạo trước đó trong su
 Các tài nguyên này được tổ chức trong VPC và cho phép phân chia các tài nguyên dựa trên nhu cầu về khả năng tiếp cận công khai hoặc sự liên kết của chúng với các dịch vụ cụ thể như RDS hoặc Elasticache. Ngoài ra, chúng còn được gắn thẻ để quản lý và nhận dạng tốt hơn trong môi trường AWS.
 
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![Subnet created from terraform](/aws-stutdy-group-workshop/images/2.2/Subnet1.png?featherlight=false&width=100pc)
-![Subnet detail created from terraform](/aws-stutdy-group-workshop/images/2.2/Subnet2.png?featherlight=false&width=100pc)
+![Subnet created from terraform](/images/2.2/Subnet1.png?featherlight=false&width=100pc)
+![Subnet detail created from terraform](/images/2.2/Subnet2.png?featherlight=false&width=100pc)
 
 ### Tạo file 03_ig.tf
 
@@ -171,7 +171,7 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
 Nhìn chung, cấu hình này thiết lập một cổng internet trong một VPC được chỉ định và áp dụng các thẻ mô tả để quản lý và nhận dạng dễ dàng hơn trong môi trường AWS.
 
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![Internet Gateway created from terraform](/aws-stutdy-group-workshop/images/2.2/igw1.png?featherlight=false&width=100pc)
+![Internet Gateway created from terraform](/images/2.2/igw1.png?featherlight=false&width=100pc)
 
 ### Tạo file 04_routeTable.tf
     
@@ -227,8 +227,8 @@ Ví dụ: "associate_public_1a" liên kết bảng lộ trình "rtb-public" vớ
 Tương tự, "associate_private_1a", "associate_private_1b" và "associate_private_1c" liên kết bảng tuyến đường "rtb-internal" với các mạng con riêng tư "private-subnet-1a", "private-subnet-1b" và "private-subnet-1c ", tương ứng.
 
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![Subnet created from terraform](/aws-stutdy-group-workshop/images/2.2/rtb1.png?featherlight=false&width=100pc)
-![Subnet detail created from terraform](/aws-stutdy-group-workshop/images/2.2/rtb2.png?featherlight=false&width=100pc)
+![Subnet created from terraform](/images/2.2/rtb1.png?featherlight=false&width=100pc)
+![Subnet detail created from terraform](/images/2.2/rtb2.png?featherlight=false&width=100pc)
 ### Tạo file 05_sg.tf
     
     `resource "aws_security_group" "bastion_sg" {
@@ -413,8 +413,8 @@ Nó cho phép lưu lượng truy cập đi trên tất cả các cổng tới kh
 ##### Tất cả các nhóm bảo mật đều được gắn thẻ cho mục đích nhận dạng và quản lý. Họ kiểm soát luồng lưu lượng giữa các loại tài nguyên khác nhau trong VPC, đảm bảo tính bảo mật và tuân thủ các chính sách mạng.
 
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![Security Group created from terraform](/aws-stutdy-group-workshop/images/2.2/sg.png?featherlight=false&width=100pc)
-![Security Group created from terraform](/aws-stutdy-group-workshop/images/2.2/sg-detail.png?featherlight=false&width=100pc)
+![Security Group created from terraform](/images/2.2/sg.png?featherlight=false&width=100pc)
+![Security Group created from terraform](/images/2.2/sg-detail.png?featherlight=false&width=100pc)
 
 
 ### Tạo file 06_bastionHost.tf
@@ -458,8 +458,8 @@ Nhìn chung, khối mã này thiết lập một phiên bản AWS EC2 (máy ch�
 
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
 
-![Ec2 Bastion Host](/aws-stutdy-group-workshop/images/2.2/ec2_basion_host.png?featherlight=false&width=100pc)
-![Ec2 Bastion Host Details](/aws-stutdy-group-workshop/images/2.2/ec2_basion_host2.png?featherlight=false&width=100pc)
+![Ec2 Bastion Host](/images/2.2/ec2_basion_host.png?featherlight=false&width=100pc)
+![Ec2 Bastion Host Details](/images/2.2/ec2_basion_host2.png?featherlight=false&width=100pc)
 ### Tạo file 07_nat.tf
 Tiếp theo, chúng ta cần tạo NAT Gateway để instance ec2 có thể kết nối qua internet.
 
@@ -509,8 +509,8 @@ Khối này xác định tài nguyên Cổng NAT AWS có tên là "nat-gw". Tham
 Nhìn chung, khối mã này cung cấp IP đàn hồi và Cổng NAT trong môi trường AWS sử dụng Terraform. Cổng NAT tạo điều kiện truy cập internet bên ngoài cho các tài nguyên trong mạng con riêng tư trong VPC.
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
 
-![Elastic IP Address ](/aws-stutdy-group-workshop/images/2.2/eip1.png?featherlight=false&width=100pc)
-![Nat Gateway  ](/aws-stutdy-group-workshop/images/2.2/eip2.png?featherlight=false&width=100pc)
+![Elastic IP Address ](/images/2.2/eip1.png?featherlight=false&width=100pc)
+![Nat Gateway  ](/images/2.2/eip2.png?featherlight=false&width=100pc)
 ## Create 08_iam-role.tf
 
       ### Khối này xác định vai trò IAM có tên "eks_role" cho cụm EKS. Nó chỉ định chính sách cho phép người đứng đầu dịch vụ EKS (eks.amazonaws.com) đảm nhận vai trò này.      
@@ -573,10 +573,10 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
       }
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
 
-![IAM Dashboard](/aws-stutdy-group-workshop/images/2.2/dashboard-iam.png?featherlight=false&width=100pc)
-![Roles List Dashboard](/aws-stutdy-group-workshop/images/2.2/role-lists.png?featherlight=false&width=100pc)
-![Policy  Dashboard](/aws-stutdy-group-workshop/images/2.2/role-lists2.png?featherlight=false&width=100pc)
-![Policy Dashboard](/aws-stutdy-group-workshop/images/2.2/policy.png?featherlight=false&width=100pc)
+![IAM Dashboard](/images/2.2/dashboard-iam.png?featherlight=false&width=100pc)
+![Roles List Dashboard](/images/2.2/role-lists.png?featherlight=false&width=100pc)
+![Policy  Dashboard](/images/2.2/role-lists2.png?featherlight=false&width=100pc)
+![Policy Dashboard](/images/2.2/policy.png?featherlight=false&width=100pc)
 ## Create 09_eks-cluster.tf
       #Khối này xác định tài nguyên cụm AWS EKS có tên "eks_cluster".      
       resource "aws_eks_cluster" "eks_cluster" {
@@ -600,8 +600,8 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
       }
       }
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![EKS Cluster](/aws-stutdy-group-workshop/images/2.2/eks.png?featherlight=false&width=100pc)
-![EKS Cluster Detail](/aws-stutdy-group-workshop/images/2.2/Eks-detail.png?featherlight=false&width=100pc)
+![EKS Cluster](/images/2.2/eks.png?featherlight=false&width=100pc)
+![EKS Cluster Detail](/images/2.2/Eks-detail.png?featherlight=false&width=100pc)
 ## Create 10_eks-nodes.tf
       ## Khối này xác định tài nguyên nhóm nút AWS EKS với tên "các nút riêng tư".
       resource "aws_eks_node_group" "private-nodes" {
@@ -653,7 +653,7 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
       }
       }
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![EKS Private Node ](/aws-stutdy-group-workshop/images/2.2/eks-private-node.png?featherlight=false&width=100pc)
+![EKS Private Node ](/images/2.2/eks-private-node.png?featherlight=false&width=100pc)
 ## Create 11_registry.tf
       ## khối mã này cung cấp một kho lưu trữ Amazon ECR có tên là "eks-project" với các cấu hình được chỉ định như tên và thẻ bằng cách sử dụng Terraform. Kho lưu trữ này có thể được sử dụng để lưu trữ hình ảnh Docker và quản lý các ứng dụng được đóng gói trong cơ sở hạ tầng AWS của bạn.
       resource "aws_ecr_repository" "ecr_repository" {
@@ -664,8 +664,8 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
       }
       }
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/ecr.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/ecr2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/ecr.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/ecr2.png?featherlight=false&width=100pc)
 ## Create 12_database.tf
       resource "aws_rds_cluster" "aurora-postgresql-cluster" {
       cluster_identifier = "aurora-postgresql-cluster"
@@ -697,8 +697,8 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
 
 Khối mã này cung cấp một cụm cơ sở dữ liệu Amazon Aurora PostgreSQL với cấu hình mở rộng quy mô v2 serverless, bao gồm cấu hình cụm và cấu hình phiên bản, sử dụng Terraform.
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/sqs1.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/ecr2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/sqs1.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/ecr2.png?featherlight=false&width=100pc)
 ## Create 13_caching.tf
       resource "aws_elasticache_replication_group" "redis" {
       replication_group_id          = "redis-cluster"
@@ -726,8 +726,8 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
       }
 Khối mã này cung cấp nhóm sao chép Amazon ElastiCache Redis với các cấu hình được chỉ định bằng cách sử dụng Terraform, đảm bảo đáp ứng các phần phụ thuộc với cụm nút và nhóm nút EKS.
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/redis1.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/redis2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/redis1.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/redis2.png?featherlight=false&width=100pc)
 ## Create 14_sqs..tf
       resource "aws_sqs_queue" "sqs_iaac" {
       name = "sqs_queue"
@@ -743,8 +743,8 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
 
 Khối mã này cung cấp hàng đợi Amazon SQS với các cấu hình được chỉ định như tên, số giây trễ, kích thước tin nhắn tối đa, số giây lưu giữ tin nhắn, số giây thời gian chờ nhận và các thẻ sử dụng Terraform. Hàng đợi này có thể được sử dụng để tách các thành phần của ứng dụng phân tán bằng cách cho phép giao tiếp không đồng bộ giữa chúng.
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/sqs1.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/sqs2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/sqs1.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/sqs2.png?featherlight=false&width=100pc)
 ##  Create 15_s3.tf
 
       resource "aws_s3_bucket" "eks-project-front-end-source" {
@@ -755,7 +755,7 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
       }
 Có các khối mã cung cấp hai nhóm Amazon S3 riêng biệt với các tên cụ thể bằng cách sử dụng Terraform. Bộ chứa S3 được sử dụng để lưu trữ và quản lý các đối tượng (chẳng hạn như tệp và dữ liệu) trên đám mây AWS. Mỗi nhóm có thể được xác định duy nhất bằng tên của nó và có thể được định cấu hình với nhiều cài đặt và quyền khác nhau nếu cần cho các trường hợp sử dụng cụ thể.
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/s3.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/s3.png?featherlight=false&width=100pc)
 ## Create 16_alb.tf
       
       resource "aws_lb" "alb" {
@@ -772,8 +772,8 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
       }
 Khối mã này cung cấp Cân bằng tải ứng dụng AWS với các cấu hình được chỉ định như tên, cài đặt nội bộ, loại, nhóm bảo mật, mạng con, bảo vệ chống xóa và thẻ sử dụng Terraform. ALB phân phối lưu lượng ứng dụng đến trên nhiều mục tiêu, chẳng hạn như phiên bản EC2, trong nhiều vùng sẵn sàng để đảm bảo tính sẵn sàng cao và khả năng chịu lỗi cho ứng dụng của bạn.
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/Alb1.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/Alb2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/Alb1.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/Alb2.png?featherlight=false&width=100pc)
 ## Create 17_cloudfront.tf
       resource "aws_cloudfront_origin_access_identity" "cloudfront_s3" {
       comment = "Cloudfront distribution"
@@ -831,8 +831,8 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
 
 Khối mã này cung cấp bản phân phối AWS CloudFront với các cấu hình được chỉ định như nguồn gốc, hành vi bộ đệm, loại giá, hạn chế và thẻ sử dụng Terraform. Phân phối này có thể được sử dụng để lưu trữ và phân phối nội dung trên toàn cầu cho người dùng, cải thiện hiệu suất và tính khả dụng của các ứng dụng và nội dung web.
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![CloudFront ](/aws-stutdy-group-workshop/images/2.2/CloudFront.png?featherlight=false&width=100pc)
-![CloudFront ](/aws-stutdy-group-workshop/images/2.2/CloudFront2.png?featherlight=false&width=100pc)
+![CloudFront ](/images/2.2/CloudFront.png?featherlight=false&width=100pc)
+![CloudFront ](/images/2.2/CloudFront2.png?featherlight=false&width=100pc)
 ## Create 18_waf.tf
       resource "aws_wafv2_web_acl" "WafWebAcl" {
       name  = "wafv2-web-acl"
@@ -1025,8 +1025,8 @@ Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết q
       }
 Khối mã này cung cấp tài nguyên AWS WAFv2 bao gồm ACL web, cấu hình ghi nhật ký và liên kết với tính năng ghi nhật ký CloudWatch liên quan để giám sát và ghi nhật ký hoạt động ACL web, từ đó nâng cao trạng thái bảo mật của các ứng dụng web được triển khai phía sau Cân bằng tải ứng dụng.
 Sau khi tài nguyên được tạo bởi terraform , chúng ta sẽ có kết quả như bên dưới:
-![CloudFront ](/aws-stutdy-group-workshop/images/2.2/Waf1.png?featherlight=false&width=100pc)
-![CloudFront ](/aws-stutdy-group-workshop/images/2.2/Waf2.png?featherlight=false&width=100pc)
+![CloudFront ](/images/2.2/Waf1.png?featherlight=false&width=100pc)
+![CloudFront ](/images/2.2/Waf2.png?featherlight=false&width=100pc)
 
 
 

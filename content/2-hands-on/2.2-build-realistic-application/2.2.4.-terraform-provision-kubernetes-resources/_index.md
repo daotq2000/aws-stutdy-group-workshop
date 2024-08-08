@@ -7,7 +7,7 @@ pre : " <b> 2.2.4 </b> "
 ---
 
 ## Video
-[![How to build realistic application on AWS](/aws-stutdy-group-workshop/images/2.2/Test.png)](https://youtu.be/XNSiWFjPslg?list=PLk36mRYn9bOHtZsDG3iA-yGzktMiBojm9 "Everything Is AWESOME")
+[![How to build realistic application on AWS](/images/2.2/Test.png)](https://youtu.be/XNSiWFjPslg?list=PLk36mRYn9bOHtZsDG3iA-yGzktMiBojm9 "Everything Is AWESOME")
 ## Overall
 Is this post, we will configuration Helm Chart and Kubernetes Resource for Cluster, Helm Chart is power tool for management resources on Kubernetes. We need to know each component to use.
 ## What is the Helm Chart ? Keys benefits of them
@@ -35,7 +35,7 @@ Is this post, we will configuration Helm Chart and Kubernetes Resource for Clust
 10. Easy Rollbacks:Should a deployment fail or result in an unstable release, Helm allows for easy rollback to a previous stable version of your application.
 
 ## Terraform Provision Kubernetes Resources
-![Structure Kubernetes resource provisioning by Terraform](/aws-stutdy-group-workshop/images/2.2/struct1.png?featherlight=false&width=100pc)
+![Structure Kubernetes resource provisioning by Terraform](/images/2.2/struct1.png?featherlight=false&width=100pc)
 
 As the image, we have 2 directory 
 1. HelmChart directory where contains helm chart project apply resource for kubernetes

@@ -9,7 +9,7 @@ pre : " <b> 2.1.7 </b> "
 
 #### Demo
 
-![Development Frontend](/aws-stutdy-group-workshop/images/2/FE1.jpeg?featherlight=false&width=80pc)
+![Development Frontend](/images/2/FE1.jpeg?featherlight=false&width=80pc)
 
 After done front-end we have a website similar as image above, you can create, edit, delete notes.
 

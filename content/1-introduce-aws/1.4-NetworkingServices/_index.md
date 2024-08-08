@@ -10,7 +10,7 @@ pre : " <b> 1.4 </b> "
 Amazon Web Services (AWS) offers a comprehensive suite of networking services designed to provide scalable, secure, and reliable connectivity for cloud-based applications and resources. These networking services enable businesses to build, manage, and optimize their network infrastructure with ease. Here's an introduction to some key AWS networking services:
 
 AWS offers several database services, each catering to different use cases and workload requirements
-![VPC](/aws-stutdy-group-workshop/images/1/vpc-all.png?featherlight=false&width=60pc)
+![VPC](/images/1/vpc-all.png?featherlight=false&width=60pc)
 
 ## Contents
 ### Amazon Virtual Private Cloud (VPC): 

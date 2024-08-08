@@ -5,11 +5,11 @@ weight : 7
 chapter : false
 pre : " <b> 2.2.6 </b> "
 ---
-![AWS DESIGN KIẾN TRÚC](/aws-stutdy-group-workshop/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
+![AWS DESIGN KIẾN TRÚC](/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
 
 ## Báo cáo chi phí
 
-![KIẾN TRÚC THIẾT KẾ AWS](/aws-stutdy-group-workshop/images/testing/report_cost.png?featherlight=false&width=100pc)
+![KIẾN TRÚC THIẾT KẾ AWS](/images/testing/report_cost.png?featherlight=false&width=100pc)
 
 Có tất cả các dịch vụ chúng tôi đang sử dụng trong thực tế này:
 

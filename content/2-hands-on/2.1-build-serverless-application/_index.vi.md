@@ -4,13 +4,13 @@ date : "`r Sys.Date()`"
 weight : 2
 chapter : false
 pre : " <b> 2.1 </b> "
-image: "/aws-stutdy-group-workshop/images/1/LambdaArchitechture.svg" # The path to your image
+image: "/images/1/LambdaArchitechture.svg" # The path to your image
 ---
 
 
 #### Tổng quan
 
-![Build-Serverless-Application](/aws-stutdy-group-workshop/images/1/LambdaArchitechture.svg?featherlight=false&width=100pc)
+![Build-Serverless-Application](/images/1/LambdaArchitechture.svg?featherlight=false&width=100pc)
 
 Dự án ứng dụng Take Note là một ứng dụng không có máy chủ được thiết kế để cung cấp cho người dùng một nền tảng thuận tiện để ghi và quản lý ghi chú. Được xây dựng bằng dịch vụ AWS, dự án tận dụng các hàm Lambda cho logic phụ trợ và DynamoDB để lưu trữ dữ liệu. Ngoài ra, nó còn tích hợp với GitHub để triển khai tự động bằng AWS CodeBuild.
 

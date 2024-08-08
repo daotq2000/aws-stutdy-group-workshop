@@ -7,8 +7,8 @@ pre : " <b> 2.3.2 </b> "
 ---
 ## Official Product: https://spotify-a74af.web.app/
 ## Github: https://github.com/daotq2000/spotify-frontend
-![fe.png](/aws-stutdy-group-workshop/images/3/3.0/fe.png)
-![fe.png](/aws-stutdy-group-workshop/images/3/3.0/prod.jpeg)
+![fe.png](/images/3/3.0/fe.png)
+![fe.png](/images/3/3.0/prod.jpeg)
 ## Giới thiệu:
 
 Trong thử thách này, hệ thống giao diện người dùng của Ứng dụng Music Serverless được thiết kế để cung cấp giao diện người dùng năng động và hấp dẫn để phát trực tuyến và quản lý nhạc. Giao diện người dùng được xây dựng bằng ReactJS, tận dụng bộ thư viện và công cụ phong phú để tạo ra trải nghiệm liền mạch và phản hồi nhanh cho người dùng.

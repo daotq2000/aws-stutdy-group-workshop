@@ -9,7 +9,7 @@ pre : " <b> 2.1.2 </b> "
 
 #### Tổng quan
 
-![Build-Serverless-Application](/aws-stutdy-group-workshop/images/1/LambdaArchitechture.svg?featherlight=false&width=100pc)
+![Build-Serverless-Application](/images/1/LambdaArchitechture.svg?featherlight=false&width=100pc)
 
 Chúng tôi thấy VPC Endpoint kết nối giữa hàm Lambda và DynamoDB.
 
@@ -24,9 +24,9 @@ Bằng cách tạo VPC Endpoint cho DynamoDB trong VPC của bạn, các hàm La
 #### Thực hành
 
 Hãy **Tạo VPC Endpoint** làm theo hướng dẫn bên dưới:
-![CreateVPCEndPoint2](/aws-stutdy-group-workshop/images/2/CreateVPCEndPoint2.jpeg?featherlight=false&width=100pc)
+![CreateVPCEndPoint2](/images/2/CreateVPCEndPoint2.jpeg?featherlight=false&width=100pc)
 + Truy cập https://us-east-1.console.aws.amazon.com/vpcconsole/home?region=us-east-1#Endpoints: choose **Create Endpoint**
-![CreateVPCEndPoint3](/aws-stutdy-group-workshop/images/2/CreateVPCEndPoint3.jpeg?featherlight=false&width=100pc)
+![CreateVPCEndPoint3](/images/2/CreateVPCEndPoint3.jpeg?featherlight=false&width=100pc)
 
 **Chọn Tùy chọn bên dưới như hình ảnh:**
 

@@ -28,16 +28,16 @@ Continuous Integration/Continuous Deployment (CI/CD) and automated deployment of
 
 In summary, CI/CD auto-deployment with GitHub for static pages streamlines the development workflow, improves reliability, and accelerates the delivery of updates to end-users.
 #### Hands-on
-![CICD Auto Deploy Static Page With GitHub](/aws-stutdy-group-workshop/images/2/CICD2.jpeg?featherlight=false&width=80pc)
-![CICD Auto Deploy Static Page With GitHub](/aws-stutdy-group-workshop/images/2/CICD3.jpeg?featherlight=false&width=80pc)
+![CICD Auto Deploy Static Page With GitHub](/images/2/CICD2.jpeg?featherlight=false&width=80pc)
+![CICD Auto Deploy Static Page With GitHub](/images/2/CICD3.jpeg?featherlight=false&width=80pc)
 + Go to yours repository github, click Settings and Click to Pages.
 + Next, clik to Static HTML
-![CICD Auto Deploy Static Page With GitHub](/aws-stutdy-group-workshop/images/2/CICD4.jpeg?featherlight=false&width=50pc)
+![CICD Auto Deploy Static Page With GitHub](/images/2/CICD4.jpeg?featherlight=false&width=50pc)
 + Next, enter yours commit message and click Commit Change
-![CICD Auto Deploy Static Page With GitHub](/aws-stutdy-group-workshop/images/2/CICD7.jpeg?featherlight=false&width=50pc)
+![CICD Auto Deploy Static Page With GitHub](/images/2/CICD7.jpeg?featherlight=false&width=50pc)
 + Now, back to Code tab, view deployment history and click to detail
 + Awesome, that’s deploy at Url: https://daotq2000.github.io/note-app/
-![CICD Auto Deploy Static Page With GitHub](/aws-stutdy-group-workshop/images/2/CICD5.jpeg?featherlight=false&width=50pc)
+![CICD Auto Deploy Static Page With GitHub](/images/2/CICD5.jpeg?featherlight=false&width=50pc)
 + After open ours website
 
 **Almost done, we have successfully create serverless application with Lambda Function and API gateway, DynamoDB and Integration Auto Deploy with Github Page. Next we will create CI/CD for auto deploy lambda function when has commit change from source lambda**

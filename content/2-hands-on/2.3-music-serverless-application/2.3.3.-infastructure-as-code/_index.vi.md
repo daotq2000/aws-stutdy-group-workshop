@@ -8,8 +8,8 @@ pre : " <b> 2.3.3 </b> "
 ## Sản phẩm chính thức: https://spotify-a74af.web.app/
 ## Github: https://github.com/daotq2000/terraform-spotify-serverless
 ## Cơ sở hạ tầng
-![AWS DESIGN KIẾN TRÚC](/aws-stutdy-group-workshop/images/3/3.0/architechture.svg?featherlight=false&width=100pc)
-![fe.png](/aws-stutdy-group-workshop/images/3/3.0/prod.jpeg)
+![AWS DESIGN KIẾN TRÚC](/images/3/3.0/architechture.svg?featherlight=false&width=100pc)
+![fe.png](/images/3/3.0/prod.jpeg)
 ## Giới thiệu:
 
 Cơ sở hạ tầng dưới dạng mã (IaC) là một cách tiếp cận mạnh mẽ để quản lý và cung cấp tài nguyên máy tính thông qua các tệp cấu hình mà máy có thể đọc được thay vì cấu hình phần cứng vật lý hoặc các công cụ cấu hình tương tác. Terraform, một công cụ IaC nguồn mở do HashiCorp phát triển, cho phép các nhà phát triển xác định và cung cấp cơ sở hạ tầng một cách nhất quán, có thể lặp lại và tự động. Đối với dự án Ứng dụng Music Serverless này, Terraform sẽ được sử dụng để quản lý toàn bộ cơ sở hạ tầng AWS, đảm bảo việc triển khai, mở rộng quy mô và bảo trì liền mạch.

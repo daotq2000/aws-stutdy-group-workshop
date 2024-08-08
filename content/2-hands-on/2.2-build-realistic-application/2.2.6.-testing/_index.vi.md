@@ -12,32 +12,32 @@ chúng tôi thậm chí cần phải định cấu hình một số tài nguyên
 từ chối mọi kết nối nếu chúng tôi không có cấu hình bảo mật.
 
 Bước cấu hình được chuyển tới **Bảng điều khiển AWS => EC2 => Nhóm bảo mật**
-![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/sg-eks-remote.png)
+![create_admin_user.png](/images/2.4-config/sg-eks-remote.png)
 ### Chỉnh sửa quy tắc gửi đến
 Nhấp để chỉnh sửa quy tắc gửi đến
-![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/inbound.png)
-![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/inbound1.png)
+![create_admin_user.png](/images/2.4-config/inbound.png)
+![create_admin_user.png](/images/2.4-config/inbound1.png)
 
 Cấu hình gửi đến thành công
-![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/config-inboumd-success.png)
+![create_admin_user.png](/images/2.4-config/config-inboumd-success.png)
 
 ### Chỉnh sửa quy tắc gửi đi
-![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/outbound.png)
-![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/outboundSuccessively.png)
+![create_admin_user.png](/images/2.4-config/outbound.png)
+![create_admin_user.png](/images/2.4-config/outboundSuccessively.png)
 
 ## 2. Cấu hình nhóm mục tiêu cho cân bằng tải ứng dụng
 Mục tiêu cấu hình cho bộ cân bằng tải, bộ cân bằng tải sẽ chuyển tiếp yêu cầu từ cloudfront đến Nginx-Controller bên trong
 Cụm EKS.
 Thực hiện theo các bước:
 1. Nhấp vào `alb-target-group`
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/configALB.png)
+   ![create_admin_user.png](/images/2.4-config/configALB.png)
 2. Đăng ký nhóm đối tượng
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/config-targetGroup.png)
+   ![create_admin_user.png](/images/2.4-config/config-targetGroup.png)
 - Port `30080` là NodePort của Nginx Controller.
 3. Tại tab Kiểm tra sức khỏe, nhấp vào `Chỉnh sửa`
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/success-config-alb.png)
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/config-heathy.png)
+   ![create_admin_user.png](/images/2.4-config/success-config-alb.png)
+   ![create_admin_user.png](/images/2.4-config/config-heathy.png)
 4. Kiểm tra sức khỏe cấu hình thành công
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.4-config/success-config-alb.png)
+   ![create_admin_user.png](/images/2.4-config/success-config-alb.png)
 
 Sau khi cấu hình kiểm tra tình trạng thành công, bộ cân bằng tải ứng dụng sẽ chuyển tiếp yêu cầu tới bộ điều khiển nginx.

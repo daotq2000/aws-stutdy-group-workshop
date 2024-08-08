@@ -6,11 +6,11 @@ chapter : false
 pre : " <b> 2.2.6 </b> "
 ---
 
-![AWS DESIGN ARCHITECTURE](/aws-stutdy-group-workshop/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
+![AWS DESIGN ARCHITECTURE](/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
 
 ## Report Cost 
 
-![AWS DESIGN ARCHITECTURE](/aws-stutdy-group-workshop/images/testing/report_cost.png?featherlight=false&width=100pc)
+![AWS DESIGN ARCHITECTURE](/images/testing/report_cost.png?featherlight=false&width=100pc)
 
 There are all services we are using in this practice:
 

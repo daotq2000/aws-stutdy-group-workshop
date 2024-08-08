@@ -9,7 +9,7 @@ pre : " <b> 2.1.7 </b> "
 
 #### Demo
 
-![Phát triển giao diện người dùng](/aws-stutdy-group-workshop/images/2/FE1.jpeg?featherlight=false&width=80pc)
+![Phát triển giao diện người dùng](/images/2/FE1.jpeg?featherlight=false&width=80pc)
 
 Sau khi hoàn thành front-end chúng ta có một website tương tự như hình trên, các bạn có thể tạo, chỉnh sửa, xóa ghi chú.
 

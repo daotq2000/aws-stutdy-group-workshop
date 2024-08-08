@@ -9,7 +9,7 @@ pre : " <b> 2.1.2 </b> "
 
 #### Overview
 
-![Build-Serverless-Application](/aws-stutdy-group-workshop/images/1/LambdaArchitechture.svg?featherlight=false&width=100pc)
+![Build-Serverless-Application](/images/1/LambdaArchitechture.svg?featherlight=false&width=100pc)
 
 We see VPC Endpoint connect between Lambda function and DynamoDB.
 
@@ -24,9 +24,9 @@ By creating a VPC endpoint for DynamoDB within your VPC, Lambda functions in the
 
 #### Hands-on
 Let’s **Create VPC Endpoint** follow instructions below:
-![CreateVPCEndPoint2](/aws-stutdy-group-workshop/images/2/CreateVPCEndPoint2.jpeg?featherlight=false&width=100pc)
+![CreateVPCEndPoint2](/images/2/CreateVPCEndPoint2.jpeg?featherlight=false&width=100pc)
 + Go to https://us-east-1.console.aws.amazon.com/vpcconsole/home?region=us-east-1#Endpoints: choose **Create Endpoint**
-![CreateVPCEndPoint3](/aws-stutdy-group-workshop/images/2/CreateVPCEndPoint3.jpeg?featherlight=false&width=100pc)
+![CreateVPCEndPoint3](/images/2/CreateVPCEndPoint3.jpeg?featherlight=false&width=100pc)
 
 **Choose Option below like picture:** 
 

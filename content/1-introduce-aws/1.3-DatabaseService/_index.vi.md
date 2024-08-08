@@ -10,7 +10,7 @@ pre : " <b> 1.3 </b> "
 Amazon Web Services (AWS) cung cấp một bộ dịch vụ dựa trên đám mây toàn diện, bao gồm các dịch vụ Cơ sở dữ liệu dưới dạng dịch vụ (DBaaS) rất phổ biến. Dịch vụ cơ sở dữ liệu của AWS cung cấp cho người dùng các giải pháp có thể mở rộng, đáng tin cậy và tiết kiệm chi phí để quản lý nhiều loại dữ liệu khác nhau , từ các cặp khóa-giá trị đơn giản đến cơ sở dữ liệu quan hệ phức tạp. Các dịch vụ này được thiết kế để hợp lý hóa các tác vụ quản lý cơ sở dữ liệu, nâng cao hiệu suất và đảm bảo tính sẵn sàng và bảo mật cao.
 
 AWS cung cấp một số dịch vụ cơ sở dữ liệu, mỗi dịch vụ phục vụ cho các trường hợp sử dụng và yêu cầu khối lượng công việc khác nhau
-![AWS Database](/aws-stutdy-group-workshop/images/1/db.png?featherlight=false&width=50pc)
+![AWS Database](/images/1/db.png?featherlight=false&width=50pc)
 
 ## Contents
 ### Amazon RDS (Relational Database Service): 

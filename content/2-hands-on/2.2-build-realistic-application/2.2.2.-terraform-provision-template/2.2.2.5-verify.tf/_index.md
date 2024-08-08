@@ -16,7 +16,7 @@ You can following instruction release from AWS at [here] (https://docs.aws.amazo
 
         aws iam list-roles
 If you get result below, you are successfully connected to AWS by **AWS CLI**
-![AWS CLI](/aws-stutdy-group-workshop/images/2.2/verify_aws_cli.png?featherlight=false&width=100pc)
+![AWS CLI](/images/2.2/verify_aws_cli.png?featherlight=false&width=100pc)
 2. Generate Kubernetes Config, using command below
 
        aws eks update-kubeconfig --region region-code --name my-cluster 
@@ -88,7 +88,7 @@ Step 2: Using command below to ssh server
     $ chmod 400 public-bastion-host.pem
     $ ssh -i public-bastion-host.pem ec2-user@{Your Bastion Host IP}
 If you received result as image below , you are successfully ssh to server.
-![AWS SSH](/aws-stutdy-group-workshop/images/2.2/ssh-bastion-host.png?featherlight=false&width=100pc)
+![AWS SSH](/images/2.2/ssh-bastion-host.png?featherlight=false&width=100pc)
 
 ### 2. Ping connection from Bastion Host to Rds Database, Redis Cache, EKS cluster
 After ssh successfully into bastion host, next we need instal [telnet](https://www.ionos.com/digitalguide/server/tools/telnet-commands/) tool to ping connection
@@ -97,7 +97,7 @@ Install telnet tool at Bastion Host using command below
 
     sudo yum install telnet
 If you received result below, you are successfully installed telnet tools
-![AWS SSH](/aws-stutdy-group-workshop/images/2.2/installed_telnet.png?featherlight=false&width=100pc)
+![AWS SSH](/images/2.2/installed_telnet.png?featherlight=false&width=100pc)
 
 If you haven't received result as image below, please check with your nat, internet gateway maybe connection to Internet has failed
 #### 2.1 Ping connection from Bastion Host to RDS Database
@@ -106,13 +106,13 @@ Using command below to ping
     telnet {host-aurora-postgres} {port-running}
 
 - {host-aurora-postgres} and {port-running} you can get it at Amazon Console like below
-  ![AWS SSH](/aws-stutdy-group-workshop/images/2.2/auroraping.png?featherlight=false&width=100pc)
+  ![AWS SSH](/images/2.2/auroraping.png?featherlight=false&width=100pc)
 
 If you received result below , you have connected to RDS Database from Bastion host
-![AWS SSH](/aws-stutdy-group-workshop/images/2.2/telnet_ok_aurora.png?featherlight=false&width=100pc)
+![AWS SSH](/images/2.2/telnet_ok_aurora.png?featherlight=false&width=100pc)
 
 Or if you received result below, you haven't connected to RDS Database, need to check Security Group, Inbound traffic from Bastion Host to RDS datbase
-![AWS SSH](/aws-stutdy-group-workshop/images/2.2/telnet_failed_aurora.png?featherlight=false&width=100pc)
+![AWS SSH](/images/2.2/telnet_failed_aurora.png?featherlight=false&width=100pc)
 
 #### 2.2 Ping connection from Bastion Host to Redis Cache Cluster
 Using command below to ping
@@ -120,7 +120,7 @@ Using command below to ping
     telnet {host-redis-cluster} {port-running}
 
 If you received result below , you have connected to Redis Cache from Bastion host
-![AWS SSH](/aws-stutdy-group-workshop/images/2.2/telnet_ok_redis.png?featherlight=false&width=100pc)
+![AWS SSH](/images/2.2/telnet_ok_redis.png?featherlight=false&width=100pc)
 
 #### 2.3 Ping connection from Bastion Host to Elastic Kubernetes Cluster(EKS)
 Using command below to ping
@@ -128,7 +128,7 @@ Using command below to ping
     telnet {host-eks-cluster} {port-running}
 
 If you received result below , you have connected to Redis Cache from Bastion host
-![AWS SSH](/aws-stutdy-group-workshop/images/2.2/telnet_ok_eks.png?featherlight=false&width=100pc)
+![AWS SSH](/images/2.2/telnet_ok_eks.png?featherlight=false&width=100pc)
 
 ### 3. Bastion Host can SSH to Worker Node from VPC
 Now, we need to ssh to Worker Node to monitoring, troubleshoot issue

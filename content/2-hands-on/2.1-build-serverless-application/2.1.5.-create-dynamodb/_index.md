@@ -8,9 +8,9 @@ pre : " <b> 2.1.5 </b> "
 
 
 #### Create DynamoDB
-![Create DynamoDB](/aws-stutdy-group-workshop/images/2/CreateLambda10.jpeg?featherlight=false&width=50pc)
-![Create DynamoDB](/aws-stutdy-group-workshop/images/2/CreateLambda11.jpeg?featherlight=false&width=50pc)
-![Create DynamoDB](/aws-stutdy-group-workshop/images/2/CreateLambda12.jpeg?featherlight=false&width=50pc)
+![Create DynamoDB](/images/2/CreateLambda10.jpeg?featherlight=false&width=50pc)
+![Create DynamoDB](/images/2/CreateLambda11.jpeg?featherlight=false&width=50pc)
+![Create DynamoDB](/images/2/CreateLambda12.jpeg?featherlight=false&width=50pc)
 
 Now, we almost completed set up lambda function, next step we need datasource to lambda function can active and work correct follow.
 

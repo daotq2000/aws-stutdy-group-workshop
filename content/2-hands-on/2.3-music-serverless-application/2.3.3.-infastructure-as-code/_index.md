@@ -8,8 +8,8 @@ pre : " <b> 2.3.3 </b> "
 ## Official Product: https://spotify-a74af.web.app/
 ## Github: https://github.com/daotq2000/terraform-spotify-serverless
 ## Infastructure
-![AWS DESIGN ARCHITECTURE](/aws-stutdy-group-workshop/images/3/3.0/architechture.svg?featherlight=false&width=100pc)
-![fe.png](/aws-stutdy-group-workshop/images/3/3.0/prod.jpeg)
+![AWS DESIGN ARCHITECTURE](/images/3/3.0/architechture.svg?featherlight=false&width=100pc)
+![fe.png](/images/3/3.0/prod.jpeg)
 ## Introduction:
 
 Infrastructure as Code (IaC) is a powerful approach to managing and provisioning computing resources through machine-readable configuration files rather than physical hardware configuration or interactive configuration tools. Terraform, an open-source IaC tool developed by HashiCorp, enables developers to define and provision infrastructure in a consistent, repeatable, and automated manner. For this Music Serverless Application project, Terraform will be used to manage the entire AWS infrastructure, ensuring seamless deployment, scaling, and maintenance.

@@ -16,7 +16,7 @@ Amazon EC2 là một dịch vụ web cung cấp khả năng tính toán có th�
 Người dùng có thể chọn từ nhiều loại phiên bản được tối ưu hóa cho các khối lượng công việc khác nhau, chẳng hạn như phiên bản có mục đích chung, tối ưu hóa điện toán, tối ưu hóa bộ nhớ và tối ưu hóa lưu trữ.
 Bạn có thể sử dụng phiên bản EC2 cho nhiều ứng dụng, bao gồm lưu trữ web, phát triển ứng dụng, xử lý dữ liệu và AI.
 
-![EC2](/aws-stutdy-group-workshop/images/1/ec2.png?featherlight=false&width=50pc)
+![EC2](/images/1/ec2.png?featherlight=false&width=50pc)
 
 **Các loại phiên bản EC2 ** \
 Dưới đây là một số ví dụ có mục đích chung mà từ đó chúng ta có thể chọn:
@@ -37,7 +37,7 @@ Là một lựa chọn phổ biến cho nhiều doanh nghiệp, phiên bản đa
 ### 2. AWS Lambda:
 AWS Lambda là dịch vụ điện toán không có máy chủ do Amazon Web Services (AWS) cung cấp, cho phép người dùng chạy mã mà không cần cung cấp hay quản lý máy chủ. Nó cho phép các nhà phát triển tập trung vào việc viết mã cho ứng dụng của họ mà không phải lo lắng về cơ sở hạ tầng cơ bản. Dưới đây là tổng quan chi tiết về AWS Lambda:
 
-![Lambda](/aws-stutdy-group-workshop/images/1/lambda.png?featherlight=false&width=50pc)
+![Lambda](/images/1/lambda.png?featherlight=false&width=50pc)
 
 #### Serverless Computing:
 

@@ -12,19 +12,19 @@ pre : " <b> 2.1.9 </b> "
 Bước tiếp theo, chúng ta cần tạo Dự án CodeBuild để tích hợp với webhook github nhằm tự động triển khai các hàm lambda khi phát hiện thấy một commit mới.
 
 1. Truy cập https://us-east-1.console.aws.amazon.com/codesuite/codebuild/start?khu vực=us-east-1
-![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/aws-stutdy-group-workshop/images/2/BE3.png?featherlight=false&width=80pc)
+![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/images/2/BE3.png?featherlight=false&width=80pc)
 2. Nhấp vào **Tạo dự án**
-![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/aws-stutdy-group-workshop/images/2/BE1.png?featherlight=false&width=80pc)
+![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/images/2/BE1.png?featherlight=false&width=80pc)
 3. Điền  Project configuration, Source
 4. Chọn nguồn: S3/GitHub, ở đây chọn GitHub
-![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/aws-stutdy-group-workshop/images/2/BE2.png?featherlight=false&width=80pc)
+![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/images/2/BE2.png?featherlight=false&width=80pc)
 5. At Environment, we select **lambda** để  build image
 6. Choose Operating system: **Amazon Lunix**
 7. Choose Runtime(s): **Java 11**
 8. Choose Image: **aws/codebuild/amazonlinux-aarch64-lambda-standard:corretto11**
-![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/aws-stutdy-group-workshop/images/2/Build1.png?featherlight=false&width=50pc)
+![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/images/2/Build1.png?featherlight=false&width=50pc)
 9. Trên Buildspec,**Insert build commands** and choose **Switch to editor**
-![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/aws-stutdy-group-workshop/images/2/Build3.png?featherlight=false&width=50pc)
+![Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](/images/2/Build3.png?featherlight=false&width=50pc)
 10. Bây giờ chúng ta cần cấu hình Build Command mã bên dưới để xây dựng dự án thành công
 
         version: 0.2
@@ -64,19 +64,19 @@ aws lambda update-function-code --function-name LambdaDeleteNote --s3-bucket cf-
  **Giải thích: Lệnh này có ý nghĩa là nguồn cập nhật cho hàm lambda LambdaDeleteNote từ file jar, bạn đã upload vào s3**
 
 ### Tạo Pipeline
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline1.png?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline1.png?featherlight=false&width=50pc)
 1. Truy cập https://us-east-1.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-east-1
 2. Click Create pipeline
 
 Chúng ta đã hoàn thành 4 bước::
 + Bước 1 :Choose pipeline settings
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline1.jpeg?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline1.jpeg?featherlight=false&width=50pc)
 + Bước 2: Add source 
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline2.jpeg?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline2.jpeg?featherlight=false&width=50pc)
 + Bước 3: Add build 
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline3.jpeg?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline3.jpeg?featherlight=false&width=50pc)
 + Bước 4:Add deploy 
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline4.jpeg?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline4.jpeg?featherlight=false&width=50pc)
 + Bước 5: Review and Create
 
 **Bây giờ, gần như đã thiết lập xong, chúng tôi sẽ kiểm tra bằng cách xuất bản thay đổi cam kết mới và thực thi tự động quy trình**
@@ -111,9 +111,9 @@ Bây giờ, hãy kiểm tra mã nguồn và thực hiện bất kỳ thay đổi
         To github.com:daotq2000/aws-handson.git
         2bfe657..ac6d839  main -> main
 
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline5.jpeg?featherlight=false&width=100pc)
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline6.jpeg?featherlight=false&width=100pc)
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline7.jpeg?featherlight=false&width=100pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline5.jpeg?featherlight=false&width=100pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline6.jpeg?featherlight=false&width=100pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline7.jpeg?featherlight=false&width=100pc)
 
 Mở Dự án CodeBuild của bạn rồi nhấp vào chi tiết và xem bảng điều khiển.
 

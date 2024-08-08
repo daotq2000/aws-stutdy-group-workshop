@@ -10,7 +10,7 @@ pre : " <b> 1.3 </b> "
 Amazon Web Services (AWS) offers a comprehensive suite of cloud-based services, including its highly popular Database as a Service (DBaaS) offerings. AWS's Database service provides users with scalable, reliable, and cost-effective solutions for managing various types of data, ranging from simple key-value pairs to complex relational databases. These services are designed to streamline database management tasks, enhance performance, and ensure high availability and security.
 
 AWS offers several database services, each catering to different use cases and workload requirements
-![AWS Database](/aws-stutdy-group-workshop/images/1/db.png?featherlight=false&width=40pc)
+![AWS Database](/images/1/db.png?featherlight=false&width=40pc)
 
 ## Contents
 ### Amazon RDS (Relational Database Service): 

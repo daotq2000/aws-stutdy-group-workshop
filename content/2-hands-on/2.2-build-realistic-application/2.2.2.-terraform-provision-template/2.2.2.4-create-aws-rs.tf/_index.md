@@ -64,8 +64,8 @@ At `variables.tf` we had define cidr_block
 After run terraform plan, apply , it's created vpc have name is `vpc-main` and `vpc_cidr_block` is `10.0.0.0/16`
 
 After terraform created successfully , we have achieve result below:
-![VPC created from terraform](/aws-stutdy-group-workshop/images/2.2/vpc1.png?featherlight=false&width=100pc)
-![VPC detail created from terraform](/aws-stutdy-group-workshop/images/2.2/vpc2.png?featherlight=false&width=100pc)
+![VPC created from terraform](/images/2.2/vpc1.png?featherlight=false&width=100pc)
+![VPC detail created from terraform](/images/2.2/vpc2.png?featherlight=false&width=100pc)
 
 
 ### Create 02_subnet.tf
@@ -147,8 +147,8 @@ It also includes the private subnets created earlier in its subnet_ids.
 These resources are organized within a VPC and allow for the segmentation of resources based on their need for public accessibility or their association with specific services like RDS or Elasticache. Additionally, they are tagged for better management and identification within the AWS environment.
 
 After terraform created successfully , we have achieve result below:
-![Subnet created from terraform](/aws-stutdy-group-workshop/images/2.2/Subnet1.png?featherlight=false&width=100pc)
-![Subnet detail created from terraform](/aws-stutdy-group-workshop/images/2.2/Subnet2.png?featherlight=false&width=100pc)
+![Subnet created from terraform](/images/2.2/Subnet1.png?featherlight=false&width=100pc)
+![Subnet detail created from terraform](/images/2.2/Subnet2.png?featherlight=false&width=100pc)
 
 ### Create 03_ig.tf
 
@@ -173,7 +173,7 @@ Overall, this configuration sets up an internet gateway within a specified VPC a
  
 
 After terraform created successfully , we have achieve result below:
-![Internet Gateway created from terraform](/aws-stutdy-group-workshop/images/2.2/igw1.png?featherlight=false&width=100pc)
+![Internet Gateway created from terraform](/images/2.2/igw1.png?featherlight=false&width=100pc)
 
 ### Create 04_routeTable.tf
     
@@ -229,8 +229,8 @@ For example, "associate_public_1a" associates the "rtb-public" route table with 
 Similarly, "associate_private_1a", "associate_private_1b", and "associate_private_1c" associate the "rtb-internal" route table with the private subnets "private-subnet-1a", "private-subnet-1b", and "private-subnet-1c", respectively.
 
 After terraform created successfully , we have achieve result below:
-![Subnet created from terraform](/aws-stutdy-group-workshop/images/2.2/rtb1.png?featherlight=false&width=100pc)
-![Subnet detail created from terraform](/aws-stutdy-group-workshop/images/2.2/rtb2.png?featherlight=false&width=100pc)
+![Subnet created from terraform](/images/2.2/rtb1.png?featherlight=false&width=100pc)
+![Subnet detail created from terraform](/images/2.2/rtb2.png?featherlight=false&width=100pc)
 
 ### Create 05_sg.tf
     
@@ -420,8 +420,8 @@ It allows outbound traffic on all ports to the CIDR blocks of the private and pu
 ##### All security groups are tagged for identification and management purposes. They control traffic flow between different types of resources within the VPC, ensuring security and compliance with network policies.
 
 After terraform created successfully , we have achieve result below:
-![Security Group created from terraform](/aws-stutdy-group-workshop/images/2.2/sg.png?featherlight=false&width=100pc)
-![Security Group created from terraform](/aws-stutdy-group-workshop/images/2.2/sg-detail.png?featherlight=false&width=100pc)
+![Security Group created from terraform](/images/2.2/sg.png?featherlight=false&width=100pc)
+![Security Group created from terraform](/images/2.2/sg-detail.png?featherlight=false&width=100pc)
 
 ### Create 06_bastionHost.tf
 
@@ -465,8 +465,8 @@ Overall, this block of code sets up an AWS EC2 instance (bastion host) with nece
 
 After terraform created successfully , we have achieve result below:
 
-![Ec2 Bastion Host](/aws-stutdy-group-workshop/images/2.2/ec2_basion_host.png?featherlight=false&width=100pc)
-![Ec2 Bastion Host Details](/aws-stutdy-group-workshop/images/2.2/ec2_basion_host2.png?featherlight=false&width=100pc)
+![Ec2 Bastion Host](/images/2.2/ec2_basion_host.png?featherlight=false&width=100pc)
+![Ec2 Bastion Host Details](/images/2.2/ec2_basion_host2.png?featherlight=false&width=100pc)
 
 ### Create 07_nat.tf
 Next, we need create NAT Gateway to ec2 instance can connect over internet.
@@ -518,8 +518,8 @@ Overall, this block of code provisions an Elastic IP and a NAT Gateway in an AWS
 
 After terraform created successfully , we have achieve result below:
 
-![Elastic IP Address ](/aws-stutdy-group-workshop/images/2.2/eip1.png?featherlight=false&width=100pc)
-![Nat Gateway  ](/aws-stutdy-group-workshop/images/2.2/eip2.png?featherlight=false&width=100pc)
+![Elastic IP Address ](/images/2.2/eip1.png?featherlight=false&width=100pc)
+![Nat Gateway  ](/images/2.2/eip2.png?featherlight=false&width=100pc)
 ## Create 08_iam-role.tf
       
       ### This block defines an IAM role named "eks_role" for the EKS cluster. It specifies a policy allowing the EKS service principal (eks.amazonaws.com) to assume this role.
@@ -583,10 +583,10 @@ After terraform created successfully , we have achieve result below:
 
 After terraform created successfully , we have achieve result below:
 
-![IAM Dashboard](/aws-stutdy-group-workshop/images/2.2/dashboard-iam.png?featherlight=false&width=100pc)
-![Roles List Dashboard](/aws-stutdy-group-workshop/images/2.2/role-lists.png?featherlight=false&width=100pc)
-![Policy  Dashboard](/aws-stutdy-group-workshop/images/2.2/role-lists2.png?featherlight=false&width=100pc)
-![Policy Dashboard](/aws-stutdy-group-workshop/images/2.2/policy.png?featherlight=false&width=100pc)
+![IAM Dashboard](/images/2.2/dashboard-iam.png?featherlight=false&width=100pc)
+![Roles List Dashboard](/images/2.2/role-lists.png?featherlight=false&width=100pc)
+![Policy  Dashboard](/images/2.2/role-lists2.png?featherlight=false&width=100pc)
+![Policy Dashboard](/images/2.2/policy.png?featherlight=false&width=100pc)
 
 ## Create 09_eks-cluster.tf
       #This block defines an AWS EKS cluster resource with the name "eks_cluster".
@@ -612,8 +612,8 @@ After terraform created successfully , we have achieve result below:
       }
 
 After terraform created successfully , we have achieve result below:
-![EKS Cluster](/aws-stutdy-group-workshop/images/2.2/eks.png?featherlight=false&width=100pc)
-![EKS Cluster Detail](/aws-stutdy-group-workshop/images/2.2/Eks-detail.png?featherlight=false&width=100pc)
+![EKS Cluster](/images/2.2/eks.png?featherlight=false&width=100pc)
+![EKS Cluster Detail](/images/2.2/Eks-detail.png?featherlight=false&width=100pc)
 
 ## Create 10_eks-nodes.tf
       ## This block defines an AWS EKS node group resource with the name "private-nodes".
@@ -667,9 +667,9 @@ After terraform created successfully , we have achieve result below:
       }
 
 After terraform created successfully , we have achieve result below:
-![EKS Private Node ](/aws-stutdy-group-workshop/images/2.2/eks-private-node.png?featherlight=false&width=100pc)
+![EKS Private Node ](/images/2.2/eks-private-node.png?featherlight=false&width=100pc)
 ## Create 11_registry.tf
-      ## this block of code provisions an Amazon ECR repository named "eks-project" with specified configurations such as name and tags using Terraform. This repository can be used to store Docker /aws-stutdy-group-workshop/images and manage containerized applications within your AWS infrastructure.
+      ## this block of code provisions an Amazon ECR repository named "eks-project" with specified configurations such as name and tags using Terraform. This repository can be used to store Docker /images and manage containerized applications within your AWS infrastructure.
       resource "aws_ecr_repository" "ecr_repository" {
       name = "eks-project"
       tags = {
@@ -678,8 +678,8 @@ After terraform created successfully , we have achieve result below:
       }
       }
 After terraform created successfully , we have achieve result below:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/ecr.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/ecr2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/ecr.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/ecr2.png?featherlight=false&width=100pc)
 ## Create 12_database.tf
       resource "aws_rds_cluster" "aurora-postgresql-cluster" {
       cluster_identifier = "aurora-postgresql-cluster"
@@ -712,8 +712,8 @@ After terraform created successfully , we have achieve result below:
 This block of code provisions an Amazon Aurora PostgreSQL database cluster with serverless v2 scaling configuration, including cluster configuration and instance configuration, using Terraform.
 
 After terraform created successfully , we have achieve result below:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/sqs1.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/ecr2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/sqs1.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/ecr2.png?featherlight=false&width=100pc)
 ## Create 13_caching.tf
       resource "aws_elasticache_replication_group" "redis" {
       replication_group_id          = "redis-cluster"
@@ -742,8 +742,8 @@ After terraform created successfully , we have achieve result below:
 This block of code provisions an Amazon ElastiCache Redis replication group with specified configurations using Terraform, ensuring dependencies are met with the EKS cluster and node group.
 
 After terraform created successfully , we have achieve result below:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/redis1.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/redis2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/redis1.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/redis2.png?featherlight=false&width=100pc)
 ## Create 14_sqs..tf
       resource "aws_sqs_queue" "sqs_iaac" {
       name = "sqs_queue"
@@ -759,8 +759,8 @@ After terraform created successfully , we have achieve result below:
 
 This block of code provisions an Amazon SQS queue with specified configurations such as name, delay seconds, max message size, message retention seconds, receive wait time seconds, and tags using Terraform. This queue can be used to decouple the components of a distributed application by enabling asynchronous communication between them.
 After terraform created successfully , we have achieve result below:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/sqs1.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/sqs2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/sqs1.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/sqs2.png?featherlight=false&width=100pc)
 ##  Create 15_s3.tf
 
       resource "aws_s3_bucket" "eks-project-front-end-source" {
@@ -771,7 +771,7 @@ After terraform created successfully , we have achieve result below:
       }
 There blocks of code provision two separate Amazon S3 buckets with specific names using Terraform. S3 buckets are used for storing and managing objects (such as files and data) in the AWS cloud. Each bucket can be uniquely identified by its name and can be configured with various settings and permissions as needed for specific use cases.
 After terraform created successfully , we have achieve result below:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/s3.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/s3.png?featherlight=false&width=100pc)
 ## Create 16_alb.tf
       
       resource "aws_lb" "alb" {
@@ -788,8 +788,8 @@ After terraform created successfully , we have achieve result below:
       }
 This block of code provisions an AWS Application Load Balancer with specified configurations such as name, internal setting, type, security groups, subnets, deletion protection, and tags using Terraform. The ALB distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple availability zones to ensure high availability and fault tolerance for your applications.
 After terraform created successfully , we have achieve result below:
-![ECR ](/aws-stutdy-group-workshop/images/2.2/Alb1.png?featherlight=false&width=100pc)
-![ECR ](/aws-stutdy-group-workshop/images/2.2/Alb2.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/Alb1.png?featherlight=false&width=100pc)
+![ECR ](/images/2.2/Alb2.png?featherlight=false&width=100pc)
 ## Create 17_cloudfront.tf
       resource "aws_cloudfront_origin_access_identity" "cloudfront_s3" {
       comment = "Cloudfront distribution"
@@ -847,8 +847,8 @@ After terraform created successfully , we have achieve result below:
 
 This block of code provisions an AWS CloudFront distribution with specified configurations such as origins, cache behavior, price class, restrictions, and tags using Terraform. This distribution can be used to cache and distribute content globally to users, improving the performance and availability of web applications and content.
 After terraform created successfully , we have achieve result below:
-![CloudFront ](/aws-stutdy-group-workshop/images/2.2/CloudFront.png?featherlight=false&width=100pc)
-![CloudFront ](/aws-stutdy-group-workshop/images/2.2/CloudFront2.png?featherlight=false&width=100pc)
+![CloudFront ](/images/2.2/CloudFront.png?featherlight=false&width=100pc)
+![CloudFront ](/images/2.2/CloudFront2.png?featherlight=false&width=100pc)
 ## Create 18_waf.tf
       resource "aws_wafv2_web_acl" "WafWebAcl" {
       name  = "wafv2-web-acl"
@@ -1042,8 +1042,8 @@ After terraform created successfully , we have achieve result below:
 This code block provisions AWS WAFv2 resources including web ACLs, logging configurations, and associations with associated CloudWatch logging for monitoring and logging web ACL activity, thereby enhancing the security posture of web applications deployed behind the Application Load Balancer.
 
 After terraform created successfully , we have achieve result below:
-![CloudFront ](/aws-stutdy-group-workshop/images/2.2/Waf1.png?featherlight=false&width=100pc)
-![CloudFront ](/aws-stutdy-group-workshop/images/2.2/Waf2.png?featherlight=false&width=100pc)
+![CloudFront ](/images/2.2/Waf1.png?featherlight=false&width=100pc)
+![CloudFront ](/images/2.2/Waf2.png?featherlight=false&width=100pc)
 
 
 

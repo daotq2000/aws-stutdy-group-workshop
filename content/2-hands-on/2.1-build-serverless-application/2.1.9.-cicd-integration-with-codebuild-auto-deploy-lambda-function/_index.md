@@ -11,19 +11,19 @@ pre : " <b> 2.1.9 </b> "
 
 Next step, we need to create a CodeBuild Project to integrate with github webhook to auto deploy lambda functions when a new commit is detected.
 1. Go to https://us-east-1.console.aws.amazon.com/codesuite/codebuild/start?region=us-east-1
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/BE3.png?featherlight=false&width=80pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/BE3.png?featherlight=false&width=80pc)
 2. Click **Create project** 
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/BE1.png?featherlight=false&width=80pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/BE1.png?featherlight=false&width=80pc)
 3. Fill your Project configuration, Source
 4. Choose source: S3/GitHub, at here we choose GitHub
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/BE2.png?featherlight=false&width=80pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/BE2.png?featherlight=false&width=80pc)
 5. At Environment, we select **lambda** to build image
 6. Choose Operating system: **Amazon Lunix**
 7. Choose Runtime(s): **Java 11**
 8. Choose Image: **aws/codebuild/amazonlinux-aarch64-lambda-standard:corretto11**
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Build1.png?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Build1.png?featherlight=false&width=50pc)
 9. On Buildspec we select **Insert build commands** and choose **Switch to editor**
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Build3.png?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Build3.png?featherlight=false&width=50pc)
 10. It see like this, now we need config pipeline using code below to build successfully project
 
         version: 0.2
@@ -63,19 +63,19 @@ aws lambda update-function-code --function-name LambdaDeleteNote --s3-bucket cf-
  **Explain: This command have meaning is update source for lambda funtion LambdaDeleteNote from jar file, you have puted in s3**
 
 ### Create Pipeline
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline1.png?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline1.png?featherlight=false&width=50pc)
 1. Go to https://us-east-1.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-east-1
 2. Click Create pipeline
 
 We have complete 4 steps:
 + Step 1 :Choose pipeline settings
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline1.jpeg?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline1.jpeg?featherlight=false&width=50pc)
 + Step 2: Add source 
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline2.jpeg?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline2.jpeg?featherlight=false&width=50pc)
 + Step 3: Add build 
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline3.jpeg?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline3.jpeg?featherlight=false&width=50pc)
 + Step 4:Add deploy 
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline4.jpeg?featherlight=false&width=50pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline4.jpeg?featherlight=false&width=50pc)
 + Step 5: Review and Create
 
 **Now, almost set up done, we will test by publish new commit change and pipeline auto execution**
@@ -108,9 +108,9 @@ Now, inspect source code and make any change to test pipeline work correctly.
         To github.com:daotq2000/aws-handson.git
         2bfe657..ac6d839  main -> main
 
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline5.jpeg?featherlight=false&width=100pc)
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline6.jpeg?featherlight=false&width=100pc)
-![CICD Integration with CodeBuild Auto Deploy Lambda Function](/aws-stutdy-group-workshop/images/2/Pipeline7.jpeg?featherlight=false&width=100pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline5.jpeg?featherlight=false&width=100pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline6.jpeg?featherlight=false&width=100pc)
+![CICD Integration with CodeBuild Auto Deploy Lambda Function](/images/2/Pipeline7.jpeg?featherlight=false&width=100pc)
 
 Open your CodeBuild Project and Click to detail and view the build console.
 

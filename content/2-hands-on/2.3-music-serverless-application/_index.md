@@ -4,10 +4,10 @@ date : "`r Sys.Date()`"
 weight : 3
 chapter : false
 pre : " <b> 2.3 </b> "
-image: "/aws-stutdy-group-workshop/images/3/3.0/architechture.svg" # The path to your image
+image: "/images/3/3.0/architechture.svg" # The path to your image
 ---
 ## 1.Overview Architechture
-![AWS DESIGN ARCHITECTURE](/aws-stutdy-group-workshop/images/3/3.0/architechture.svg?featherlight=false&width=100pc)
+![AWS DESIGN ARCHITECTURE](/images/3/3.0/architechture.svg?featherlight=false&width=100pc)
 
 ### Challenge 3: Build a Music Serverless Application on Amazon Web Services (AWS)
 **Objective:**

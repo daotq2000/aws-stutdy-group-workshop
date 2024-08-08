@@ -8,9 +8,9 @@ pre : " <b> 2.1.5 </b> "
 
 
 #### Tạo DynamoDB Database
-![Tạo DynamoDB Database](/aws-stutdy-group-workshop/images/2/CreateLambda10.jpeg?featherlight=false&width=50pc)
-![Tạo DynamoDB Database](/aws-stutdy-group-workshop/images/2/CreateLambda11.jpeg?featherlight=false&width=50pc)
-![Tạo DynamoDB Database](/aws-stutdy-group-workshop/images/2/CreateLambda12.jpeg?featherlight=false&width=50pc)
+![Tạo DynamoDB Database](/images/2/CreateLambda10.jpeg?featherlight=false&width=50pc)
+![Tạo DynamoDB Database](/images/2/CreateLambda11.jpeg?featherlight=false&width=50pc)
+![Tạo DynamoDB Database](/images/2/CreateLambda12.jpeg?featherlight=false&width=50pc)
 
 Bây giờ, chúng ta đã gần như hoàn thành việc thiết lập hàm lambda, bước tiếp theo chúng ta cần nguồn dữ liệu để hàm lambda có thể hoạt động và hoạt động chính xác theo sau.
 

@@ -11,7 +11,7 @@ Amazon Web Services (AWS) cung cấp một bộ dịch vụ mạng toàn diện 
 
 AWS cung cấp một số dịch vụ cơ sở dữ liệu, mỗi dịch vụ phục vụ cho các trường hợp sử dụng và yêu cầu khối lượng công việc khác nhau.
 
-![VPC](/aws-stutdy-group-workshop/images/1/vpc-all.png?featherlight=false&width=60pc)
+![VPC](/images/1/vpc-all.png?featherlight=false&width=60pc)
 
 ## Contents
 ### Amazon Virtual Private Cloud (VPC): 

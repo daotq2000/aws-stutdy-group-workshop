@@ -7,7 +7,7 @@ pre : " <b> 2.2.4 </b> "
 ---
 
 ## Video
-[![How to build realistic application on AWS](/aws-stutdy-group-workshop/images/2.2/Test.png)](https://youtu.be/XNSiWFjPslg?list=PLk36mRYn9bOHtZsDG3iA-yGzktMiBojm9 "Everything Is AWESOME")
+[![How to build realistic application on AWS](/images/2.2/Test.png)](https://youtu.be/XNSiWFjPslg?list=PLk36mRYn9bOHtZsDG3iA-yGzktMiBojm9 "Everything Is AWESOME")
 ## Overall
 Bài viết này chúng ta sẽ cấu hình Helm Chart và Kubernetes Resource cho Cluster, Helm Chart là công cụ mạnh mẽ để quản lý tài nguyên trên Kubernetes. Chúng ta cần biết từng thành phần để sử dụng.
 
@@ -36,7 +36,7 @@ Helm Chart là gói chứa tất cả các tệp và tài nguyên cần thiết 
 10. Khôi phục dễ dàng: Nếu quá trình triển khai không thành công hoặc dẫn đến bản phát hành không ổn định, Helm cho phép dễ dàng khôi phục về phiên bản ổn định trước đó của ứng dụng của bạn.
 
 ## Quản lý tài nguyên Kubernetes với Terraform
-![Structure Kubernetes resource provisioning by Terraform](/aws-stutdy-group-workshop/images/2.2/struct1.png?featherlight=false&width=100pc)
+![Structure Kubernetes resource provisioning by Terraform](/images/2.2/struct1.png?featherlight=false&width=100pc)
 
 Như hình ảnh chúng ta có 2 thư mục
 1. Thư mục HelmChart chứa dự án helm áp dụng tài nguyên cho kubernetes

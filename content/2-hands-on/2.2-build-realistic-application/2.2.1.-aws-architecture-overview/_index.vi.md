@@ -5,7 +5,7 @@ weight : 3
 chapter : false
 pre : " <b> 2.2.1 </b> "
 ---
-![KIẾN TRÚC THIẾT KẾ AWS](/aws-stutdy-group-workshop/images/2.2/HA_AWS_DESIGN.png?featherlight=false&width=100pc)
+![KIẾN TRÚC THIẾT KẾ AWS](/images/2.2/HA_AWS_DESIGN.png?featherlight=false&width=100pc)
 
 ### Thiết kế phân tích Kiến trúc AWS
 Kiến trúc được mô tả trong hình ảnh thể hiện giải pháp điện toán đám mây AWS với nhiều thành phần khác nhau, mỗi thành phần có một mục đích cụ thể.

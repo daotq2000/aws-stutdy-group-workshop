@@ -66,9 +66,9 @@ Nhập thông tin đăng nhập của bạn, hãy lấy nó tại bảng điều
 
 1. Truy cập https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/users
 2. Tạo người dùng mới , sau khi tạo xong, chúng sẽ hiện thị tại trang danh sách người dùng.
-   ![Create new user](/aws-stutdy-group-workshop/images/2.2/aws.png?featherlight=false&width=100pc)
+   ![Create new user](/images/2.2/aws.png?featherlight=false&width=100pc)
 3. Xem thông tin và nhận thông tin xác thực
-   ![Create new user](/aws-stutdy-group-workshop/images/2.2/aws2.png?featherlight=false&width=100pc)
+   ![Create new user](/images/2.2/aws2.png?featherlight=false&width=100pc)
 4. Định cấu hình thông tin xác thực của bạn như bên dưới (thay thế `XXX` bằng thông tin của bạn)
 
             `@daotq1:~$ aws configure

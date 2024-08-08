@@ -7,7 +7,7 @@ pre : " <b> 2.2.1 </b> "
 ---
  
 
-![AWS DESIGN ARCHITECTURE](/aws-stutdy-group-workshop/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
+![AWS DESIGN ARCHITECTURE](/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
 
 ### Analytics Design AWS Architecture
 The architecture depicted in the image represents an AWS cloud computing solution with various components, each with a specific purpose.
@@ -45,7 +45,7 @@ On the infrastructure management and operational side:
 
 **Grafana:** Analytics and interactive visualization web application that provides charts, graphs, and alerts.
 
-**Elastic Container Registry (ECR):** Docker container registry for storing, managing, and deploying container /aws-stutdy-group-workshop/images.
+**Elastic Container Registry (ECR):** Docker container registry for storing, managing, and deploying container /images.
 
 **Amazon SQS queue:** Message queuing service to decouple and scale microservices, distributed systems, and serverless applications.
 And for storage and deployment:

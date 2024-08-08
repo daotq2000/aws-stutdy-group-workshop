@@ -7,8 +7,8 @@ pre : " <b> 2.3.2 </b> "
 ---
 ## Official Product: https://spotify-a74af.web.app/
 ## Github: https://github.com/daotq2000/spotify-frontend
-![fe.png](/aws-stutdy-group-workshop/images/3/3.0/fe.png)
-![fe.png](/aws-stutdy-group-workshop/images/3/3.0/prod.jpeg)
+![fe.png](/images/3/3.0/fe.png)
+![fe.png](/images/3/3.0/prod.jpeg)
 ## Introduction:
 
 In this challenge, the frontend system of the Music Serverless Application is designed to provide a dynamic and engaging user interface for streaming and managing music. The frontend is built using ReactJS, leveraging a rich set of libraries and tools to create a seamless and responsive experience for users.

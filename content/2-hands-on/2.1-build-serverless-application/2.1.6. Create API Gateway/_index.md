@@ -22,28 +22,28 @@ In Amazon API Gateway, there are three types of API endpoints that you can choos
 
 + Private Endpoint:A private endpoint is accessible only from within your Amazon Virtual Private Cloud (VPC) using an interface VPC endpoint.It’s suitable for scenarios where you want to expose your API to resources within your VPC or other connected networks via AWS Direct Connect or AWS VPN.Private endpoints provide enhanced security by keeping traffic within the private network, reducing exposure to the public internet.
 ##### 4. Create resource to create main Path for APIs.
-![Create resource to create main Path for APIs](/aws-stutdy-group-workshop/images/2/CreateAPIGW1.jpeg?featherlight=false&width=80pc)
+![Create resource to create main Path for APIs](/images/2/CreateAPIGW1.jpeg?featherlight=false&width=80pc)
 Next, config yours path like below and remember CORS (Cross Origin Resource Sharing)
 Cross-Origin Resource Sharing (CORS) is a security feature implemented by web browsers to prevent scripts running on one domain from making requests to another domain. When you’re using Amazon API Gateway to create a REST API, you might need to configure CORS to allow your API to be accessed by client applications running in web browsers from different origins.
 After created resources, now we have to create some method mapping with lambda function, click Create Method
 ##### 5. After created resources, now we have to create some method mapping with lambda function, click Create Method
-![Create Method for APIs](/aws-stutdy-group-workshop/images/2/CreateAPIGW2.jpeg?featherlight=false&width=80pc)
+![Create Method for APIs](/images/2/CreateAPIGW2.jpeg?featherlight=false&width=80pc)
 At here, we choose
 Method type: GET/POST/DELETE
 Integration type: Lambda Function
 Lambda function: choose your lambda function create at step previous
 Click to Create method , after created we have method like image below.
-![Create Method for APIs](/aws-stutdy-group-workshop/images/2/CreateAPIGW3.jpeg?featherlight=false&width=80pc)
+![Create Method for APIs](/images/2/CreateAPIGW3.jpeg?featherlight=false&width=80pc)
 ##### 6. Click to tab Test to test API, click Test to test APIs
-![test APIs](/aws-stutdy-group-workshop/images/2/CreateAPIGW4.jpeg?featherlight=false&width=80pc)
-![test APIs](/aws-stutdy-group-workshop/images/2/CreateAPIGW5.jpeg?featherlight=false&width=80pc)
+![test APIs](/images/2/CreateAPIGW4.jpeg?featherlight=false&width=80pc)
+![test APIs](/images/2/CreateAPIGW5.jpeg?featherlight=false&width=80pc)
 We have received responses like the image above. Next create similar method with method **POST, DELETE** integration with **LambdaDeleteDataFunction, LambdaAddDataFunction**
 ##### 7. After done, we have to click Deploy API to expose API over internet
-![test APIs](/aws-stutdy-group-workshop/images/2/Deploy5.jpeg?featherlight=false&width=50pc)
+![test APIs](/images/2/Deploy5.jpeg?featherlight=false&width=50pc)
 **Click Deploy API** 
-![test APIs](/aws-stutdy-group-workshop/images/2/Deploy1.jpeg?featherlight=false&width=50pc)
+![test APIs](/images/2/Deploy1.jpeg?featherlight=false&width=50pc)
 **Fill your Stage name and Deployment description, after click Deploy we have received response below**
-![test APIs](/aws-stutdy-group-workshop/images/2/Deploy3.jpeg?featherlight=false&width=50pc)
+![test APIs](/images/2/Deploy3.jpeg?featherlight=false&width=50pc)
 
 - Let’s inspect Invoke URL: https://q3q8l57ui9.execute-api.us-east-1.amazonaws.com/prod this is public URL we can call on the public internet.
 After get URL public API, you can test with POSTMAN, TERMINAL tool

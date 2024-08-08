@@ -27,16 +27,16 @@ Tích hợp liên tục/Triển khai liên tục (CI/CD) và triển khai tự �
 
 Tóm lại, triển khai tự động CI/CD với GitHub cho các trang tĩnh giúp hợp lý hóa quy trình phát triển, cải thiện độ tin cậy và tăng tốc việc cung cấp các bản cập nhật cho người dùng cuối.
 #### Thực hành
-![CICD Tự động triển khai trang tĩnh bằng GitHub](/aws-stutdy-group-workshop/images/2/CICD2.jpeg?featherlight=false&width=80pc)
-![CICD Tự động triển khai trang tĩnh bằng GitHub](/aws-stutdy-group-workshop/images/2/CICD3.jpeg?featherlight=false&width=80pc)
+![CICD Tự động triển khai trang tĩnh bằng GitHub](/images/2/CICD2.jpeg?featherlight=false&width=80pc)
+![CICD Tự động triển khai trang tĩnh bằng GitHub](/images/2/CICD3.jpeg?featherlight=false&width=80pc)
 + Đi tới kho lưu trữ github của bạn, nhấp vào Cài đặt và Nhấp vào Trang.
 + Tiếp theo click vào Static HTML
-![CICD Tự động triển khai trang tĩnh bằng GitHub](/aws-stutdy-group-workshop/images/2/CICD4.jpeg?featherlight=false&width=50pc)
+![CICD Tự động triển khai trang tĩnh bằng GitHub](/images/2/CICD4.jpeg?featherlight=false&width=50pc)
 + Tiếp theo, nhập thông điệp cam kết của bạn và nhấp vào Cam kết thay đổi
-![CICD Tự động triển khai trang tĩnh bằng GitHub](/aws-stutdy-group-workshop/images/2/CICD7.jpeg?featherlight=false&width=50pc)
+![CICD Tự động triển khai trang tĩnh bằng GitHub](/images/2/CICD7.jpeg?featherlight=false&width=50pc)
 + Bây giờ, quay lại tab Code, xem lịch sử triển khai và nhấp vào chi tiết
 + Tuyệt vời, triển khai tại Url: https://daotq2000.github.io/note-app/
-![CICD Tự động triển khai trang tĩnh bằng GitHub](/aws-stutdy-group-workshop/images/2/CICD5.jpeg?featherlight=false&width=50pc)
+![CICD Tự động triển khai trang tĩnh bằng GitHub](/images/2/CICD5.jpeg?featherlight=false&width=50pc)
 + Sau khi mở website của chúng tôi
 
 **Gần như đã hoàn tất, chúng tôi đã tạo thành công ứng dụng serverless với Cổng API và Chức năng Lambda, DynamoDB và Triển khai tự động tích hợp với Trang Github. Tiếp theo chúng ta sẽ tạo CI/CD để tự động triển khai chức năng lambda khi có thay đổi commit git lambda source**

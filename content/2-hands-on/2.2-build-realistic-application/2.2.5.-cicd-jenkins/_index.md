@@ -23,7 +23,7 @@ Following CI, Continuous Delivery automates the delivery of applications to sele
 A step beyond Continuous Delivery, Continuous Deployment goes further by releasing every change that passes through the production pipeline to customers with no human intervention. It requires a highly developed culture of monitoring, automated testing, and quality assurance to work effectively.
 
 #### Most Popular CI/CD tools
-![CICD Tools](/aws-stutdy-group-workshop/images/2.2/cicd_tools.png?featherlight=false&width=50pc)
+![CICD Tools](/images/2.2/cicd_tools.png?featherlight=false&width=50pc)
 As image above, there are most popular CI/CD tools, pricing and the complexity, you can refer:
 
 - **Jenkins:** An open-source automation server providing an impressive plugin ecosystem to support building, deploying, and automating any project.
@@ -40,7 +40,7 @@ We will install Jenkins on Bastion Host.
 
 #### 2.1 SSH to Bastion Host
     ssh -i public-bastion-host.pem ec2-user@YourEC2PublicIPV4
-![SSH Successfully to Bastion Host](/aws-stutdy-group-workshop/images/2.2/ssh-bastion-host.png?featherlight=false&width=50pc)
+![SSH Successfully to Bastion Host](/images/2.2/ssh-bastion-host.png?featherlight=false&width=50pc)
 
 #### 2.2 Configure Security for Jenkins
 At [terraform source code](https://github.com/daotq2000/aws-iaac-terraform), we have configured inbound security group for Jenkins allow access from Internet to Jenkins server via port **8080**
@@ -64,7 +64,7 @@ After installed we need find path of Java in directory
 
       sudo update-alternatives --config java
 
-![issue-build1.png](/aws-stutdy-group-workshop/images/2.3_project/java-version.png)
+![issue-build1.png](/images/2.3_project/java-version.png)
 
 #### 2.3 Downloading and installing Jenkins
 
@@ -103,11 +103,11 @@ You can check the status of the Jenkins service using the command:
 #### 2.4 Configure Exec build Java on Jenkins Server
 
 Go to **Manage Jenkins** => **Tools** => **JDK Installations**
-![issue-build1.png](/aws-stutdy-group-workshop/images/2.3_project/config-java.png)
+![issue-build1.png](/images/2.3_project/config-java.png)
 Find path Java installed
-![find-java-path.png](/aws-stutdy-group-workshop/images/2.3_project/find-java-path.png)
+![find-java-path.png](/images/2.3_project/find-java-path.png)
 Config Java directory for Java path
-![issue-build1.png](/aws-stutdy-group-workshop/images/2.3_project/config-java-tool.png)
+![issue-build1.png](/images/2.3_project/config-java-tool.png)
 
 ## 3. Install Docker on Bastion Host
 You can refer post install docker on Amazon Linux at [here](https://www.cyberciti.biz/faq/how-to-install-docker-on-amazon-linux-2/) or following constructions step below:
@@ -167,27 +167,27 @@ Outputs:
 ## 4. Configuring Jenkins
 Jenkins is now installed and running on your EC2 instance. To configure Jenkins:
 1. Connect to http://<your_server_public_DNS>:8080 from your browser. You will be able to access Jenkins through its management interface:
-![unlock_jenkins.png](/aws-stutdy-group-workshop/images/2.2/unlock_jenkins.png)[Jenkins Password](https://www.jenkins.io/doc/book/resources/tutorials/AWS/unlock_jenkins.png)
+![unlock_jenkins.png](/images/2.2/unlock_jenkins.png)[Jenkins Password](https://www.jenkins.io/doc/book/resources/tutorials/AWS/unlock_jenkins.png)
 2. As prompted, enter the password found in /var/lib/jenkins/secrets/initialAdminPassword.
 
 Use the following command to display this password:
 
     [ec2-user ~]$ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 3. The Jenkins installation script directs you to the Customize Jenkins page. Click Install suggested plugins.
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.2-jenkins/config-plugins.png)
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.2-jenkins/getting-started.png)
+   ![create_admin_user.png](/images/2.2-jenkins/config-plugins.png)
+   ![create_admin_user.png](/images/2.2-jenkins/getting-started.png)
 
 4. Once the installation is complete, the Create First Admin User will open. Enter your information, and then select Save and Continue.
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.2/create_admin_user.png)
+   ![create_admin_user.png](/images/2.2/create_admin_user.png)
 5. When you go to home page jenkins, if you see node offline like image below:
-   ![create_admin_user.png](/aws-stutdy-group-workshop/images/2.2-jenkins/bring-node-online.png)
+   ![create_admin_user.png](/images/2.2-jenkins/bring-node-online.png)
    
 Go to Dashboard => Node => Built-In Node => Configure => Node Properties => Disk space monitoring thresholds => Fill All field to 0MB => Save 
-![create_admin_user.png](/aws-stutdy-group-workshop/images/2.2-jenkins/cfmem.png)
+![create_admin_user.png](/images/2.2-jenkins/cfmem.png)
 After config done, let click to `Bring this node back online`
-![create_admin_user.png](/aws-stutdy-group-workshop/images/2.2-jenkins/click-bring.png)
+![create_admin_user.png](/images/2.2-jenkins/click-bring.png)
 After done, you can see node backed online.
-![create_admin_user.png](/aws-stutdy-group-workshop/images/2.2-jenkins/onlined.png)
+![create_admin_user.png](/images/2.2-jenkins/onlined.png)
 
 ## 4.1. Configure aws credentials on Bastion Host
 

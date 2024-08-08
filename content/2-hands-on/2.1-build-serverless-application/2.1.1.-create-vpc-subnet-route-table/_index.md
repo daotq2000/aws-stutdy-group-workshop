@@ -57,15 +57,15 @@ Let’s delve into the concepts of VPC, Subnet, Route Table, and Security Group:
 
 #### Hands-on
 Let’s **Create VPC** follow instructions below:
-![CreateVPC1](/aws-stutdy-group-workshop/images/2/CreateVPC1.jpeg?featherlight=false&width=100pc)
+![CreateVPC1](/images/2/CreateVPC1.jpeg?featherlight=false&width=100pc)
 + Go to https://us-east-1.console.aws.amazon.com/vpcconsole/home?region=us-east-1#vpcs choose **Create VPC**
-![CreateVPC2](/aws-stutdy-group-workshop/images/2/CreateVPC2.jpeg?featherlight=false&width=100pc)
+![CreateVPC2](/images/2/CreateVPC2.jpeg?featherlight=false&width=100pc)
 + Select VPC and More
 + Select IPv4 CIDR: 10.0.0.0/16
 + Choose AZ: 1
 + Choose number public subnet 1
 + Choose private subnet 1
 + Choose NAT gateway: none, because we are connecting within AWS resources, so we don’t need any connection to the internet. NAT gateway suitable for third party resources on the internet
-![CreateVPC3](/aws-stutdy-group-workshop/images/2/CreateVPC3.jpeg?featherlight=false&width=100pc)
+![CreateVPC3](/images/2/CreateVPC3.jpeg?featherlight=false&width=100pc)
 After fulfilling these options click to **Create VPC**. Waiting a minute to resources provisioning, After done, we have a vpc like this picture above.
 

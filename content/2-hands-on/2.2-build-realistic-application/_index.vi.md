@@ -6,9 +6,9 @@ chapter : false
 pre : " <b> 2.2 </b> "
 ---
 
-![AWS DESIGN ARCHITECTURE](/aws-stutdy-group-workshop/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
+![AWS DESIGN ARCHITECTURE](/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
 ## Video
-[![How to build realistic application on AWS](/aws-stutdy-group-workshop/images/2.2/1.png)](https://youtu.be/xBy9F5qLOYA "Everything Is AWESOME")
+[![How to build realistic application on AWS](/images/2.2/1.png)](https://youtu.be/xBy9F5qLOYA "Everything Is AWESOME")
 
 
 ### Thử thách 2: Xây dựng Nền tảng thương mại điện tử có khả năng phục hồi AWS
