@@ -3,7 +3,7 @@ title : "Terraform Provision AWS Resources"
 date : "`r Sys.Date()`"
 weight : 3
 chapter : false
-pre : " <b> 2.2.2 </b> "
+pre : " <b> 2.2.2 </b> " 
 ---
 
 ## Video
