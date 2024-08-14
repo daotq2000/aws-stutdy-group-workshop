@@ -80,3 +80,9 @@ url = "https://www.linkedin.com/in/daotq1/"
 weight = 20
 
 canonifyURLs = true 
+
+[sitemap]
+  changeFreq = ''
+  disable = false
+  filename = 'sitemap.xml'
+  priority = -1
