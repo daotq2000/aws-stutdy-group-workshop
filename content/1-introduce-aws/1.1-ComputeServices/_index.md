@@ -4,6 +4,7 @@ date :  "`r Sys.Date()`"
 weight : 1
 chapter : false
 pre : " <b> 1.1 </b> "
+image: "https://jayendrapatil.com/wp-content/uploads/2017/02/aws-compute-services.png" # The path to your image
 ---
 
 ## Introduction AWS Compute Services
