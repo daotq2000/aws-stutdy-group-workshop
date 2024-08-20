@@ -6,7 +6,13 @@
     <meta property="og:title" content="{{ .Title }}">
     <meta property="og:description" content="{{ .Description }}">
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
-    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title"  content="{{ .Title }}">
+    <meta name="twitter:description" content="{{ .Description }}">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
+    <meta name="twitter:url" content="{{ .Site.BaseURL }}">
+  
     {{ hugo.Generator }}
     {{ partial "meta.html" . }}
     {{ partial "favicon.html" . }}
