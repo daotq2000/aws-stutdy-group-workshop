@@ -2,7 +2,7 @@
 title : "Cách Tạo VPC Endpoint Trong AWS: Hướng Dẫn Chi Tiết"
 description : "Hướng dẫn chi tiết về cách tạo VPC endpoint trong AWS. Tìm hiểu quy trình và lợi ích của việc thiết lập VPC endpoint để kết nối mạng bảo mật và hiệu quả hơn."
 date : "`r Sys.Date()`"
-weight : 3
+weight : 4
 chapter : false
 pre : " <b> 2.1.2 </b> "
 image: "/images/2.2/vpcs-diagram.png"

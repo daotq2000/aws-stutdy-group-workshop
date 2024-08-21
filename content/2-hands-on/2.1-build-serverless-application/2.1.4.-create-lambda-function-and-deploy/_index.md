@@ -1,9 +1,11 @@
 ---
-title : "Create Lambda function and deploy"
+title : "How to Create and Deploy a Lambda Function in AWS: A Complete Guide"
+description : "Learn how to create and deploy an AWS Lambda function with this complete guide. Follow step-by-step instructions to efficiently deploy serverless applications."
 date : "`r Sys.Date()`"
 weight : 5
 chapter : false
 pre : " <b> 2.1.2 </b> "
+image: "images/1/lambda.png"
 ---
 
 
@@ -82,3 +84,4 @@ Let’s click Edit and add 2 environment variables to it.
 
 Similarly, set up the lambda function LambdaAddDataFunction,LambdaDeleteDataFunction according to the instructions above.
 
+**Conclusion:This comprehensive guide will walk you through the process of creating and deploying an AWS Lambda function. AWS Lambda enables you to run code in a serverless environment, eliminating the need for server management. Follow these steps to set up and deploy your Lambda function efficiently.**

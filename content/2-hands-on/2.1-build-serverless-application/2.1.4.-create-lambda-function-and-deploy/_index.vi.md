@@ -1,11 +1,12 @@
 ---
-title : "Tạo hàm Lambda và triển khai"
+title : "Cách Tạo và Triển Khai Lambda Function Trong AWS"
+description : "Hướng dẫn chi tiết cách tạo và triển khai Lambda Function trong AWS. Làm theo các bước hướng dẫn để triển khai ứng dụng serverless hiệu quả."
 date : "`r Sys.Date()`"
 weight : 5
 chapter : false
 pre : " <b> 2.1.2 </b> "
+image: "images/1/lambda.png"
 ---
-
 
 #### Tạo hàm Lambda
 
