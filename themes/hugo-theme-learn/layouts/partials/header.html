@@ -126,7 +126,7 @@
               "name": "{{ .Title }}",
               "description": "{{ .Params.description }}",
               "url": "{{ .Permalink }}",
-              "image": "{{ .Params.image }}",
+              "image": "{{ .Site.BaseURL }}{{ .Params.image }}",
               "author": {
                 "@type": "Person",
                 "name": "{{ .Site.Params.author }}"
