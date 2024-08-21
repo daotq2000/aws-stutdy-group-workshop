@@ -12,7 +12,7 @@
     <meta name="twitter:description" content="{{ .Description }}">
     <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
     <meta name="twitter:url" content="{{ .Site.BaseURL }}">
-  
+
     {{ hugo.Generator }}
     {{ partial "meta.html" . }}
     {{ partial "favicon.html" . }}
@@ -119,3 +119,19 @@
             {{.value|safeHTML}}
           {{end}}
         {{end}}
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "{{ .Type }}",
+              "name": "{{ .Title }}",
+              "description": "{{ .Params.description }}",
+              "url": "{{ .Permalink }}",
+              "image": "{{ .Params.image }}",
+              "author": {
+                "@type": "Person",
+                "name": "{{ .Site.Params.author }}"
+              },
+              "datePublished": "{{ now }}",
+              "dateModified": "{{ now }}"
+            }
+          </script>
