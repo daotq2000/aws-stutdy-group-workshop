@@ -1,11 +1,14 @@
 ---
-title : "CICD Auto Deploy Static Page With GitHub"
+title : "CI/CD for Auto-Deploying Static Pages with GitHub: A Step-by-Step Guide"
+description : "Learn how to set up CI/CD pipelines for auto-deploying static pages using GitHub. This comprehensive guide covers every step to streamline your deployment process."
 date : "`r Sys.Date()`"
 weight : 9
 chapter : false
 pre : " <b> 2.1.8 </b> "
+image: "images/2/cicd.png"
 ---
-
+## What is an CI/CD?
+Continuous Integration and Continuous Deployment (CI/CD) is a crucial practice for modern web development, especially when deploying static pages. In this guide, we'll walk you through the steps of setting up a CI/CD pipeline using GitHub, which will automate the deployment of your static pages. This setup not only simplifies the deployment process but also improves consistency and efficiency.
 
 #### Why we need CICD Auto Deploy Static Page With GitHub
 Continuous Integration/Continuous Deployment (CI/CD) and automated deployment of static pages with GitHub provide several benefits:

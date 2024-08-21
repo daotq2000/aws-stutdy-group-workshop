@@ -1,9 +1,11 @@
 ---
-title : "CICD Integration with CodeBuild Auto Deploy Lambda Function"
+title : "CI/CD Integration with CodeBuild: Auto-Deploy Lambda Function"
+description : "Discover how to integrate CI/CD with AWS CodeBuild for auto-deploying Lambda functions. This guide covers setup, configuration, and best practices for a seamless deployment process."
 date : "`r Sys.Date()`"
 weight : 9
 chapter : false
 pre : " <b> 2.1.9 </b> "
+image: "images/2/111111111111111111111.png"
 ---
 
 

@@ -1,9 +1,11 @@
 ---
-title : "Tích hợp CICD với CodeBuild Tự động triển khai chức năng Lambda"
+title : "Tích Hợp CI/CD Với CodeBuild: Tự Động Triển Khai Hàm Lambda"
+description : "Khám phá cách tích hợp CI/CD với AWS CodeBuild để tự động triển khai các hàm Lambda. Hướng dẫn này bao gồm cách thiết lập, cấu hình và các biện pháp thực hành tốt nhất để có quy trình triển khai liền mạch"
 date : "`r Sys.Date()`"
 weight : 9
 chapter : false
 pre : " <b> 2.1.9 </b> "
+image: "images/2/111111111111111111111.png"
 ---
 
 

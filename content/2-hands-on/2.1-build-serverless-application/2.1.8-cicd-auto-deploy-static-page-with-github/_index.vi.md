@@ -1,10 +1,14 @@
 ---
-title : "CICD Tự động triển khai trang tĩnh với GitHub"
+title : "CI/CD Tự Động Triển Khai Trang Web Tĩnh Với GitHub: Hướng Dẫn Chi Tiết"
+description : "Tìm hiểu cách thiết lập CI/CD để tự động triển khai trang Web tĩnh với GitHub. Hướng dẫn chi tiết từng bước để tối ưu hóa quy trình triển khai của bạn."
 date : "`r Sys.Date()`"
 weight : 9
 chapter : false
 pre : " <b> 2.1.8 </b> "
+image: "images/2/cicd.png"
 ---
+## CI/CD Là Gì?
+Triển khai trang tĩnh bằng cách sử dụng quy trình CI/CD giúp tự động hóa và tối ưu hóa quy trình triển khai. Bài viết này cung cấp hướng dẫn chi tiết về cách thiết lập CI/CD với GitHub để tự động triển khai trang tĩnh của bạn, từ cấu hình đến kiểm tra.
 
 #### Tại sao chúng ta cần CICD Tự động phát triển khai trang tĩnh với GitHub
 Tích hợp liên tục/Triển khai liên tục (CI/CD) và triển khai tự động các trang tĩnh với GitHub mang lại một số lợi ích:
