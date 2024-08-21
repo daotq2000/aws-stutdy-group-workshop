@@ -1,11 +1,12 @@
 ---
-title : "Tạo VPC endpoint"
+title : "Cách Tạo VPC Endpoint Trong AWS: Hướng Dẫn Chi Tiết"
+description : "Hướng dẫn chi tiết về cách tạo VPC endpoint trong AWS. Tìm hiểu quy trình và lợi ích của việc thiết lập VPC endpoint để kết nối mạng bảo mật và hiệu quả hơn."
 date : "`r Sys.Date()`"
 weight : 3
 chapter : false
 pre : " <b> 2.1.2 </b> "
+image: "/images/2.2/vpcs-diagram.png"
 ---
-
 
 #### Tổng quan
 
@@ -34,3 +35,5 @@ Hãy **Tạo VPC Endpoint** làm theo hướng dẫn bên dưới:
 + Service category: Dịch vụ AWS
 + Services: com.amazonaws.us-east-1.dynamodb
 + VPC: chọn vpc chúng ta đã tạo ở [Step 2.1.1](../2.1.1.-create-vpc-subnet-route-table/)
+  
+**Kết luận: Hướng dẫn này sẽ giúp bạn hiểu cách tạo VPC endpoint trong AWS. VPC endpoint cho phép bạn kết nối trực tiếp VPC của mình với các dịch vụ AWS, giúp tăng cường bảo mật và hiệu suất. Thực hiện theo các bước dưới đây để thiết lập VPC endpoint và đảm bảo kết nối mạng của bạn hoạt động hiệu quả.**

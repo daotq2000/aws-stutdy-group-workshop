@@ -1,9 +1,11 @@
 ---
-title : "Create VPC endpoint"
+title : "How to Create a VPC Endpoint in AWS: A Step-by-Step Tutorial"
+description : "Learn how to create a VPC endpoint in AWS with this detailed step-by-step tutorial. Understand the process and benefits of setting up VPC endpoints for secure and efficient network connections."
 date : "`r Sys.Date()`"
 weight : 3
 chapter : false
 pre : " <b> 2.1.2 </b> "
+image: "/images/2.2/vpcs-diagram.png"
 ---
 
 
@@ -12,7 +14,7 @@ pre : " <b> 2.1.2 </b> "
 ![Build-Serverless-Application](/images/1/LambdaArchitechture.svg?featherlight=false&width=100pc)
 
 We see VPC Endpoint connect between Lambda function and DynamoDB.
-
+## Introduction to VPC Endpoints
 **Why need a VPC endpoint to connect it?**
 
 + VPC Isolation: When Lambda functions are configured to run within a VPC, they are isolated from the internet and can only access resources within the VPC or those reachable through VPC endpoints. This ensures a higher level of security by restricting external access.
@@ -34,3 +36,5 @@ Let’s **Create VPC Endpoint** follow instructions below:
 + Service category: AWS services
 + Services: com.amazonaws.us-east-1.dynamodb
 + VPC: select vpc we created at [Step 2.1.1](../2.1.1.-create-vpc-subnet-route-table/)
+
+**Conclusion: This guide will walk you through the process of creating a VPC endpoint in AWS. A VPC endpoint allows you to connect your VPC directly to AWS services, enhancing security and performance. Follow these steps to set up your VPC endpoint and ensure efficient network connections.**
