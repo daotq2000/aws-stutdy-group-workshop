@@ -1,14 +1,16 @@
 ---
-title : "Build Note Application AWS Serverless"
+title : "How to Build a Serverless Note application- A Hands-On Guide"
+description : "Learn how to build a serverless application with this hands-on guide. Explore the benefits of serverless architecture and step-by-step instructions to create your own serverless app."
 date : "`r Sys.Date()`"
 weight : 2
 chapter : false
 pre : " <b> 2.1 </b> "
-image: "/images/1/LambdaArchitechture.svg" # The path to your image
+image: "images/1/LambdaArchitechture.svg" # The path to your image
 ---
 
+## How to Build a Serverless Application? A Hands-On Guide
 
-### Challenge 1: Building Serverless Appication with AWS Lambda
+### Challenge 1: Building Serverless Note Appication with AWS Lambda
 ![Build-Serverless-Application](/images/1/LambdaArchitechture.svg?featherlight=false&width=100pc)
 
 The Take Note App Project is a serverless application designed to provide users with a convenient platform for taking and managing notes. Built using AWS services, the project leverages Lambda functions for backend logic and DynamoDB for data storage. Additionally, it integrates with GitHub for automatic deployment using AWS CodeBuild.
@@ -43,3 +45,5 @@ User Authentication and Authorization: The application can incorporate user auth
 [2.1.8 CICD Auto Deploy Static Page With GitHub](2.1.8-cicd-auto-deploy-static-page-with-github/)
 
 [2.1.9. CICD Integration with CodeBuild Auto Deploy Lambda Function](2.1.9.-cicd-integration-with-codebuild-auto-deploy-lambda-function/)
+
+**Conclusion:Building a serverless application allows you to focus on writing code without managing servers. In this hands-on guide, we will walk you through the process of creating a serverless app using popular cloud platforms like AWS Lambda. Learn about the benefits of serverless architecture, from cost savings to scalability, and follow our step-by-step instructions to set up your environment, create serverless functions, and deploy your application.**

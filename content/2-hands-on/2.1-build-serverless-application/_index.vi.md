@@ -1,10 +1,11 @@
 ---
-title : "Xây dựng ứng dụng ghi chú AWS Serverless "
+title : "Cách Xây Dựng Ứng Dụng Ghi Chú Serverless: Hướng Dẫn Chi Tiết"
+description : "Khám phá cách xây dựng ứng dụng serverless với hướng dẫn thực tế này. Tìm hiểu các lợi ích của kiến trúc serverless và các bước để tạo ứng dụng serverless của riêng bạn."
 date : "`r Sys.Date()`"
 weight : 2
 chapter : false
 pre : " <b> 2.1 </b> "
-image: "/images/1/LambdaArchitechture.svg" # The path to your image
+image: "images/1/LambdaArchitechture.svg" # The path to your image
 ---
 
 
@@ -44,3 +45,6 @@ Xác thực và ủy quyền người dùng: Ứng dụng có thể kết hợp 
 [2.1.8 CICD Tự động triển khai trang tĩnh bằng GitHub](2.1.8-cicd-auto-deploy-static-page-with-github/)
 
 [2.1.9. Tích hợp CICD với CodeBuild Tự động triển khai hàm Lambda](2.1.9.-cicd-integration-with-codebuild-auto-deploy-lambda-function/)
+
+
+**Kết luận: Xây dựng ứng dụng serverless cho phép bạn tập trung vào việc viết mã mà không cần quản lý máy chủ. Trong hướng dẫn thực tế này, chúng tôi sẽ hướng dẫn bạn từng bước để tạo ứng dụng serverless bằng các nền tảng đám mây phổ biến như AWS Lambda. Tìm hiểu các lợi ích của kiến trúc serverless, từ tiết kiệm chi phí đến khả năng mở rộng, và làm theo hướng dẫn từng bước để thiết lập môi trường của bạn, tạo hàm serverless và triển khai ứng dụng của bạn.**
