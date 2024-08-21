@@ -1,9 +1,11 @@
 ---
-title : "Dịch vụ mạng"
+title : "Giới Thiệu Các Dịch Vụ Mạng AWS: VPC, Route 53, Direct Connect"
+description: "Khám phá các dịch vụ mạng của AWS như VPC, Route 53 và Direct Connect. Tìm hiểu cách các dịch vụ này có thể nâng cao hiệu suất, bảo mật và kết nối mạng của bạn."
 date :  "`r Sys.Date()`" 
 weight : 4 
 chapter : false
 pre : " <b> 1.4 </b> "
+image: "/images/1/ArchitechtureDesign.svg"
 ---
 
 ## Giới thiệu dịch vụ mạng
@@ -83,3 +85,5 @@ Dịch vụ Mạng phân phối nội dung (CDN): Amazon CloudFront là dịch v
 + **Tích hợp với Dịch vụ AWS:** CloudFront tích hợp liền mạch với các dịch vụ AWS khác, giúp dễ dàng phân phối nội dung được lưu trữ trong bộ chứa Amazon S3, phiên bản Amazon EC2, hàm AWS Lambda và các máy chủ gốc khác. Người dùng có thể định cấu hình các bản phân phối CloudFront để lưu vào bộ nhớ đệm và phân phối nội dung từ nhiều nguồn, cho phép họ xây dựng các ứng dụng có tính linh hoạt cao và có khả năng mở rộng.
 
 + **Giám sát và đo lường theo thời gian thực:** CloudFront cung cấp khả năng giám sát và đo lường theo thời gian thực cho phép người dùng giám sát hiệu suất và việc sử dụng các bản phân phối của họ. Người dùng có thể theo dõi các số liệu chính như số lượng yêu cầu, truyền dữ liệu, tỷ lệ nhấn bộ đệm và tỷ lệ lỗi bằng cách sử dụng các công cụ giám sát tích hợp của CloudFront hoặc bằng cách tích hợp với AWS CloudWatch để theo dõi và cảnh báo nâng cao.
+
+**Kết luận: Các dịch vụ mạng của AWS bao gồm nhiều giải pháp để nâng cao hiệu suất và bảo mật cho mạng đám mây của bạn. Amazon VPC (Virtual Private Cloud) cho phép bạn tạo một mạng riêng trong AWS. Amazon Route 53 cung cấp dịch vụ DNS và tên miền có thể mở rộng cho việc định tuyến yêu cầu của người dùng. Amazon Direct Connect cung cấp kết nối mạng chuyên dụng giữa cơ sở của bạn và AWS để hiệu suất đáng tin cậy và nhất quán hơn.**

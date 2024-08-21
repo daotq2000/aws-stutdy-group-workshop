@@ -1,9 +1,11 @@
 ---
-title : "Networking Service"
+title : "Introduction to AWS Networking Services: VPC, Route 53, Direct Connect, and More"
+description: "Explore AWS networking services including VPC, Route 53, and Direct Connect. Learn how these services can enhance your cloud network's performance, security, and connectivity."
 date :  "`r Sys.Date()`" 
 weight : 4 
 chapter : false
 pre : " <b> 1.4 </b> "
+image: "/images/1/ArchitechtureDesign.svg"
 ---
 
 ## Introduction Networking Service
@@ -82,3 +84,5 @@ Content Delivery Network (CDN) Service: Amazon CloudFront is a CDN service that 
 + **Integration with AWS Services:** CloudFront seamlessly integrates with other AWS services, making it easy to deliver content stored in Amazon S3 buckets, Amazon EC2 instances, AWS Lambda functions, and other origin servers. Users can configure CloudFront distributions to cache and deliver content from multiple origins, enabling them to build highly dynamic and scalable applications.
 
 + **Real-Time Metrics and Monitoring:** CloudFront provides real-time metrics and monitoring capabilities that allow users to monitor the performance and usage of their distributions. Users can track key metrics such as request counts, data transfer, cache hit ratios, and error rates using CloudFront's built-in monitoring tools or by integrating with AWS CloudWatch for advanced monitoring and alerting.
+
+**Conclusion: AWS offers a range of networking services designed to enhance the performance, security, and connectivity of your cloud network. Amazon VPC (Virtual Private Cloud) allows you to create a private network within AWS. Amazon Route 53 provides scalable DNS and domain name services for routing user requests. Amazon Direct Connect offers a dedicated network connection between your premises and AWS for more reliable and consistent performance.**
