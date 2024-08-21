@@ -1,10 +1,13 @@
 ---
-title : "Dịch vụ lưu trữ"
+title: "Introduction to AWS Storage Services: S3, EBS, Glacier, and More"
+description : "Giới Thiệu Các Dịch Vụ Lưu Trữ AWS: S3, EBS, Glacier, EFS"
 date :  "`r Sys.Date()`" 
 weight : 2
 chapter : false
 pre : " <b> 1.2 </b> "
+image: "/images/1/s3.png"
 ---
+
 
 ## Giới thiệu dịch vụ lưu trữ AWS
 AWS cung cấp một bộ dịch vụ lưu trữ toàn diện được thiết kế để đáp ứng nhu cầu đa dạng của các doanh nghiệp và nhà phát triển, từ lưu trữ đối tượng đơn giản đến lưu trữ khối hiệu suất cao.
@@ -15,7 +18,7 @@ S3 cung cấp các tính năng như lập phiên bản, mã hóa, kiểm soát t
 
 Nó thường được sử dụng cho nhiều trường hợp sử dụng, bao gồm sao lưu và khôi phục, lưu trữ dữ liệu, phân phối nội dung và lưu trữ các trang web tĩnh.
 
-![S3](/images/1/s3.png?featherlight=false&width=50pc)
+![Tổng Quan về Các Dịch Vụ Lưu Trữ AWS bao gồm S3, EBS và Glacier](/images/1/s3.png?featherlight=false&width=50pc)
 #### Lớp lưu trữ đối tượng(Object Storage Classes):
 
 **Amazon S3 Standard (S3 Standard):** S3 Standard cung cấp khả năng lưu trữ đối tượng có độ bền cao, tính khả dụng và hiệu suất cao cho dữ liệu được truy cập thường xuyên. Vì mang lại độ trễ thấp và thông lượng cao nên S3 Standard phù hợp với nhiều trường hợp sử dụng khác nhau, bao gồm ứng dụng đám mây, trang web động, phân phối nội dung, ứng dụng di động và trò chơi cũng như phân tích dữ liệu lớn. 
@@ -105,4 +108,7 @@ FSx dành cho Máy chủ tệp Windows cung cấp tính năng chia sẻ tệp Wi
 FSx phù hợp với các ứng dụng yêu cầu hệ thống tệp hiệu suất cao hoặc lưu trữ tệp tương thích với Windows cho các khối lượng công việc tính toán chuyên sâu như học máy và mô phỏng.
 #### Sử dụng FSx trong trường hợp nào?
 + Amazon FSx for Windows File Server được sử dụng trong các trường hợp người dùng cần một hệ thống tệp tương thích với Windows được quản lý hoàn toàn có hỗ trợ giao thức SMB (Server Message Block).
-+ Nó cung cấp một hệ thống tệp Windows được quản lý đầy đủ và có thể mở rộng, có thể truy cập được từ các máy khách Windows, Linux và macOS, giúp nó phù hợp để chia sẻ và cộng tác tệp trên các nền tảng khác nhau.
++ Nó cung cấp một hệ thống tệp Windows được quản lý đầy đủ và có thể mở rộng, có thể truy cập được từ các máy khách Windows, Linux và macOS, giúp nó phù hợp để chia sẻ và cộng tác tệp trên các nền tảng khác nhau..
+
+
+Các dịch vụ lưu trữ của AWS cung cấp các giải pháp đa dạng để đáp ứng nhu cầu lưu trữ dữ liệu. Amazon S3 cung cấp lưu trữ đối tượng linh hoạt cho bất kỳ số lượng dữ liệu nào, trong khi Amazon EBS cung cấp lưu trữ khối cho các phiên bản EC2. Đối với lưu trữ lâu dài với chi phí thấp, Amazon Glacier là giải pháp lý tưởng.

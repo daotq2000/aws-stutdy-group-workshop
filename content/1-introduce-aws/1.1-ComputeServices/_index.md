@@ -1,5 +1,6 @@
 ---
-title : "Compute Services"
+title : "Introduction to AWS Compute Services: EC2, Lambda, and More"
+description : "Learn about AWS compute services, including EC2 and Lambda. Discover how these services can optimize your cloud computing needs and enhance scalability"
 date :  "`r Sys.Date()`" 
 weight : 1
 chapter : false

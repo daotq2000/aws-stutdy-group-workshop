@@ -1,9 +1,11 @@
 ---
-title : "Storage Services"
+title: "Introduction to AWS Storage Services: S3, EBS, Glacier, and More"
+description : "Explore AWS storage services like S3, EBS, and Glacier. Learn how these solutions can meet your data storage needs with scalability and reliability."
 date :  "`r Sys.Date()`" 
 weight : 2
 chapter : false
 pre : " <b> 1.2 </b> "
+image: "/images/1/s3.png"
 ---
 
 ## Introduction AWS Storage Services
@@ -108,3 +110,5 @@ FSx is suitable for applications that require Windows-compatible file storage or
 #### Use FSx in which situation?
 + Amazon FSx for Windows File Server is used in situations where users need a fully managed Windows-compatible file system with support for SMB (Server Message Block) protocol.
 + It provides a scalable and fully managed Windows file system that is accessible from Windows, Linux, and macOS clients, making it suitable for file sharing and collaboration across different platforms.
+
+AWS storage services offer a range of solutions to meet various data storage needs. Amazon S3 provides scalable object storage for any amount of data, while Amazon EBS delivers block storage for use with EC2 instances. For long-term archival storage, Amazon Glacier offers a cost-effective solution.

@@ -1,5 +1,6 @@
 ---
-title : "Giới Thiệu Dịch Vụ Tính Toán AWS | Auto.io.vn"
+title : "Giới Thiệu Các Dịch Vụ Tính Toán AWS: EC2, Lambda"
+description : "Tìm hiểu về các dịch vụ tính toán của AWS, bao gồm EC2 và Lambda. Khám phá cách các dịch vụ này có thể tối ưu hóa nhu cầu điện toán đám mây của bạn và nâng cao khả năng mở rộng."
 date :  "`r Sys.Date()`" 
 weight : 1
 chapter : false
