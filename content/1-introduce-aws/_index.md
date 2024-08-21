@@ -1,7 +1,7 @@
 ---
 title : "Introduction to AWS: Comprehensive Guide to Amazon Web Services"
 description: "Explore our comprehensive guide to AWS (Amazon Web Services). Learn about its features, benefits, and how it can revolutionize your cloud computing experience."
-image: "/images/1/logo.png"
+image: "images/1/logo.png"
 date :  "`r Sys.Date()`" 
 weight : 1
 chapter : false

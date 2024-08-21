@@ -1,7 +1,7 @@
 ---
 title : "Giới Thiệu AWS: Hướng Dẫn Chi Tiết về Dịch Vụ Amazon Web Services"
 description: "Khám phá hướng dẫn chi tiết về AWS (Amazon Web Services). Tìm hiểu các tính năng, lợi ích và cách dịch vụ này có thể thay đổi trải nghiệm điện toán đám mây của bạn."
-image: "/images/1/logo.png"
+image: "images/1/logo.png"
 date :  "`r Sys.Date()`" 
 weight : 1
 chapter : false

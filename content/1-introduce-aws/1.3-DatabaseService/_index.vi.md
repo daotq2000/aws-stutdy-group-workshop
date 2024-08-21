@@ -5,7 +5,7 @@ date :  "`r Sys.Date()`"
 weight : 3 
 chapter : false
 pre : " <b> 1.3 </b> "
-image: "/images/1/db-aws.png"
+image: "images/1/db-aws.png"
 ---
 
 ## Giới Thiệu Dịch Vụ Cơ Sở Dữ Liệu

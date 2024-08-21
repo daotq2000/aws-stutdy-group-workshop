@@ -5,7 +5,7 @@ date :  "`r Sys.Date()`"
 weight : 1
 chapter : false
 pre : " <b> 1.1 </b> "
-image: "/images/1/aws-compute-services.png" # The path to your image
+image: "images/1/aws-compute-services.png" # The path to your image
 ---
 
 ## Introduction AWS Compute Services

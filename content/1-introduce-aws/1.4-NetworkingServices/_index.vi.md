@@ -5,7 +5,7 @@ date :  "`r Sys.Date()`"
 weight : 4 
 chapter : false
 pre : " <b> 1.4 </b> "
-image: "/images/1/ArchitechtureDesign.svg"
+image: "images/1/vpc.png"
 ---
 
 ## Giới thiệu dịch vụ mạng
