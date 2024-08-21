@@ -5,7 +5,7 @@ date : "`r Sys.Date()`"
 weight : 2
 chapter : false
 pre : " <b> 2 </b> "
-image: "/images/1/logo.png"
+image: "images/1/logo.png"
 ---
 
 # Introduce
