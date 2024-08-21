@@ -1,6 +1,6 @@
 ---
-title: "Introduction to AWS Storage Services: S3, EBS, Glacier, and More"
-description : "Giới Thiệu Các Dịch Vụ Lưu Trữ AWS: S3, EBS, Glacier, EFS"
+title: "Giới Thiệu Các Dịch Vụ Lưu Trữ AWS: S3, EBS, Glacier, EFS"
+description : "Khám phá các dịch vụ lưu trữ của AWS như S3, EBS và Glacier. Tìm hiểu cách các giải pháp này có thể đáp ứng nhu cầu lưu trữ dữ liệu của bạn với khả năng mở rộng và độ tin cậy."
 date :  "`r Sys.Date()`" 
 weight : 2
 chapter : false
@@ -9,7 +9,7 @@ image: "/images/1/s3.png"
 ---
 
 
-## Giới thiệu dịch vụ lưu trữ AWS
+## Giới thiệu dịch vụ lưu Trữ AWS: S3, EBS, Glacier, EFS
 AWS cung cấp một bộ dịch vụ lưu trữ toàn diện được thiết kế để đáp ứng nhu cầu đa dạng của các doanh nghiệp và nhà phát triển, từ lưu trữ đối tượng đơn giản đến lưu trữ khối hiệu suất cao.
 ## Nội dung
 ### 1. Amazon S3 Storage(Dịch vụ lưu trữ đơn giản):
