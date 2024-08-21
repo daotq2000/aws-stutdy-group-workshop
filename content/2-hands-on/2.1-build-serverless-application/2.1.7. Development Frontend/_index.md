@@ -1,13 +1,15 @@
 ---
-title : "Development Frontend"
+title : "Frontend Development for Serverless Applications: A Comprehensive Guide"
+description : "Explore our detailed guide on frontend development for serverless applications. Learn how to build and optimize user interfaces for scalable serverless architectures."
 date : "`r Sys.Date()`"
 weight : 8
 chapter : false
 pre : " <b> 2.1.7 </b> "
+image: "images/2/FE1.jpeg"
 ---
 
 
-#### Demo
+## Best Practices for Frontend Development
 
 ![Development Frontend](/images/2/FE1.jpeg?featherlight=false&width=80pc)
 

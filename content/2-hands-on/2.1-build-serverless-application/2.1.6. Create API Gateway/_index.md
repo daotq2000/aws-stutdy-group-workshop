@@ -1,13 +1,16 @@
 ---
-title : "Create API Gateway"
+title : "How to Create and Configure AWS API Gateway for Serverless Applications"
+description : "Learn how to create and configure AWS API Gateway for serverless applications. Follow our comprehensive guide to set up a scalable API with ease"
 date : "`r Sys.Date()`"
 weight : 7
 chapter : false
 pre : " <b> 2.1.6 </b> "
+image: "images/2/apigw.png"
 ---
+## What is API Gateway?
+AWS API Gateway is a fully managed service that makes it easy to create, publish, maintain, monitor, and secure APIs at any scale. In this guide, we'll walk you through the process of creating and configuring an API Gateway for your serverless applications on AWS. Follow these steps to set up a scalable API that integrates seamlessly with your serverless architecture.
 
-
-#### Create API Gateway
+#### Step-by-Step Guide to Creating API Gateway
 To create an API Gateway in AWS, follow these steps:
 
 ##### 1. Go to https://console.aws.amazon.com/ and sign in to your AWS account.

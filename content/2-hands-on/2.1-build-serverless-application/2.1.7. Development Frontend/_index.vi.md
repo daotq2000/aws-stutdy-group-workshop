@@ -1,13 +1,15 @@
 ---
-title : "Phát triển giao diện người dùng"
+title : "Hướng Dẫn Phát Triển Frontend Cho Ứng Dụng Serverless"
+description : "Khám phá hướng dẫn chi tiết về phát triển frontend cho ứng dụng serverless. Tìm hiểu cách xây dựng và tối ưu hóa giao diện người dùng cho các kiến trúc serverless."
 date : "`r Sys.Date()`"
 weight : 8
 chapter : false
 pre : " <b> 2.1.7 </b> "
+image: "images/2/FE1.jpeg"
 ---
 
 
-#### Demo
+## Các phương pháp hay nhất để phát triển giao diện người dùng
 
 ![Phát triển giao diện người dùng](/images/2/FE1.jpeg?featherlight=false&width=80pc)
 

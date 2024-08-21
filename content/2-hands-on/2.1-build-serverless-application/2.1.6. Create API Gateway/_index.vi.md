@@ -1,14 +1,20 @@
 ---
-title : "Tạo API Gateway"
+title : "Cách Tạo và Cấu Hình AWS API Gateway cho Ứng Dụng Serverless"
+description : "Hướng dẫn chi tiết cách tạo và cấu hình AWS API Gateway cho các ứng dụng serverless. Làm theo hướng dẫn từng bước để thiết lập API mở rộng và hiệu quả."
 date : "`r Sys.Date()`"
 weight : 7
 chapter : false
 pre : " <b> 2.1.6 </b> "
+image: "images/2/apigw.png"
 ---
 
 
-#### Tạo API Gateway
-Để tạo API Gateway trong AWS, hãy làm theo các bước sau:
+## Cổng API (API Gateway) là gì?
+AWS API Gateway là dịch vụ được quản lý toàn phần giúp dễ dàng tạo, phát hành, duy trì, giám sát và bảo mật API ở mọi quy mô. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình tạo và định cấu hình Cổng API cho các ứng dụng serverless trên AWS. Hãy làm theo các bước sau để thiết lập API có thể mở rộng, tích hợp liền mạch với kiến ​​trúc serverless của bạn.
+
+#### Hướng dẫn từng bước tạo API Gateway
+Để tạo Cổng API trong AWS, hãy làm theo các bước sau:
+
 
 ##### 1. Truy cập https://console.aws.amazon.com/ và đăng nhập vào tài khoản AWS của bạn.
 ##### 2. Truy cập https://us-east-1.console.aws.amazon.com/apigateway/main/apis?khu vực=us-east-1
@@ -51,7 +57,9 @@ Chúng tôi đã nhận được phản hồi như hình trên. Tiếp theo, t�
 - Hãy kiểm tra URL gọi: https://q3q8l57ui9.execute-api.us-east-1.amazonaws.com/prod đây là URL công khai mà chúng tôi có thể gọi trên internet công cộng.
 Sau khi nhận được API công khai URL, bạn có thể kiểm tra bằng công cụ POSTMAN, TERMINAL
 Bạn có thể thử với Yêu cầu cuộn tròn với mẫu: cuộn tròn -X GET {{YourInvoke URL}}/{{Stage}}/{{YourAPIs}}
+  
+- Kích hoạt ghi log và giám sát để theo dõi hiệu suất API và xử lý sự cố một cách hiệu quả.
 
-Example: 
+- Example: 
 
     curl -X GET https://q3q8l57ui9.execute-api.us-east-1.amazonaws.com/dev/notes
