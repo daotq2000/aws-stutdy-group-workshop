@@ -1,9 +1,11 @@
 ---
-title : "Develop Lambda Function with Java Language"
+title : "How to Create and Deploy a Lambda Function in AWS: A Step-by-Step Guide"
+description : "Learn how to create and deploy a Lambda function in AWS with this step-by-step guide. Understand the process and best practices for serverless application deployment."
 date : "`r Sys.Date()`"
 weight : 4
 chapter : false
 pre : " <b> 2.1.3 </b> "
+image: "images/1/java&lambda.png"
 ---
 
 
