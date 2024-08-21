@@ -1,13 +1,17 @@
 ---
-title : "Create DynamoDB"
+title : "How to Create and Configure DynamoDB for Serverless Applications"
+description : "Learn how to create and configure DynamoDB for your serverless applications. Follow our step-by-step guide to set up a scalable database in AWS."
 date : "`r Sys.Date()`"
 weight : 6
 chapter : false
 pre : " <b> 2.1.5 </b> "
+image: "images/1/db.png"
 ---
+## What is DynamoDB
 
+Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. In this guide, we'll walk you through the process of creating and configuring DynamoDB for your serverless applications on AWS. Follow these steps to set up a DynamoDB table and integrate it with your serverless architecture.
 
-#### Create DynamoDB
+## Step-by-Step Guide to Creating DynamoDB
 ![Create DynamoDB](/images/2/CreateLambda10.jpeg?featherlight=false&width=50pc)
 ![Create DynamoDB](/images/2/CreateLambda11.jpeg?featherlight=false&width=50pc)
 ![Create DynamoDB](/images/2/CreateLambda12.jpeg?featherlight=false&width=50pc)

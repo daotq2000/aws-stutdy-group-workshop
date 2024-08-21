@@ -1,11 +1,15 @@
 ---
-title : "Tạo DynamoDB Database"
+title : "How to Create and Configure DynamoDB for Serverless Applications"
+description : "Learn how to create and configure DynamoDB for your serverless applications. Follow our step-by-step guide to set up a scalable database in AWS."
 date : "`r Sys.Date()`"
 weight : 6
 chapter : false
 pre : " <b> 2.1.5 </b> "
+image: "images/1/db.png"
 ---
+## DynamoDB là gì?
 
+Amazon DynamoDB là dịch vụ cơ sở dữ liệu NoSQL được quản lý toàn phần, cung cấp hiệu suất nhanh và có thể dự đoán được với khả năng mở rộng liền mạch. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình tạo và đặt cấu hình DynamoDB cho các ứng dụng serverless trên AWS. Hãy làm theo các bước sau để thiết lập bảng DynamoDB và tích hợp bảng đó với kiến trúc serverless của bạn.
 
 #### Tạo DynamoDB Database
 ![Tạo DynamoDB Database](/images/2/CreateLambda10.jpeg?featherlight=false&width=50pc)
