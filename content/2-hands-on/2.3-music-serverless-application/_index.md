@@ -1,5 +1,5 @@
 ---
-title : "Build Music Severless Application"
+title : "Build Music Serverless Application"
 date : "`r Sys.Date()`"
 weight : 3
 chapter : false
