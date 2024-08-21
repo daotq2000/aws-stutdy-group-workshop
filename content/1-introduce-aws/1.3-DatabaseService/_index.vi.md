@@ -1,9 +1,11 @@
 ---
-title : "Dịch Vụ Cơ Sở Dữ Liệu"
+title : "Giới Thiệu Các Dịch Vụ Cơ Sở Dữ Liệu AWS: RDS, DynamoDB, Aurora"
+description: "Khám phá các dịch vụ cơ sở dữ liệu của AWS như RDS, DynamoDB và Aurora. Tìm hiểu cách các giải pháp này có thể tối ưu hóa quản lý cơ sở dữ liệu của bạn với khả năng mở rộng, hiệu suất và độ tin cậy."
 date :  "`r Sys.Date()`" 
 weight : 3 
 chapter : false
 pre : " <b> 1.3 </b> "
+image: "/images/1/db.png"
 ---
 
 ## Giới Thiệu Dịch Vụ Cơ Sở Dữ Liệu
@@ -142,3 +144,5 @@ Amazon Neptune là dịch vụ cơ sở dữ liệu đồ thị được quản 
 + **Tích hợp với Dịch vụ AWS:** Neptune tích hợp liền mạch với các dịch vụ AWS khác, chẳng hạn như Amazon S3, AWS Lambda, Amazon CloudWatch và AWS Identity and Access Management (IAM). Điều này cho phép bạn xây dựng các ứng dụng dựa trên biểu đồ toàn diện bằng các công cụ và dịch vụ AWS quen thuộc.
 
 + **Bảo mật:** Neptune cung cấp các tính năng bảo mật mạnh mẽ, bao gồm mã hóa khi lưu trữ và đang truyền, kiểm soát truy cập chi tiết bằng chính sách AWS Identity and Access Management (IAM) và tích hợp với AWS Key Management Service (KMS) để quản lý mã hóa phím. Nó cũng tuân thủ các tiêu chuẩn và quy định khác nhau của ngành, chẳng hạn như HIPAA, GDPR và PCI DSS.
+
+**Kết luận: Các dịch vụ cơ sở dữ liệu của AWS cung cấp các giải pháp khác nhau để quản lý dữ liệu hiệu quả. Amazon RDS mang đến dịch vụ cơ sở dữ liệu quan hệ được quản lý với hỗ trợ nhiều động cơ cơ sở dữ liệu. Amazon DynamoDB là dịch vụ cơ sở dữ liệu NoSQL hoàn toàn được quản lý, nổi bật với độ trễ thấp và khả năng mở rộng. Amazon Aurora là động cơ cơ sở dữ liệu quan hệ hiệu suất cao tương thích với MySQL và PostgreSQL, cung cấp hiệu suất và độ tin cậy vượt trội.**
