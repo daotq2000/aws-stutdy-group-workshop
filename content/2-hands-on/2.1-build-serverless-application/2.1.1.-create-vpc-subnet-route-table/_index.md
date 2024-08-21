@@ -1,17 +1,19 @@
 ---
-title : "Create VPC, Subnet, Route Table"
+title : "How to Create a VPC, Subnet, and Route Table in AWS: A Step-by-Step Guide"
+description : "Learn how to create a Virtual Private Cloud (VPC), subnet, and route table in AWS with this detailed step-by-step guide. Understand the process and best practices for configuring your network infrastructure."
 date : "`r Sys.Date()`"
 weight : 2
 chapter : false
 pre : " <b> 2.1.1 </b> "
+image: "images/1/vpc.png"
 ---
 
 
-#### Overview
+## Introduction to AWS Networking
 
 Let’s delve into the concepts of VPC, Subnet, Route Table, and Security Group:
 
-**1.1 Virtual Private Cloud (VPC):**
+### **1.1 What is a Virtual Private Cloud (VPC)?:**
 
 + A Virtual Private Cloud (VPC) is a virtual network environment provided by Amazon Web Services (AWS).
 
@@ -21,7 +23,7 @@ Let’s delve into the concepts of VPC, Subnet, Route Table, and Security Group:
 
 + VPCs provide security by enabling you to define network access control policies, set up VPN connections, and use security groups and network ACLs to restrict traffic.
 
-**1.2 Subnet:**
+### **1.2 What is an Subnet? **
 
 + A subnet is a segmented portion of a VPC’s IP address range in which you can place AWS resources.
 
@@ -31,7 +33,7 @@ Let’s delve into the concepts of VPC, Subnet, Route Table, and Security Group:
 
 + Subnets can be public or private, depending on whether they have a route to an internet gateway.
 
-**1.3 Route Table:**
+### **1.3 What is an Route Table:**
 
 + A route table is a set of rules (routes) that determine where network traffic is directed within a VPC.
 
@@ -41,7 +43,7 @@ Let’s delve into the concepts of VPC, Subnet, Route Table, and Security Group:
 
 + By configuring routes in the route table, you can control how traffic flows between subnets within the VPC and to external networks.
 
-**1.4 Security Group:**
+### **1.4 What is an Security Group:**
 
 + A security group acts as a virtual firewall for your instances to control inbound and outbound traffic.
 
@@ -69,3 +71,4 @@ Let’s **Create VPC** follow instructions below:
 ![CreateVPC3](/images/2/CreateVPC3.jpeg?featherlight=false&width=100pc)
 After fulfilling these options click to **Create VPC**. Waiting a minute to resources provisioning, After done, we have a vpc like this picture above.
 
+**Conclusion:In this guide, we will walk you through the process of creating a Virtual Private Cloud (VPC), subnets, and route tables in AWS. A VPC allows you to define a virtual network in your AWS environment, while subnets help segment your network and route tables manage traffic between them. Follow these steps to set up your AWS network infrastructure effectively and ensure your application runs smoothly.**

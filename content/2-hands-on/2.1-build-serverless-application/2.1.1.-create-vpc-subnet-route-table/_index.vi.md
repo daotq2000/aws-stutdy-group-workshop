@@ -1,16 +1,19 @@
 ---
-title : "Tạo VPC, Subnet, Route Table"
+title : "Cách Tạo VPC, Subnet và Route Table Trong AWS: Hướng Dẫn Chi Tiết"
+description : "Khám phá cách tạo Virtual Private Cloud (VPC), subnet và route table trong AWS với hướng dẫn chi tiết này. Hiểu quy trình và thực hành tốt nhất để cấu hình cơ sở hạ tầng mạng của bạn."
 date : "`r Sys.Date()`"
 weight : 2
 chapter : false
 pre : " <b> 2.1.1 </b> "
+image: "images/1/vpc.png"
 ---
 
-#### Tổng quan
+
+## Giới Thiệu Về Mạng AWS
 
 Hãy cùng đi sâu vào các khái niệm về VPC, Subnet, Route Table và Security Group:
 
-**1.1 Đám mây riêng ảo (VPC):**
+### **1.1 VPC (Virtual Private Cloud) Là Gì?:**
 
 + Virtual Private Cloud (VPC) là môi trường mạng ảo được cung cấp bởi Amazon Web Services (AWS).
 
@@ -20,7 +23,7 @@ Hãy cùng đi sâu vào các khái niệm về VPC, Subnet, Route Table và Sec
 
 + VPC cung cấp bảo mật bằng cách cho phép bạn xác định chính sách kiểm soát truy cập mạng, thiết lập kết nối VPN và sử dụng các nhóm bảo mật cũng như ACL mạng để hạn chế lưu lượng truy cập.
 
-**Mạng con 1.2:**
+### **1.2 Subnet(Mạng con) là gì? **
 
 + Mạng con là một phần được phân đoạn trong dải địa chỉ IP của VPC mà bạn có thể đặt tài nguyên AWS trong đó.
 
@@ -30,7 +33,7 @@ Hãy cùng đi sâu vào các khái niệm về VPC, Subnet, Route Table và Sec
 
 + Mạng con có thể là công khai hoặc riêng tư, tùy thuộc vào việc chúng có đường dẫn đến cổng internet hay không.
 
-**1.3 Bảng lộ trình:**
+### **1.3 Route Table (Bảng lộ trình) là gì ?:**
 
 + Bảng định tuyến là một bộ quy tắc (tuyến đường) xác định nơi lưu lượng mạng được hướng tới trong VPC.
 
@@ -40,7 +43,7 @@ Hãy cùng đi sâu vào các khái niệm về VPC, Subnet, Route Table và Sec
 
 + Bằng cách định cấu hình các tuyến trong bảng tuyến, bạn có thể kiểm soát cách lưu lượng truy cập giữa các mạng con trong VPC và với các mạng bên ngoài.
 
-**1.4 Nhóm bảo mật:**
+### **1.4 Nhóm bảo mật(Security Group) là gì ?:**
 
 + Nhóm bảo mật hoạt động như một tường lửa ảo cho các phiên bản của bạn để kiểm soát lưu lượng vào và ra.
 
@@ -68,3 +71,4 @@ Hãy **Tạo VPC** làm theo hướng dẫn bên dưới:
 ![CreateVPC3](/images/2/CreateVPC3.jpeg?featherlight=false&width=100pc)
 Sau khi hoàn thành các tùy chọn này, hãy nhấp vào **Tạo VPC**. Chờ một phút để cung cấp tài nguyên, Sau khi hoàn tất, chúng ta có một vpc như hình trên.
 
+**Kết luận: Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách tạo Virtual Private Cloud (VPC), subnet và route table trong AWS. VPC cho phép bạn định nghĩa một mạng ảo trong môi trường AWS, trong khi các subnet giúp phân chia mạng và route tables quản lý lưu lượng giữa chúng. Làm theo các bước này để cấu hình cơ sở hạ tầng mạng của bạn hiệu quả và đảm bảo ứng dụng của bạn hoạt động mượt mà.**
