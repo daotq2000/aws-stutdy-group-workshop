@@ -1,6 +1,6 @@
 ---
-title : "Xây dựng Ứng dụng Nghe Nhạc Serverless với Amazon Fargate: Giải pháp Tối ưu Chi phí và Khả năng Mở Rộng"
-description: "Hướng dẫn xây dựng ứng dụng nghe nhạc serverless bằng Amazon Fargate và Terraform để tối ưu hóa chi phí và tăng khả năng mở rộng."
+title : "Build a Scalable Music Streaming Application Using Amazon Fargate and Serverless Architecture"
+description: "Learn how to create a cost-effective and scalable serverless music streaming application with Amazon Fargate, leveraging Terraform for cloud infrastructure management."
 date : "`r Sys.Date()`"
 weight : 3
 chapter : false
