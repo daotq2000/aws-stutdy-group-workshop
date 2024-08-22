@@ -1,13 +1,14 @@
 ---
-title : "Build Music Serverless Application"
+title : "Xây dựng Ứng dụng Nghe Nhạc Serverless với Amazon Fargate: Giải pháp Tối ưu Chi phí và Khả năng Mở Rộng"
+description: "Hướng dẫn xây dựng ứng dụng nghe nhạc serverless bằng Amazon Fargate và Terraform để tối ưu hóa chi phí và tăng khả năng mở rộng."
 date : "`r Sys.Date()`"
 weight : 3
 chapter : false
 pre : " <b> 2.3 </b> "
-image: "/images/3/3.0/architechture.svg" # The path to your image
+image: "/images/3/3.0/music.jpg" # The path to your image
 ---
 ## 1.Overview Architechture
-![AWS DESIGN ARCHITECTURE](/images/3/3.0/architechture.svg?featherlight=false&width=100pc)
+![AWS DESIGN ARCHITECTURE](/images/3/3.0/music-multi.drawio.svg?featherlight=false&width=100pc)
 
 ### Challenge 3: Build a Music Serverless Application on Amazon Web Services (AWS)
 **Objective:**
