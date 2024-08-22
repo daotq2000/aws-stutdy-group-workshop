@@ -1,9 +1,11 @@
 ---
-title : "Config AWS Resource"
+title : "Configuring AWS Application Load Balancer for Zero Downtime Applications"
+description: "Learn how to configure AWS Application Load Balancer for zero downtime applications. This guide covers setup, best practices, and optimization tips for ensuring high availability and reliability"
 date : "`r Sys.Date()`"
 weight : 4
 chapter : false
 pre : " <b> 2.2.3 </b> "
+image: "/images/2.2/alb.png"
 ---
 Although we have set up resources AWS by terraform, there are contains many component, with big complexity but 
 we even need to config some resource to application working without errors.
