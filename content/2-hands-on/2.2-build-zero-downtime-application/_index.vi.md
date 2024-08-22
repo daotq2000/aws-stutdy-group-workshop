@@ -7,8 +7,8 @@ pre : " <b> 2.2 </b> "
 ---
 
 ![AWS DESIGN ARCHITECTURE](/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
-## Video
-[![How to build realistic application on AWS](/images/2.2/1.png)](https://youtu.be/xBy9F5qLOYA "Everything Is AWESOME")
+## Video on Youtube
+[![Build Zero Downtime AWS Application](/images/2/YT.png)](https://youtu.be/xBy9F5qLOYA?list=PLk36mRYn9bOHtZsDG3iA-yGzktMiBojm9 "Everything Is AWESOME")
 
 
 ### Thử thách 2: Xây dựng Nền tảng thương mại điện tử có khả năng phục hồi AWS

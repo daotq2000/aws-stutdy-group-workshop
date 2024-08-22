@@ -85,5 +85,5 @@ For more information on AWS and hands-on learning, check out our comprehensive g
 
 ## List labs hands-on
 1. Day 1: [Build Note Application AWS Serverless](2.1-build-serverless-application/)
-2. Day 2: [Build Zero Downtime AWS Application](2.2-build-realistic-application/)
+2. Day 2: [Build Zero Downtime AWS Application](2.2-build-zero-downtime-application/)
 3. Day 3 [Build Music Serverless Application](2.3-music-serverless-application/)

@@ -80,5 +80,5 @@ Kinh nghiệm thực tế cho phép bạn làm việc trên các dự án và s�
 Kinh nghiệm thực tế với AWS là điều cần thiết để thành thạo điện toán đám mây. Nó cung cấp những hiểu biết thực tế, nâng cao kỹ năng giải quyết vấn đề và xây dựng sự tự tin trong khi giúp bạn luôn cập nhật những cải tiến mới nhất. Hãy trải nghiệm AWS thực tế để khai phá toàn bộ tiềm năng của bạn, thăng tiến sự nghiệp và luôn đi đầu trong thế giới công nghệ đám mây năng động.
 ## Danh sách bài thực hành
 1. Day 1 [Xây dựng ứng dụng Serverless](2.1-build-serverless-application/)
-2. Day 2: [Xây dựng ứng dụng Zero Downtime AWS Application](2.2-build-realistic-application/)
+2. Day 2: [Xây dựng ứng dụng Zero Downtime AWS Application](2.2-build-zero-downtime-application/)
 3. Day 3 [Xây dựng ứng dụng nghe nhạc Serverless trên AWS](2.3-music-serverless-application/)
