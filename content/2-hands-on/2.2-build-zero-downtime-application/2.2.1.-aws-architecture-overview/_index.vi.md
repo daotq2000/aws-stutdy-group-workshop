@@ -9,15 +9,15 @@ image: "images/2.2/HA_AWS_DESIGN.png" # The path to your image
 ---
 ![KIẾN TRÚC THIẾT KẾ AWS](/images/2.2/FJCAwsStudyGroup.svg?featherlight=false&width=100pc)
 
-# Tổng Quan Về Kiến Trúc AWS Cho Ứng Dụng Không Gián Đoạn
+# Tổng Quan Về Kiến Trúc AWS Cho Ứng Dụng Zero Downtime 
 
-Chào mừng bạn đến với hướng dẫn chi tiết về kiến trúc AWS được thiết kế để đạt được ứng dụng không gián đoạn (zero downtime). Trong bài viết này, chúng tôi sẽ đi sâu vào các thành phần chính và các chiến lược được sử dụng trong Dịch Vụ Web Amazon (AWS) để đảm bảo tính khả dụng cao, khả năng mở rộng tự động, và sự tin cậy liên tục.
+Chào mừng bạn đến với hướng dẫn chi tiết về kiến trúc AWS được thiết kế để đạt được Ứng Dụng Zero Downtime  (zero downtime). Trong bài viết này, chúng tôi sẽ đi sâu vào các thành phần chính và các chiến lược được sử dụng trong Dịch Vụ Web Amazon (AWS) để đảm bảo tính khả dụng cao, khả năng mở rộng tự động, và sự tin cậy liên tục.
 
-## Vì Sao Chọn AWS Cho Ứng Dụng Không Gián Đoạn?
+## Vì Sao Chọn AWS Cho Ứng Dụng Zero Downtime ?
 
-Amazon Web Services (AWS) cung cấp cơ sở hạ tầng đám mây mạnh mẽ và linh hoạt, cho phép các nhà phát triển xây dựng và duy trì các ứng dụng không gián đoạn. Sử dụng bộ công cụ và dịch vụ của AWS giúp tạo ra kiến trúc có thể mở rộng, kiên cố và có khả năng chịu lỗi, điều này rất cần thiết cho các ứng dụng hiện đại.
+Amazon Web Services (AWS) cung cấp cơ sở hạ tầng đám mây mạnh mẽ và linh hoạt, cho phép các nhà phát triển xây dựng và duy trì các Ứng Dụng Zero Downtime . Sử dụng bộ công cụ và dịch vụ của AWS giúp tạo ra kiến trúc có thể mở rộng, kiên cố và có khả năng chịu lỗi, điều này rất cần thiết cho các ứng dụng hiện đại.
 
-## Các Thành Phần Chính Của Kiến Trúc AWS Cho Ứng Dụng Không Gián Đoạn
+## Các Thành Phần Chính Của Kiến Trúc AWS Cho Ứng Dụng Zero Downtime 
 
 ### 1. Elastic Load Balancing (ELB)
 Elastic Load Balancing tự động phân phối lưu lượng ứng dụng đến nhiều mục tiêu khác nhau, như các instance EC2, container và địa chỉ IP. ELB tăng cường khả năng chịu lỗi bằng cách chuyển hướng lưu lượng đến các instance khỏe mạnh, đảm bảo tính khả dụng liên tục của ứng dụng.
@@ -34,7 +34,7 @@ Amazon Route 53 là dịch vụ DNS web có khả năng mở rộng và tính kh
 ### 5. Amazon CloudWatch
 Amazon CloudWatch cung cấp giám sát và quan sát tài nguyên và ứng dụng của AWS. Với CloudWatch, bạn có thể thiết lập các cảnh báo để phát hiện và phản ứng với các bất thường về hiệu suất. Nó cho phép bạn duy trì sức khỏe của ứng dụng và giảm thiểu thời gian gián đoạn thông qua việc giám sát chủ động.
 
-## Triển Khai Kiến Trúc AWS Cho Ứng Dụng Không Gián Đoạn
+## Triển Khai Kiến Trúc AWS Cho Ứng Dụng Zero Downtime 
 
 1. **Cân Bằng Tải và Nhóm Tự Động Mở Rộng**
     - Cấu hình Elastic Load Balancers để phân phối lưu lượng.
@@ -54,6 +54,6 @@ Amazon CloudWatch cung cấp giám sát và quan sát tài nguyên và ứng d�
 
 ## Kết Luận
 
-AWS cung cấp một bộ dịch vụ toàn diện giúp bạn xây dựng các ứng dụng không gián đoạn. Bằng cách triển khai Elastic Load Balancing, Auto Scaling, Amazon RDS, Route 53, và CloudWatch, bạn có thể đảm bảo ứng dụng của mình luôn hoạt động tốt và có sẵn dưới mọi điều kiện.
+AWS cung cấp một bộ dịch vụ toàn diện giúp bạn xây dựng các Ứng Dụng Zero Downtime . Bằng cách triển khai Elastic Load Balancing, Auto Scaling, Amazon RDS, Route 53, và CloudWatch, bạn có thể đảm bảo ứng dụng của mình luôn hoạt động tốt và có sẵn dưới mọi điều kiện.
 
-Khám phá các lợi ích của kiến trúc AWS và duy trì lợi thế cạnh tranh với các ứng dụng không gián đoạn. Để biết thêm hướng dẫn chi tiết và các thực hành tốt nhất, hãy truy cập [auto.io.vn](https://auto.io.vn).
+Khám phá các lợi ích của kiến trúc AWS và duy trì lợi thế cạnh tranh với các Ứng Dụng Zero Downtime . Để biết thêm hướng dẫn chi tiết và các thực hành tốt nhất, hãy truy cập [auto.io.vn](https://auto.io.vn).
