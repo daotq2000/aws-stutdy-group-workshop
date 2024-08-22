@@ -2,7 +2,7 @@
 title : "Tổng Quan Về Kiến Trúc AWS Zero Downtime"
 description: "Khám phá kiến trúc AWS Zero Downtime. Hiểu các thành phần chính và các biện pháp thực hành tốt nhất để tạo ra các giải pháp AWS đáng tin cậy và có thể mở rộng."
 date : "`r Sys.Date()`"
-weight : 3
+weight : 2
 chapter : false
 pre : " <b> 2.2.1 </b> "
 image: "images/2.2/HA_AWS_DESIGN.png" # The path to your image
