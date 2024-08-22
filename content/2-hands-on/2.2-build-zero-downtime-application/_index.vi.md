@@ -1,19 +1,22 @@
 ---
-title : "Xây dựng ứng dụng Amazon Zero down time"
+title : "Hướng Dẫn Xây Dựng Ứng Dụng Zero Downtime AWS"
+description: "Tìm hiểu cách xây dựng ứng dụng Zero Downtime trên Amazon Web Service qua hướng dẫn chi tiết. Khám phá các phương pháp tốt nhất, hướng dẫn từng bước và mẹo để đảm bảo khả năng mở rộng,bảo mật và tính bền vững cao."
 date : "`r Sys.Date()`"
-weight : 3
+weight : 2
 chapter : false
 pre : " <b> 2.2 </b> "
+image: "/images/2/architechture.webp" # The path to your image
 ---
-
 ![AWS DESIGN ARCHITECTURE](/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
 ## Video on Youtube
-[![Build Zero Downtime AWS Application](/images/2/YT.png)](https://youtu.be/xBy9F5qLOYA?list=PLk36mRYn9bOHtZsDG3iA-yGzktMiBojm9 "Everything Is AWESOME")
+[![Hướng Dẫn Xây Dựng Ứng Dụng Zero Downtime AWS](/images/2/YT.png)](https://youtu.be/xBy9F5qLOYA?list=PLk36mRYn9bOHtZsDG3iA-yGzktMiBojm9 "Everything Is AWESOME")
 
 
 ### Thử thách 2: Xây dựng Nền tảng thương mại điện tử có khả năng phục hồi AWS
 
 Sự tăng trưởng theo cấp số nhân của mua sắm trực tuyến đòi hỏi các nền tảng thương mại điện tử mạnh mẽ và có thể mở rộng. Lưu lượng truy cập tăng trong thời gian mua sắm cao điểm như Thứ Sáu Đen hoặc Thứ Hai Điện Tử đòi hỏi nền tảng thương mại điện tử phải có khả năng phục hồi và phản hồi cao. Mục tiêu thách thức: Xây dựng một nền tảng thương mại điện tử có khả năng mở rộng cao, linh hoạt và tiết kiệm chi phí trên AWS, có thể xử lý các tải khác nhau, khắc phục các lỗi thành phần mà không có lỗi mà người dùng có thể thấy và duy trì tính nhất quán của dữ liệu.
+
+Cung cấp hướng dẫn chi tiết, hữu ích về cách xây dựng ứng dụng không có thời gian ngừng hoạt động bằng AWS. Bao gồm các ví dụ thực tế, nghiên cứu trường hợp và mẹo khắc phục sự cố.
 
 ### Yêu cầu:
 

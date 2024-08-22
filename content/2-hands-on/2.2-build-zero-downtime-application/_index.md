@@ -1,10 +1,11 @@
 ---
-title : "Build Zero Downtime AWS Application"
+title : "How to Build a Zero Downtime Application with AWS: A Complete Guide"
+description: "Learn how to build a zero downtime application using AWS with our comprehensive guide. Discover best practices, step-by-step instructions, and tips for ensuring continuous availability."
 date : "`r Sys.Date()`"
 weight : 2
 chapter : false
 pre : " <b> 2.2 </b> "
-image: "/images/1/ArchitechtureDesign.svg" # The path to your image
+image: "/images/2/architechture.webp" # The path to your image
 ---
 
 ![AWS DESIGN ARCHITECTURE](/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
@@ -15,6 +16,8 @@ image: "/images/1/ArchitechtureDesign.svg" # The path to your image
 ### Challenge 2: Building AWS Resilient E-commerce Platform
 
 The exponential growth of online shopping necessitates robust and scalable e-commerce platforms. An increase in traffic during peak shopping periods like Black Friday or Cyber Monday requires the e-commerce platform to be highly resilient and responsive. Challenge Objective: Build a highly scalable, resilient, and cost-effective e-commerce platform on AWS that can handle varying loads, survive component failures without user-visible errors, and maintain data consistency.
+
+Provide a detailed, actionable guide on building a zero downtime application using AWS. Include practical examples, case studies, and troubleshooting tips.
 
 ### Requirements:
 
@@ -44,3 +47,5 @@ Utilize AWS CloudWatch for monitoring the health and performance metrics of AWS 
 3. CI/CD Pipeline
 4. Testing
 5. A cost analysis report.
+
+
