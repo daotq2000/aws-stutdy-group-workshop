@@ -1,9 +1,12 @@
 ---
 title : "Tạo tệp main.tf"
+description: "Khám phá cách tạo mẫu cung cấp Terraform để xây dựng các ứng dụng  Zero Downtime Applications. Tìm hiểu hướng dẫn từng bước và các biện pháp thực hành tốt nhất để tự động hóa cơ sở hạ tầng AWS của bạn"
 date : "`r Sys.Date()`"
 weight : 4
 chapter : false
 pre : " <b> 2.2.2.2 </b> "
+image: "images/2.2/teraform-aws.jpeg"
+
 ---
 ## Tạo tệp main.tf
 

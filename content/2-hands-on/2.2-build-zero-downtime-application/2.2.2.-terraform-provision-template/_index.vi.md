@@ -1,10 +1,13 @@
 ---
-title : "Quản lý tài nguyên Amazon với Terraform"
+title : "Terraform Provision Template for Zero Downtime Applications"
+description: "Khám phá cách tạo mẫu cung cấp Terraform để xây dựng các ứng dụng  Zero Downtime Applications. Tìm hiểu hướng dẫn từng bước và các biện pháp thực hành tốt nhất để tự động hóa cơ sở hạ tầng AWS của bạn"
 date : "`r Sys.Date()`"
-weight : 4
+weight : 3
 chapter : false
 pre : " <b> 2.2.2 </b> "
+image: "images/2.2/teraform-aws.jpeg"
 ---
+
 ## Terraform là gì?
 Terraform là một công cụ phần mềm cơ sở hạ tầng nguồn mở dưới dạng mã (IaC) được tạo bởi HashiCorp. Nó cho phép người dùng xác định và cung cấp cơ sở hạ tầng trung tâm dữ liệu bằng ngôn ngữ cấu hình khai báo được gọi là Ngôn ngữ cấu hình HashiCorp (HCL) hoặc JSON tùy chọn.
 ## Tại sao chúng ta cần sử dụng Terraform?

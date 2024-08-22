@@ -1,9 +1,11 @@
 ---
-title : "Terraform Provision AWS Resources"
+title : "Terraform Provision Template for Zero Downtime Applications"
+description: "Discover how to create a Terraform provision template for building zero downtime applications. Learn step-by-step instructions and best practices for automating your AWS infrastructure"
 date : "`r Sys.Date()`"
 weight : 3
 chapter : false
 pre : " <b> 2.2.2 </b> " 
+image: "images/2.2/teraform-aws.jpeg"
 ---
  
 ## Video

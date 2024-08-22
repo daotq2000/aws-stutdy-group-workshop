@@ -1,9 +1,12 @@
 ---
 title : "Create aws-resources directory"
+description: "Discover how to create a Terraform provision template for building zero downtime applications. Learn step-by-step instructions and best practices for automating your AWS infrastructure"
 date : "`r Sys.Date()`"
 weight : 5
 chapter : false
 pre : " <b> 2.2.2.4 </b> "
+image: "images/2.2/teraform-aws.jpeg"
+
 ---
 ## Create aws-resources directory
 This directory contains many resources as VPC, Load Balancer, Ec2...
