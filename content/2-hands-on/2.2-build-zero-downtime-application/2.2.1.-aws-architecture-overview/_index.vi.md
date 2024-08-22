@@ -1,55 +1,59 @@
 ---
-title : "Thiết kế kiến trúc AWS"
+title : "Tổng Quan Về Kiến Trúc AWS Zero Downtime"
+description: "Khám phá kiến trúc AWS Zero Downtime. Hiểu các thành phần chính và các biện pháp thực hành tốt nhất để tạo ra các giải pháp AWS đáng tin cậy và có thể mở rộng."
 date : "`r Sys.Date()`"
 weight : 3
 chapter : false
 pre : " <b> 2.2.1 </b> "
+image: "images/2.2/HA_AWS_DESIGN.png" # The path to your image
 ---
-![KIẾN TRÚC THIẾT KẾ AWS](/images/2.2/HA_AWS_DESIGN.png?featherlight=false&width=100pc)
+![KIẾN TRÚC THIẾT KẾ AWS](/images/2.2/FJCAwsStudyGroup.svg?featherlight=false&width=100pc)
 
-### Thiết kế phân tích Kiến trúc AWS
-Kiến trúc được mô tả trong hình ảnh thể hiện giải pháp điện toán đám mây AWS với nhiều thành phần khác nhau, mỗi thành phần có một mục đích cụ thể.
-Dưới đây là các thành phần và ý nghĩa của chúng:
+# Tổng Quan Về Kiến Trúc AWS Cho Ứng Dụng Không Gián Đoạn
 
-**Trình duyệt web:** Thể hiện khía cạnh phía máy khách, nơi người dùng tương tác với hệ thống.
+Chào mừng bạn đến với hướng dẫn chi tiết về kiến trúc AWS được thiết kế để đạt được ứng dụng không gián đoạn (zero downtime). Trong bài viết này, chúng tôi sẽ đi sâu vào các thành phần chính và các chiến lược được sử dụng trong Dịch Vụ Web Amazon (AWS) để đảm bảo tính khả dụng cao, khả năng mở rộng tự động, và sự tin cậy liên tục.
 
-**Tường lửa ứng dụng web (WAF):**
-Bảo vệ ứng dụng khỏi các mối đe dọa dựa trên web.
+## Vì Sao Chọn AWS Cho Ứng Dụng Không Gián Đoạn?
 
-**Mặt trận đám mây:**
-Mạng phân phối nội dung (CDN) của AWS phân phối nội dung đến người dùng với tính sẵn sàng cao và tốc độ cao.
+Amazon Web Services (AWS) cung cấp cơ sở hạ tầng đám mây mạnh mẽ và linh hoạt, cho phép các nhà phát triển xây dựng và duy trì các ứng dụng không gián đoạn. Sử dụng bộ công cụ và dịch vụ của AWS giúp tạo ra kiến trúc có thể mở rộng, kiên cố và có khả năng chịu lỗi, điều này rất cần thiết cho các ứng dụng hiện đại.
 
-**Cân bằng tải ứng dụng (ALB):**
-Phân phối lưu lượng truy cập ứng dụng đến trên nhiều mục tiêu, chẳng hạn như phiên bản EC2, trong nhiều Vùng sẵn sàng.
+## Các Thành Phần Chính Của Kiến Trúc AWS Cho Ứng Dụng Không Gián Đoạn
 
-**Cụm EKS của Amazon:**
-Dịch vụ Kubernetes được quản lý để chạy các ứng dụng trong vùng chứa.
+### 1. Elastic Load Balancing (ELB)
+Elastic Load Balancing tự động phân phối lưu lượng ứng dụng đến nhiều mục tiêu khác nhau, như các instance EC2, container và địa chỉ IP. ELB tăng cường khả năng chịu lỗi bằng cách chuyển hướng lưu lượng đến các instance khỏe mạnh, đảm bảo tính khả dụng liên tục của ứng dụng.
 
-**Mạng con riêng tư với nhóm nút được quản lý EC2:**
-Lưu trữ an toàn và có thể mở rộng cho các phiên bản EC2 tạo thành một phần của cụm EKS.
+### 2. Auto Scaling
+Auto Scaling điều chỉnh số lượng instance EC2 trong ứng dụng dựa trên yêu cầu lưu lượng. Nó tự động mở rộng hoặc thu hẹp dung lượng, duy trì hiệu suất và hiệu quả chi phí. Với Auto Scaling, các ứng dụng vẫn phản hồi tốt ngay cả dưới các tải trọng thay đổi.
 
-**Cơ sở dữ liệu RDS chính:** Dịch vụ cơ sở dữ liệu quan hệ để quản lý dữ liệu chính.
+### 3. Amazon RDS (Relational Database Service)
+Amazon RDS đơn giản hóa việc thiết lập, vận hành và mở rộng cơ sở dữ liệu quan hệ. Nó cung cấp các bản sao lưu tự động, cập nhật và cơ chế dự phòng, đảm bảo các thành phần cơ sở dữ liệu hoạt động với thời gian gián đoạn tối thiểu và tính khả dụng cao.
 
-**Cơ sở dữ liệu RDS bản sao:** Cơ sở dữ liệu quan hệ thứ cấp được sử dụng để chuyển đổi dự phòng và khả năng mở rộng đọc.
+### 4. Amazon Route 53
+Amazon Route 53 là dịch vụ DNS web có khả năng mở rộng và tính khả dụng cao. Nó giúp định tuyến yêu cầu của người dùng cuối đến ứng dụng của bạn với độ trễ thấp và độ tin cậy cao. Route 53 cũng hỗ trợ dự phòng DNS, đảm bảo lưu lượng được chuyển hướng đến các điểm cuối khỏe mạnh.
 
-**Cụm bộ đệm Redis:** Kho lưu trữ dữ liệu trong bộ nhớ được sử dụng để lưu vào bộ nhớ đệm và làm cơ sở dữ liệu, trình trung chuyển thư và hàng đợi để cải thiện hiệu suất của ứng dụng.
-Về mặt quản lý và vận hành cơ sở hạ tầng:
+### 5. Amazon CloudWatch
+Amazon CloudWatch cung cấp giám sát và quan sát tài nguyên và ứng dụng của AWS. Với CloudWatch, bạn có thể thiết lập các cảnh báo để phát hiện và phản ứng với các bất thường về hiệu suất. Nó cho phép bạn duy trì sức khỏe của ứng dụng và giảm thiểu thời gian gián đoạn thông qua việc giám sát chủ động.
 
-**Terraform:** Cơ sở hạ tầng dưới dạng công cụ mã để xây dựng, thay đổi và tạo phiên bản cơ sở hạ tầng.
+## Triển Khai Kiến Trúc AWS Cho Ứng Dụng Không Gián Đoạn
 
-**CloudWatch:** Dịch vụ giám sát tài nguyên và ứng dụng đám mây AWS.
+1. **Cân Bằng Tải và Nhóm Tự Động Mở Rộng**
+    - Cấu hình Elastic Load Balancers để phân phối lưu lượng.
+    - Thiết lập các nhóm Auto Scaling để điều chỉnh số lượng instance đang chạy một cách linh hoạt.
 
-**CloudTrail:** Dịch vụ cung cấp bản ghi các hành động được thực hiện bởi người dùng, vai trò hoặc dịch vụ AWS.
+2. **Cấu Hình Cơ Sở Dữ Liệu**
+    - Sử dụng Amazon RDS với triển khai Multi-AZ để tăng tính khả dụng.
+    - Triển khai các bản sao đọc (read replicas) để giảm tải đọc và nâng cao hiệu suất.
 
-**Grafana:** Phân tích và ứng dụng web trực quan hóa tương tác cung cấp biểu đồ, đồ thị và cảnh báo.
+3. **Quản Lý DNS**
+    - Thiết lập Amazon Route 53 để định tuyến lưu lượng hiệu quả.
+    - Thực hiện dự phòng DNS để đảm bảo tính liên tục dịch vụ.
 
-**Đăng ký vùng chứa đàn hồi (ECR):** Sổ đăng ký vùng chứa Docker để lưu trữ, quản lý và triển khai hình ảnh vùng chứa.
+4. **Giám Sát Liên Tục**
+    - Sử dụng Amazon CloudWatch để giám sát các thông số ứng dụng.
+    - Tạo các cảnh báo và phản ứng tự động để xử lý các vấn đề tiềm ẩn một cách chủ động.
 
-**Hàng đợi SQS của Amazon:** Dịch vụ xếp hàng tin nhắn để tách rời và mở rộng quy mô các vi dịch vụ, hệ thống phân tán và ứng dụng không có máy chủ.
-Và để lưu trữ và triển khai:
+## Kết Luận
 
-**S3:** Dung lượng lưu trữ có thể mở rộng trên đám mây AWS.
+AWS cung cấp một bộ dịch vụ toàn diện giúp bạn xây dựng các ứng dụng không gián đoạn. Bằng cách triển khai Elastic Load Balancing, Auto Scaling, Amazon RDS, Route 53, và CloudWatch, bạn có thể đảm bảo ứng dụng của mình luôn hoạt động tốt và có sẵn dưới mọi điều kiện.
 
-**CodeCommit:** Dịch vụ kiểm soát nguồn lưu trữ các kho lưu trữ an toàn dựa trên Git.
-
-Mỗi thành phần này đóng một vai trò quan trọng trong cơ sở hạ tầng đám mây toàn diện, có thể mở rộng và an toàn nhằm khai thác sức mạnh của dịch vụ AWS.**** Dịch vụ cung cấp bản ghi các hành động được thực hiện bởi người dùng, vai trò hoặc dịch vụ AWS.
+Khám phá các lợi ích của kiến trúc AWS và duy trì lợi thế cạnh tranh với các ứng dụng không gián đoạn. Để biết thêm hướng dẫn chi tiết và các thực hành tốt nhất, hãy truy cập [auto.io.vn](https://auto.io.vn).
