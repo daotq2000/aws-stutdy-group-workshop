@@ -16,7 +16,7 @@ image: "images/2.2/HA_AWS_DESIGN.png" # The path to your image
 
 Sự tăng trưởng theo cấp số nhân của mua sắm trực tuyến đòi hỏi các nền tảng thương mại điện tử mạnh mẽ và có thể mở rộng. Lưu lượng truy cập tăng trong thời gian mua sắm cao điểm như Thứ Sáu Đen hoặc Thứ Hai Điện Tử đòi hỏi nền tảng thương mại điện tử phải có khả năng phục hồi và phản hồi cao. Mục tiêu thách thức: Xây dựng một nền tảng thương mại điện tử có khả năng mở rộng cao, linh hoạt và tiết kiệm chi phí trên AWS, có thể xử lý các tải khác nhau, khắc phục các lỗi thành phần mà không có lỗi mà người dùng có thể thấy và duy trì tính nhất quán của dữ liệu.
 
-Cung cấp hướng dẫn chi tiết, hữu ích về cách xây dựng ứng dụng không có thời gian ngừng hoạt động bằng AWS. Bao gồm các ví dụ thực tế, nghiên cứu trường hợp và mẹo khắc phục sự cố.
+Cung cấp hướng dẫn chi tiết, hữu ích về cách xây dựng ứng dụng Zero Downtime  bằng AWS. Bao gồm các ví dụ thực tế, nghiên cứu trường hợp và mẹo khắc phục sự cố.
 
 ### Yêu cầu:
 

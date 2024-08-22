@@ -24,7 +24,7 @@ Amazon Relational Database Service (Amazon RDS) là dịch vụ cơ sở dữ li
 
 + Nhiều công cụ cơ sở dữ liệu: Amazon RDS hỗ trợ một số công cụ cơ sở dữ liệu quan hệ phổ biến, bao gồm MySQL, PostgreSQL, MariaDB, Oracle và SQL Server. Người dùng có thể chọn công cụ phù hợp nhất với yêu cầu ứng dụng của mình và tận dụng các công nghệ cơ sở dữ liệu quen thuộc.
 
-+ Khả năng mở rộng: Amazon RDS cho phép người dùng dễ dàng tăng hoặc giảm quy mô phiên bản cơ sở dữ liệu của mình dựa trên nhu cầu khối lượng công việc thay đổi. Người dùng có thể tăng hoặc giảm tài nguyên điện toán và lưu trữ mà không có thời gian ngừng hoạt động, cho phép khả năng mở rộng liền mạch khi mức sử dụng ứng dụng biến động.
++ Khả năng mở rộng: Amazon RDS cho phép người dùng dễ dàng tăng hoặc giảm quy mô phiên bản cơ sở dữ liệu của mình dựa trên nhu cầu khối lượng công việc thay đổi. Người dùng có thể tăng hoặc giảm tài nguyên điện toán và lưu trữ mà Zero Downtime , cho phép khả năng mở rộng liền mạch khi mức sử dụng ứng dụng biến động.
 
 + Tính sẵn sàng cao: Amazon RDS cung cấp các tính năng tích hợp sẵn có tính sẵn sàng cao như sao lưu tự động, chuyển đổi dự phòng tự động và triển khai Multi-AZ. Triển khai Multi-AZ sao chép dữ liệu trên nhiều vùng sẵn sàng để cung cấp khả năng chịu lỗi cũng như đảm bảo độ bền và tính khả dụng của dữ liệu trong trường hợp xảy ra lỗi hoặc ngừng hoạt động phần cứng.
 
@@ -91,7 +91,7 @@ Amazon Redshift là dịch vụ kho dữ liệu quy mô petabyte được quản
 
 + **Xử lý song song lớn (MPP):** Redshift phân phối dữ liệu và xử lý truy vấn trên nhiều nút trong một cụm, cho phép thực hiện song song các truy vấn. Kiến trúc này cho phép Redshift mở rộng quy mô theo chiều ngang khi khối lượng dữ liệu và truy vấn của bạn tăng lên, mang lại hiệu suất ổn định bất kể kích thước tập dữ liệu.
 
-+ **Khả năng mở rộng:** Redshift hỗ trợ các cụm có phạm vi từ vài trăm gigabyte đến nhiều petabyte dữ liệu, cho phép bạn mở rộng cơ sở hạ tầng kho dữ liệu dựa trên nhu cầu kinh doanh của mình. Bạn có thể dễ dàng thêm hoặc xóa các nút khỏi cụm Redshift mà không có thời gian ngừng hoạt động.
++ **Khả năng mở rộng:** Redshift hỗ trợ các cụm có phạm vi từ vài trăm gigabyte đến nhiều petabyte dữ liệu, cho phép bạn mở rộng cơ sở hạ tầng kho dữ liệu dựa trên nhu cầu kinh doanh của mình. Bạn có thể dễ dàng thêm hoặc xóa các nút khỏi cụm Redshift mà Zero Downtime .
 
 + **Hiệu suất cao:** Redshift được tối ưu hóa để mang lại hiệu suất truy vấn nhanh, với khả năng thực hiện các truy vấn phân tích phức tạp đối với các tập dữ liệu lớn trong vài giây hoặc vài phút. Nó tận dụng các kỹ thuật tối ưu hóa truy vấn nâng cao, chẳng hạn như song song hóa truy vấn, chiến lược phân phối dữ liệu và thu thập thống kê bảng tự động, để mang lại hiệu suất tối ưu.
 

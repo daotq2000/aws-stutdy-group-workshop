@@ -1,9 +1,11 @@
 ---
-title : "Terraform Provision Kubernetes Resources"
+title : "How to Provision Kubernetes Resources Using Terraform and Helm Charts"
+description : "Tìm hiểu cách cung cấp hiệu quả tài nguyên Kubernetes bằng Biểu đồ Terraform và Helm để triển khai ứng dụng Zero Downtime ."
 date : "`r Sys.Date()`"
 weight : 5
 chapter : false
 pre : " <b> 2.2.4 </b> "
+image: "images/2.2/teraform-aws.jpeg"
 ---
 
 ## Video
@@ -165,3 +167,6 @@ using command `terraform apply deploy.tfplan` to apply change resource
 
 ## Refer to my source code
 **Github repository: ** https://github.com/daotq2000/aws-iaac-terraform 
+
+### Conclusion:
+Mastering Terraform for Kubernetes provisioning enhances your DevOps workflow, making deployments smoother and more reliable. Explore related resources on our platform for further learning.

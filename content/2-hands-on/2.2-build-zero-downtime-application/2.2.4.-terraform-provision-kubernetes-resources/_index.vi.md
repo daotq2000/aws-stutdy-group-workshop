@@ -1,9 +1,11 @@
 ---
-title : "Quản lý tài nguyên Kubernetes với Terraform"
+title : "Cách xây dựng Infastructure AWS với Terraform và HelmChart"
+description : "Learn how to efficiently provision Kubernetes resources with Terraform and Helm Charts for seamless, zero-downtime deployments."
 date : "`r Sys.Date()`"
 weight : 5
 chapter : false
 pre : " <b> 2.2.4 </b> "
+image: "images/2.2/teraform-aws.jpeg"
 ---
 
 ## Video
@@ -166,3 +168,6 @@ Sử dụng lệnh `terraform apply deploy.tfplan` để áp dụng tài nguyên
 
 ## Refer to my source code
 **Github repository: ** https://github.com/daotq2000/aws-iaac-terraform 
+
+### Phần kết luận:
+Việc nắm vững Terraform để cung cấp Kubernetes sẽ nâng cao quy trình làm việc DevOps của bạn, giúp việc triển khai mượt mà và đáng tin cậy hơn. Khám phá các tài nguyên liên quan trên nền tảng của chúng tôi để tìm hiểu thêm.
