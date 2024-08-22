@@ -5,7 +5,7 @@ date : "`r Sys.Date()`"
 weight : 2
 chapter : false
 pre : " <b> 2.2 </b> "
-image: "/images/2/architechture.webp" # The path to your image
+image: "images/2.2/HA_AWS_DESIGN.png" # The path to your image
 ---
 
 ![AWS DESIGN ARCHITECTURE](/images/1/ArchitechtureDesign.svg?featherlight=false&width=100pc)
@@ -13,7 +13,7 @@ image: "/images/2/architechture.webp" # The path to your image
 
 [![Build Zero Downtime AWS Application](/images/2/YT.png)](https://youtu.be/xBy9F5qLOYA?list=PLk36mRYn9bOHtZsDG3iA-yGzktMiBojm9 "Everything Is AWESOME")
 
-### Challenge 2: Building AWS Resilient E-commerce Platform
+### Challenge 2: Building AWS Zero Downtime Application
 
 The exponential growth of online shopping necessitates robust and scalable e-commerce platforms. An increase in traffic during peak shopping periods like Black Friday or Cyber Monday requires the e-commerce platform to be highly resilient and responsive. Challenge Objective: Build a highly scalable, resilient, and cost-effective e-commerce platform on AWS that can handle varying loads, survive component failures without user-visible errors, and maintain data consistency.
 
