@@ -8,8 +8,6 @@ chapter : false
 pre : " <b> 1. </b> "
 ---
 
-# Giới Thiệu AWS: Dịch Vụ Amazon Web Services
-
 #### Amazon Web Services là gì?
 AWS là viết tắt của **Amazon Web Service**. Đây là một nền tảng điện toán đám mây toàn diện và được sử dụng rộng rãi do Amazon.com cung cấp. Ra mắt vào năm 2006, AWS cung cấp một loạt dịch vụ bao gồm sức mạnh tính toán, tùy chọn lưu trữ, khả năng kết nối mạng, cơ sở dữ liệu, machine learning và các công cụ AI, cùng nhiều dịch vụ khác, tất cả đều được cung cấp qua internet.
 
@@ -34,8 +32,9 @@ Amazon Web Services (AWS) cung cấp một loạt các dịch vụ điện toán
 #### Nội dung
 
 Giới thiệu về dịch vụ chìa khóa mà chúng tôi sẽ sử dụng trong labs hands-on:
-1. [Dịch vụ điện toán](1-Introduce-aws/1.1-ComputeServices/)
-2. [Dịch vụ lưu trữ](1.2-StorageServices/)
-3. [Dịch vụ cơ sở dữ liệu](1.3-DatabaseServices/)
-4. [Dịch vụ mạng](1.4-NetworkingServices/)
 
+
+#### 1. [Các nguyên tắc cơ bản về điện toán đám mây AWS](/1-introduce-aws/1.1-computeservices/)
+#### 2. [Các nguyên tắc cơ bản về dịch vụ lưu trữ AWS](1-introduce-aws/1.2-storageservices/)
+#### 3. [Nguyên tắc cơ bản về dịch vụ cơ sở dữ liệu AWS](/1-introduce-aws/1.3-databaseservice/)
+#### 4. [Các nguyên tắc cơ bản về dịch vụ mạng AWS](/1-introduce-aws/1.4-networkingservices/)
