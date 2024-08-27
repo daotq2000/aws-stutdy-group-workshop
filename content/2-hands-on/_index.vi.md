@@ -82,3 +82,5 @@ Kinh nghiệm thực tế với AWS là điều cần thiết để thành thạ
 1. Day 1 [Xây dựng ứng dụng Serverless](2.1-build-serverless-application/)
 2. Day 2: [Xây dựng ứng dụng Zero Downtime AWS Application](2.2-build-zero-downtime-application/)
 3. Day 3 [Xây dựng ứng dụng nghe nhạc Serverless trên AWS](2.3-music-serverless-application/)
+
+**Keyword: [introducing amazon](/2-hands-on/),[amazon series hand of god](), [what channel does amazon use to deliver audio books to their customers](/2-hands-on/),[services offered by amazon hands-on amazon](/2-hands-on/),[amazon web services introduction](/2-hands-on/),[amazon introduces pay with hands](/2-hands-on/)**

@@ -87,3 +87,5 @@ For more information on AWS and hands-on learning, check out our comprehensive g
 1. Day 1: [Build Note Application AWS Serverless](2.1-build-serverless-application/)
 2. Day 2: [Build Zero Downtime AWS Application](2.2-build-zero-downtime-application/)
 3. Day 3 [Build Music Serverless Application](2.3-music-serverless-application/)
+
+**Keyword: [introducing amazon](/2-hands-on/),[amazon series hand of god](), [what channel does amazon use to deliver audio books to their customers](/2-hands-on/),[services offered by amazon hands-on amazon](/2-hands-on/),[amazon web services introduction](/2-hands-on/),[amazon introduces pay with hands](/2-hands-on/)**
