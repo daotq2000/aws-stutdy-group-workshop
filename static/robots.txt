@@ -16,7 +16,7 @@ Disallow:
 User-agent: Bingbot
 Disallow:
 
-# Block specific bots from accessing the site
+.# Block specific bots from accessing the site
 User-agent: BadBot
 Disallow: /
 
