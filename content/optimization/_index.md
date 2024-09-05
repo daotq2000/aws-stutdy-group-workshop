@@ -66,7 +66,7 @@ That is the premise for the application to expand and grow further.
 ![apis.png](/images/4/apis.png)
 Let's learn with us about common mistakes when programming and how to handle each problem through a series of articles on optimizing code for Java Application and SQL (Postgresql).
 
-### [1. Optimize code for Java Spring boot Application]()
-### [2. SQL optimization]()
+### [1. Optimize code for Java Spring boot Application](/optimization/optimize-springboot-performance/)
+### [2. SQL optimization](/optimization/optimize-sql/)
 ---
 **Keywords**: [aws hands on for beginners](https://auto.io.vn), [aws hands on labs pdf](https://auto.io.vn), [aws hands on project](https://auto.io.vn), [aws hands on training](https://auto.io.vn), [aws hand ons](https://auto.io.vn), [aws hands on exercise](https://auto.io.vn), [aws hands on workshop](https://auto.io.vn),[aws hands on course](https://auto.io.vn), [aws hands on labs](https://auto.io.vn), [aws 100 days](https://auto.io.vn), [what is aws?](https://auto.io.vn/1-introduce-aws)

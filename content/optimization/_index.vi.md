@@ -64,5 +64,5 @@ Và đây là kết quả sau khi đã optimized, hiệu năng tăng lên đáng
 ![apis.png](/images/4/apis.png)
 Cùng tìm hiểu cùng mình những sai lầm phổ biến khi lập trình và cách xử lý cho từng vấn đề qua loạt bài tối ưu code cho Java Application và SQL(Postgresql).
 
-### [1. Tối ưu code cho Java Spring boot Application]()
-### [2. Tối ưu SQL]()
+### [1. Tối ưu code cho Java Spring boot Application](/vi/optimization/optimize-springboot-performance/)
+### [2. Tối ưu SQL](/vi/optimization/optimize-sql/)
