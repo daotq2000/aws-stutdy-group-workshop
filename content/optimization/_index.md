@@ -1,71 +1,72 @@
 ---
-title : "The ways optimization Application High CPU Database to Low CPU"
-description: "Explore Introduce Series 100 AWS Hands-On Labs, designed for beginners to learn AWS with step-by-step hands-on exercises"
+title : "3. The ways optimization Application handle millions request"
+description: "Spring Boot Optimization Tips: Ensuring Your Application Is Always Available to Millions of Users"
 date : "`r Sys.Date()`"
-weight : 1
+weight : 3
 chapter : false
-image: "images/1/logo.png"
+image: "images/4/OptimizeSpring%20BootPerformance.png"
 ---
-# Introduce Series 100 AWS Hand On Labs
+## Architecture Overview
+![PMS_Overview.png](/images/4/PMS_Overview.png)
 
-Welcome to the "100 Days Cloud" series—an intensive, 100-day journey designed to transform your cloud computing skills from beginner to advanced. Whether you're an IT professional, a developer, or someone eager to dive into the world of cloud technology, this series is tailored to equip you with the knowledge and practical skills needed to excel in the ever-evolving cloud landscape.
+The system is developed based on microservice architecture, each service will perform tasks, responsible based on the business logic domain that it is defined. The system is built on core Java
+Application uses Spring Boot Framework, Spring Data JPA, Spring Cache, Hibernate... and classic libraries such as Apache Kafka, Elastic Search...
 
-## What Is the "100 Days Cloud" Series?
+Dividing the application into different services makes it easier to manage in maintaining, processing data, helping to increase efficiency in the process of scaling up the application without being limited like the old-style mothonic architecture.
+The application is currently running on PRODUCTION, because it is an application for all employees of company X, there will be 8,000 - 10,000 active users every day, with the number of requests to be processed up to millions of traffic per day.
+## Current status
+During a long period of running time, the application grows to tens of thousands of users, generating millions of requests each day, so reading/writing data continuously causes a large amount of data to be stored in the database, CPU Database
+often reaches 100%, APIs have slow response times, users often complain about the application freezing, lagging, long waiting time, recording APIs with response times over 10s.
 
-The "100 Days Cloud" series is a structured educational program aimed at providing a comprehensive understanding of cloud computing over a period of 100 days. Each day, you'll engage with new concepts, hands-on exercises, and real-world scenarios to build your expertise incrementally. 
+![List of APIs, services with response times > 5s, 10s.](/images/4/elk_full_cpu.png)
+List of APIs, services with response times > 5s, 10s.
 
-### Key Features of the Series:
+![CPU database often reaches 100%.](/images/4/BeforeOptimize.png)
 
-- **Daily Lessons**: Receive a new lesson every day, covering fundamental to advanced topics in cloud computing.
-- **Hands-On Projects**: Apply what you learn through practical exercises and real-world projects.
-- **Community Support**: Join a community of learners for discussions, support, and networking opportunities.
+CPU database often reaches 100%.
 
-## Why You Should Join the "100 Days Cloud" Series
+## Causes of overload
+### 1. Increased traffic
+![Increased traffic](/images/4/traffic.png)
+Application development brings benefits but also challenges to ensure the application works well and smoothly, having **100-10000** users per day will cause the number of requests to increase suddenly, related to the timely expansion of the application to meet high traffic
 
-### 1. **Structured Learning Path**
+### 2. Unoptimized code
+The main reason is due to hot development, features are continuously developed according to the agile model without much time to optimize, code control is still not tight, causing lines of code that are not really good,
+not really optimized to be put into production, making the application slow and even slower, APIs are constantly **[503-Service Unavailable](https://fptshop.com.vn/tin-tuc/danh-gia/loi-503-service-unavailable-la-gi-155247), [504-Gateway Time-out](https://cloud.z.com/vn/news/504-gateway-time-out/#:~:text=out%20l%C3%A0%20g%C3%AC%3F-,L%E1%BB%97i%20504%20Gateway%20Time%2Dout%20xu%E1%BA%A5t%20hi%E1%BB%87n%20khi%20c%C3%B3%20s%E1%BB%B1,kho%E1%BA%A3ng%20th%E1%BB%9Di%20gian%20quy%20%C4%91%E1%BB%8Bnh.)**
+due to the sudden increase in traffic, the application cannot scale in time, so it will be overloaded.
 
-The series offers a well-organized learning path, ensuring that you cover all critical aspects of cloud computing, including:
-- **Cloud Fundamentals**: Understand core concepts such as cloud models (IaaS, PaaS, SaaS), deployment models, and essential cloud services.
-- **Major Cloud Providers**: Gain insights into leading platforms like AWS, Azure, and Google Cloud, and learn how to leverage their services effectively.
-- **Cloud Security**: Explore best practices for securing cloud environments and managing data privacy.
-- **DevOps and Automation**: Delve into DevOps practices and cloud automation tools to streamline development and operations.
+### 3. SQL Query is not optimized.
 
-### 2. **Practical Experience**
+The main reason for this overload is that SQL Query has a large [query cost](https://wecommit.com.vn/sql-execution-plan-trong-toi-uu-sql/), taking up a large amount of CPU during execution. Below are some possible reasons:
 
-The series emphasizes practical experience, enabling you to:
-- **Work on Real Projects**: Implement what you’ve learned through hands-on projects and case studies.
-- **Build a Portfolio**: Showcase your skills with a portfolio of completed projects.
++ Frequently used queries, large query cost, not optimized.
 
-### 3. ** Guidance**
++ Using too many subqueries makes the query slow.
 
-Learn from experienced  who will provide:
-- **Detailed Tutorials**: Step-by-step guides and video tutorials.
-- **Q&A Sessions**: Live sessions to answer your questions and clarify doubts.
++ Selecting the entire table, lacking the selection of necessary fields.
 
-### 4. **Networking Opportunities**
++ Query full scan table, not properly indexed, causing queries that are rarely used to re-query, and queries that return large amounts of data are not used or indexed.
 
-Connect with other learners in the cloud computing field:
-- **Discussion Forums**: Participate in discussions, share insights, and get feedback.
++ Not dividing partitions with large data tables, not limiting results according to where queries ....
++ Abusing the use of group by, having.
++ Not understanding, not knowing how to analyze [execution strategy](https://wecommit.com.vn/sql-execution-plan-trong-toi-uu-sql/) of SQL statements, leading to non-optimal queries, high execution costs.
 
-## How to Get Started
+### 4. Improper cache application
+![cache.png](/images/4/cache.png)
+Using cache is very important in optimization, for data that rarely changes, can be reused, we should use cache to optimize performance, instead of opening a connection to the database each time we get data
+and get data, we will use cache, the application will read data from the cache and return it to the end-user, so the latency of APIs will be reduced to milliseconds, helping to increase the performance of APIs to respond to hundreds of thousands, to millions of requests per second.
+However, using cache also requires a strict cache invalidation and update strategy because if it is not strict, the data will be incorrect, missing, or redundant compared to the data in the database.
 
-Joining the "100 Days Cloud" series is simple:
-1. **Set Your Goals**: Define your learning objectives and track your progress throughout the series.
-2. **Engage Actively**: Participate in exercises, contribute to discussions, and leverage the community for support.
+## Solution to the problem
+After finding the cause, we will continue to solve the problem. To solve the problem, we need to know the root of why the code is not optimized? Why is the query not optimized then we will find a way to fix it.
+And this is the result after optimization, the performance increased significantly, the average processing time of the api ranged from 100-300ms, no database CPU was recorded > 50%, as you can see in 1 day of services. can handle millions of requests without any performance issues,
+That is the premise for the application to expand and grow further.
+![after.png](/images/4/after.png)
+![elk_optimize1.png](/images/4/elk_optimize1.png)
+![apis.png](/images/4/apis.png)
+Let's learn with us about common mistakes when programming and how to handle each problem through a series of articles on optimizing code for Java Application and SQL (Postgresql).
 
-
----
-## Content
-#### 1. [Why you should learning aws? ](https://auto.io.vn/2-hands-on/)
-#### 2. [Practice with AWS lambda serverless](https://auto.io.vn/2-hands-on/2.1-build-serverless-application/)
-#### 3. [Practice buiding Zero Downtime Application on AWS](https://auto.io.vn/2-hands-on/2.2-build-zero-downtime-application/)
-#### 4. [Practice building serverless music application on AWS](https://auto.io.vn/2-hands-on/2.3-music-serverless-application/)
-
-## Conclusion
-
-The "100 Days Cloud" series is more than just a learning program; it’s a commitment to advancing your cloud computing skills and positioning yourself as a proficient professional in a rapidly growing field. Don’t miss this opportunity to enhance your knowledge and career prospects.
-
-Join us today and embark on your journey to cloud mastery with the "100 Days Cloud" series!
-
+### [1. Optimize code for Java Spring boot Application]()
+### [2. SQL optimization]()
 ---
 **Keywords**: [aws hands on for beginners](https://auto.io.vn), [aws hands on labs pdf](https://auto.io.vn), [aws hands on project](https://auto.io.vn), [aws hands on training](https://auto.io.vn), [aws hand ons](https://auto.io.vn), [aws hands on exercise](https://auto.io.vn), [aws hands on workshop](https://auto.io.vn),[aws hands on course](https://auto.io.vn), [aws hands on labs](https://auto.io.vn), [aws 100 days](https://auto.io.vn), [what is aws?](https://auto.io.vn/1-introduce-aws)
