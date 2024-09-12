@@ -1,5 +1,5 @@
 ---
-title : "2. Top Tips for Leveraging an SQL Performance Optimizer"
+title : "2. Top Tips Optimize SQL Performance "
 description: "Discover the top tips for leveraging an SQL Performance Optimizer to enhance database speed, reduce query execution time, and improve overall efficiency. Learn best practices to maximize the power of your SQL optimizer today."
 date : "`r Sys.Date()`"
 weight : 2

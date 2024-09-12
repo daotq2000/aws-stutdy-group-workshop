@@ -1,5 +1,5 @@
 ---
-title : "2.Tối ưu hóa hiệu suất SQL"
+title : "2.Top Tips Optimize SQL Performance"
 mô tả: "Trình tối ưu hóa hiệu suất SQL là một công cụ mạnh mẽ được thiết kế để nâng cao hiệu quả cơ sở dữ liệu bằng cách phân tích và cải thiện các truy vấn SQL. Nó giúp xác định các tắc nghẽn, tối ưu hóa việc lập chỉ mục, hợp lý hóa các truy vấn và tinh chỉnh cấu hình cơ sở dữ liệu, đảm bảo thực thi truy vấn nhanh hơn và sử dụng tài nguyên tốt hơn"
 date : "`r Sys.Date()`"
 weight : 2

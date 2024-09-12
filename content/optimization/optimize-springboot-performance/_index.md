@@ -1,5 +1,5 @@
 ---
-title : "1. Optimize Spring Boot Performance Handling Millions of Requests"
+title : "1. Top Tips Optimize Java Spring Boot App"
 description: "How to optimize Spring Boot performance with effective strategies and best practices. Enhance application speed, reduce latency, and handle high traffic"
 date : "`r Sys.Date()`"
 weight : 1
