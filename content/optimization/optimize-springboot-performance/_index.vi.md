@@ -1,5 +1,5 @@
 ---
-title : "1. Top Tips Optimize Java Spring Boot App"
+title : "1. Top Tips Optimize Spring-boot Performance"
 description: "Tìm hiểu cách tối ưu hóa ứng dụng Java Spring Boot để xử lý hàng triệu request mỗi ngày với các kỹ thuật tối ưu CPU, bộ nhớ, caching, kết nối cơ sở dữ liệu"
 date : "`r Sys.Date()`"
 weight : 1
