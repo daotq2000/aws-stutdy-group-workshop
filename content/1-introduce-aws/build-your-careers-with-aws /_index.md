@@ -1,6 +1,6 @@
 ---
 title : "Build your careers with AWS"
-description: "Khám phá các nghề nghiệp thú vị tại AWS và gia nhập một công ty hàng đầu thế giới về điện toán đám mây. Đổi mới, phát triển và định hình tương lai của công nghệ với Amazon Web Services."
+description: "Explore AWS network services like VPC, Route 53, and Direct Connect. Learn how these services can enhance your network performance, security, and connectivity.."
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
