@@ -4,7 +4,7 @@ description : "Explore AWS storage services like S3, EBS, and Glacier. Learn how
 date :  "`r Sys.Date()`" 
 weight : 2
 chapter : false
-pre : " <b> 1.2 </b> "
+pre : " <b> 1.3 </b> "
 image: "images/1/s3.png"
 ---
 

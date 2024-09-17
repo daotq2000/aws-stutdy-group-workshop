@@ -4,7 +4,7 @@ description: "Khám phá các dịch vụ mạng của AWS như VPC, Route 53 v�
 date :  "`r Sys.Date()`" 
 weight : 4 
 chapter : false
-pre : " <b> 1.4 </b> "
+pre : " <b> 1.5 </b> "
 image: "images/1/vpc.png"
 ---
 

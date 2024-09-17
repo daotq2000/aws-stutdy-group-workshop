@@ -4,7 +4,7 @@ description : "Khám phá các dịch vụ lưu trữ của AWS như S3, EBS và
 date :  "`r Sys.Date()`" 
 weight : 2
 chapter : false
-pre : " <b> 1.2 </b> "
+pre : " <b> 1.3 </b> "
 image: "images/1/s3.png"
 ---
 

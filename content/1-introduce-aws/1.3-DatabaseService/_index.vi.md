@@ -4,7 +4,7 @@ description: "Khám phá các dịch vụ cơ sở dữ liệu của AWS như RD
 date :  "`r Sys.Date()`" 
 weight : 3 
 chapter : false
-pre : " <b> 1.3 </b> "
+pre : " <b> 1.4 </b> "
 image: "images/1/db-aws.png"
 ---
 

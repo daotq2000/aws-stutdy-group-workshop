@@ -4,7 +4,7 @@ description : "Learn about AWS compute services, including EC2 and Lambda. Disco
 date :  "`r Sys.Date()`" 
 weight : 1
 chapter : false
-pre : " <b> 1.1 </b> "
+pre : " <b> 1.2 </b> "
 image: "images/1/aws-compute-services.png" # The path to your image
 ---
 

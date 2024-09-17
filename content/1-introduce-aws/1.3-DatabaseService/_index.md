@@ -4,7 +4,7 @@ description: "Explore AWS database services like RDS, DynamoDB, and Aurora. Disc
 date :  "`r Sys.Date()`" 
 weight : 3 
 chapter : false
-pre : " <b> 1.3 </b> "
+pre : " <b> 1.4 </b> "
 image: "images/1/db-aws.png"
 ---
 
