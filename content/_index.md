@@ -6,7 +6,7 @@ weight : 1
 chapter : false
 image: "images/1/logo.png"
 ---
-# Introduce Series 100 AWS Hand On Labs
+# Introduce Series 100 AWS Hand On Labs , Optimization Practice
 
 Welcome to the "100 Days Cloud" series—an intensive, 100-day journey designed to transform your cloud computing skills from beginner to advanced. Whether you're an IT professional, a developer, or someone eager to dive into the world of cloud technology, this series is tailored to equip you with the knowledge and practical skills needed to excel in the ever-evolving cloud landscape.
 
