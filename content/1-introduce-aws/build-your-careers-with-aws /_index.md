@@ -12,7 +12,7 @@ Start an exciting journey with AWS (**Amazon Web Services**) and open doors to m
 This article will show you the vast opportunities in the **AWS ecosystem**. It will give you the knowledge and resources to build a successful career in the cloud.
 
 ![aws careers](/images/1/aws-career-successr.jpeg)
-
+ 
 ### Key Takeaways
 
 *   Explore the wide range of **AWS career opportunities** in cloud computing.
