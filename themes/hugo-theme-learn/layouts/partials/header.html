@@ -48,6 +48,49 @@
       {{ end }}
     </style>
     {{ partial "custom-header.html" . }}
+    <script>
+
+      // Define dataLayer and the gtag function.
+
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag(){dataLayer.push(arguments);}
+
+
+      // IMPORTANT - DO NOT COPY/PASTE WITHOUT MODIFYING REGION LIST
+
+      // Set default consent for specific regions according to your requirements
+
+      gtag('consent', 'default', {
+
+        'ad_storage': 'denied',
+
+        'ad_user_data': 'denied',
+
+        'ad_personalization': 'denied',
+
+        'analytics_storage': 'denied',
+
+        'regions':'US'
+
+      });
+
+      // Set default consent for all other regions according to your requirements
+
+      gtag('consent', 'default', {
+
+        'ad_storage': 'denied',
+
+        'ad_user_data': 'denied',
+
+        'ad_personalization': 'denied',
+
+        'analytics_storage': 'denied'
+
+      });
+
+    </script>
+
   </head>
   <body class="" data-url="{{ .RelPermalink }}">
     {{ partial "menu.html" . }}
@@ -144,4 +187,3 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-WT2Q7FB2');</script>
   <!-- End Google Tag Manager -->
-   
