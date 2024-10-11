@@ -2,7 +2,7 @@
 title : "Introduce Series 100 Days AWS Hand On Labs, Optimization Practice"
 description: "Explore Introduce Series 100 AWS Hands-On Labs, designed for beginners to learn AWS with optimization practice hands-on exercises, optimization resources"
 date : "`r Sys.Date()`"
-weight : 1
+weight : 2
 chapter : false
 image: "images/1/logo.png"
 ---

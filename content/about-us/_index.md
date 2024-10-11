@@ -1,8 +1,8 @@
 ---
-title : "Privacy Policy Announcement"
+title : "4. Privacy Policy Announcement"
 description: "We are pleased to announce that our website now fully complies with European privacy standards"
 date : "`r Sys.Date()`"
-weight : 1
+weight : 4
 chapter : false
 image: "images/logo.png"
 ---
