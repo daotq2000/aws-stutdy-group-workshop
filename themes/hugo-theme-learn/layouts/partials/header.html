@@ -48,50 +48,6 @@
       {{ end }}
     </style>
     {{ partial "custom-header.html" . }}
-    <script>
-
-      // Define dataLayer and the gtag function.
-
-      window.dataLayer = window.dataLayer || [];
-
-      function gtag(){dataLayer.push(arguments);}
-
-
-      // IMPORTANT - DO NOT COPY/PASTE WITHOUT MODIFYING REGION LIST
-
-      // Set default consent for specific regions according to your requirements
-
-      gtag('consent', 'default', {
-
-        'ad_storage': 'denied',
-
-        'ad_user_data': 'denied',
-
-        'ad_personalization': 'denied',
-
-        'analytics_storage': 'denied',
-
-        'regions':'US'
-
-      });
-
-      // Set default consent for all other regions according to your requirements
-
-      gtag('consent', 'default', {
-
-        'ad_storage': 'denied',
-
-        'ad_user_data': 'denied',
-
-        'ad_personalization': 'denied',
-
-        'analytics_storage': 'denied'
-
-      });
-
-    </script>
-
-    <!--Banner script here!-->
 
   </head>
   <body class="" data-url="{{ .RelPermalink }}">
@@ -183,31 +139,7 @@
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1014651997538036"
           crossorigin="anonymous"></script>
           <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WT2Q7FB2');</script>
-  <!-- End Google Tag Manager -->
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-74VPJT2D9C"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-74VPJT2D9C');
-          </script>
-
-          <!-- Google tag (gtag.js) -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=G-QWF6PSERG0"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-QWF6PSERG0');
-          </script>
+<
 
 
 
